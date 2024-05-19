@@ -57,7 +57,7 @@
 
             </ul>
 
-            <div id="logo"><a href="main.html"><img src="logo.png" height="30px" width="160px"></a></div>
+            <div id="logo"><a href="main.html"><img src="logo.png" height="55px" width="65px"></a></div>
 
             <ul class="interactions">
                 
@@ -100,35 +100,1930 @@
                     <!-- Unit 1 text -->
                     <h2>UNIT 1: Introduction</h2>
                     <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacinia nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Nulla vitae sapien ut lorem dapibus euismod. Cras varius, tortor sed consequat ultrices, erat augue pulvinar felis, id consectetur velit mi at sapien. Duis convallis, lorem vel ullamcorper aliquet, neque orci iaculis nisi, ac fermentum odio nulla id quam. Cras eget gravida justo. Pellentesque vel tortor libero. Nulla nec odio in justo tincidunt rhoncus.</p>
+                    <section>
+                        <h3>Definition:</h3><br>
+                        <article>
+                            <p>An operating system (OS) is a software layer that manages the hardware and software resources of a computer and provides common services for computer programs. It serves as an intermediary between the computer hardware and application programs, making it easier for the applications to communicate with and manage the hardware. The operating system performs a variety of functions that are essential for the efficient operation of a computer system:</p><br>
+                            <h4>Key Functions:</h4><br>
+                            <ul>
+                                <li>Process Management: Handles processes (programs in execution), including creating, scheduling, and terminating processes.</li><br>
+                                <li>Memory Management: Manages physical and virtual memory, including allocation, deallocation, and swapping.</li><br>
+                                <li>File Management: Manages the creation, deletion, and organization of files on storage media.</li><br>
+                                <li>Device Management: Controls access to peripheral devices (e.g., printers, hard drives), and provides an abstraction layer for interaction with devices.</li><br>
+                                <li>Security and Protection: Ensures the security and integrity of data, controlling access to resources and protecting against unauthorized access.</li><br>
+                                <li>User Interface: Provides a user interface, either command-line or graphical, for users to interact with the system.</li><br>
+                            </ul><br>
+                            <h4>Types of Operating Systems:</h4><br>
+                            <p>Operating systems can vary greatly depending on the purpose, functionality, and underlying hardware. Common types include:</p><br>
+                            <ul>
+                                <li>Batch Operating Systems: Executes a batch of jobs in sequence without user interaction.</li><br>
+                                <li>Time-Sharing Operating Systems: Allows multiple users to access the system simultaneously, sharing time on the processor.</li><br>
+                                <li>Real-Time Operating Systems: Designed for systems that require timely and predictable response times.</li><br>
+                                <li>Distributed Operating Systems: Manages resources across multiple networked computers.</li><br>
+                                <li>Embedded Operating Systems: Tailored for specialized hardware, such as IoT devices.</li><br>
+                            </ul><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Real-Time Operating System:</h3><br>
+                        <article>
+                            <p>Real-time operating systems (RTOS) are designed to handle tasks with strict timing constraints. RTOS prioritize tasks based on their criticality and the time by which they must be completed.</p><br>
+                            <h4>Characteristics:</h4><br>
+                            <ul>
+                                <li>Deterministic Behavior: RTOS provide predictable response times to ensure tasks are completed within specified time frames.</li><br>
+                                <li>Real-Time Constraints: RTOS must meet timing requirements, often involving strict deadlines.</li><br>
+                                <li>Priority-Based Scheduling: Prioritizes tasks based on their urgency and importance, ensuring critical tasks are processed first.</li><br>
+                            </ul><br>
+                            <h4>Types of Real-Time Operating Systems:</h4><br>
+                            <p>Hard Real-Time Systems: Systems where missing a deadline can result in catastrophic failure, such as in medical devices or avionics.<br>
+                            Soft Real-Time Systems: Systems where missing a deadline doesn't cause failure, but may result in degraded performance, such as in multimedia applications.</p><br>
+                            <h4>Applications:</h4><br>
+                            <p>RTOS are used in systems where timing is crucial, such as automotive control systems, robotics, telecommunications, industrial automation, and medical devices.</p><br>
+                            <h4>Examples:</h4><br>
+                            <p>Examples of real-time operating systems include QNX, VxWorks, FreeRTOS, and RTLinux.</p><br>
+                            <h4>Design Challenges:</h4><br>
+                            <p>Design challenges in RTOS include managing and prioritizing tasks efficiently, ensuring minimal latency, and maintaining system stability and reliability.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>System Components:</h3><br>
+                        <article>
+                            <h4>System Services:</h4><br>
+                            <ul>
+                                <li>Process Management: Includes creating, scheduling, and terminating processes. Manages process synchronization and inter-process communication.</li><br>
+                                <li>Memory Management: Manages physical and virtual memory, including allocation, deallocation, and swapping.</li><br>
+                                <li>File Management: Handles file operations like creation, deletion, and organization on storage devices.</li><br>
+                                <li>Device Management: Manages communication and access to peripheral devices, providing an abstraction layer for application software.</li><br>
+                                <li>User Interface: Provides an interface for users to interact with the system, either through command-line or graphical user interface (GUI).</li><br>
+                                <li>Security and Protection: Implements mechanisms for securing the system, controlling access to resources, and protecting against unauthorized access.</li><br>
+                            </ul><br>
+                            <h4>System Calls:</h4><br>
+                            <p>Definition: A system call is a programming interface between an application and the operating system, allowing user programs to request services from the OS.<br>
+                            Types of System Calls: Include process control (e.g., fork, wait), file management (e.g., open, read, write), device management (e.g., ioctl), and information maintenance (e.g., getpid).<br>
+                            System Call Interface: Provides an abstraction layer for the application to communicate with the OS, hiding hardware-specific details.</p><br>
+                            <h4>System Programs:</h4><br>
+                            <p>Utility Programs: These include basic tools like text editors, compilers, and file managers.<br>
+                            System Management Programs: These include programs for configuring and managing the system, such as disk defragmenters and task schedulers.<br>
+                            Application Programs: Run on top of the OS, performing specific tasks for the user.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>System Structure:</h3><br>
+                        <article>
+                            <h4>Layered Approach:</h4><br>
+                            <p>Operating systems can be structured in layers, with each layer having a specific function.<br>
+                            The layers interact with each other through well-defined interfaces.<br>
+                            Provides separation of concerns, improving maintainability and scalability.</p><br>
+                            <h4>Monolithic Kernels:</h4><br>
+                            <p>In a monolithic kernel, the entire operating system is contained within a single large program.<br>
+                            All OS services run in kernel mode, providing efficient communication.<br>
+                            However, this approach may reduce modularity and make the system less stable.</p><br>
+                            <h4>Microkernels:</h4><br>
+                            <p>Microkernels provide minimal functionality in the kernel, delegating other services to user-mode processes.<br>
+                            This approach improves system stability and modularity.<br>
+                            Communication between kernel and user-mode processes can add overhead.</p><br>
+                            <h4>Modules:</h4><br>
+                            <p>Modular design allows the operating system to load and unload components as needed.<br>
+                            Modules (e.g., device drivers) can be added or removed at runtime.<br>
+                            Increases flexibility and maintainability.</p><br>
+                            <h4>Hybrid Approaches:</h4><br>
+                            <p>Modern operating systems often use a combination of different architectural approaches.<br>
+                            For example, they might use a monolithic kernel but with some services running in user mode.</p><br>
+                            <h4>Virtual Machines:</h4><br>
+                            <p>Operating systems can also run as guests on virtual machines, allowing multiple OS instances on a single physical machine.<br>
+                            Virtualization offers benefits such as isolation, efficient resource utilization, and ease of deployment.</p><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Virtual Machines:</h3><br>
+                        <article>
+                            <p>Virtual machines (VMs) are emulations of physical hardware, allowing multiple operating systems to run concurrently on a single physical machine.</p><br>
+                            <h4>Types of Virtualization:</h4><br>
+                            <ul>
+                                <li>Hardware-Level Virtualization: VMs run directly on physical hardware with the help of a hypervisor (e.g., VMware, Hyper-V).</li><br>
+                                <li>Host-Based Virtualization: VMs run as applications on a host operating system, using a hypervisor to manage them (e.g., VirtualBox, VMware Workstation).</li><br>
+                            </ul><br>
+                            <h4>Advantages:</h4><br>
+                            <p>Isolation: Each VM is isolated from others, ensuring that issues in one VM do not affect others.<br>
+                            Resource Utilization: Multiple VMs share physical resources, maximizing utilization.<br>
+                            Scalability: Easily create and destroy VMs as needed for development, testing, or deployment.</p><br>
+                            <h4>Hypervisors:</h4><br>
+                            <p>Type 1 (Bare-Metal Hypervisors): Run directly on the hardware, managing VMs independently of the host OS.<br>
+                            Type 2 (Hosted Hypervisors): Run on top of a host OS, managing VMs as applications.</p><br>
+                            <h4>Applications:</h4><br>
+                            <p>Used in data centers for server consolidation and efficient resource usage.<br>
+                            Useful for software testing, running multiple development environments, and isolating different applications.<br>
+                            Can enhance security by isolating sensitive applications or services in separate VMs.</p><br>
+                            <h4>Challenges:</h4><br>
+                            <p>Managing resource allocation among VMs can be complex.<br>
+                            Overhead from virtualization can affect performance in some cases.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>System Design and Implementation:</h3><br>
+                        <article>
+                            <h4>System Design:</h4><br>
+                            <p>Modularity: System components should be designed to be as modular as possible to facilitate maintenance and updates.<br>
+                            Abstraction: Layers of abstraction can be used to simplify complex system operations and increase maintainability.<br>
+                            Flexibility: Systems should be flexible enough to adapt to changing hardware and software requirements.<br>
+                            Simplicity: A simple design reduces the likelihood of errors and makes the system easier to understand and modify.</p><br>
+                            <h4>Design Strategies:</h4><br>
+                            <p>Object-Oriented Design: Utilize classes and objects to represent system components and their interactions.<br>
+                            Top-Down or Bottom-Up Design: Top-down begins with high-level functionalities and breaks them into smaller components, while bottom-up starts with simple components and combines them to form higher-level systems.</p><br>
+                            <h4>Implementation:</h4><br>
+                            <p>Programming Languages: Operating systems are often written in languages like C and C++ for efficiency and low-level hardware access.<br>
+                            Debugging and Testing: Robust debugging and testing practices are crucial for system reliability.<br>
+                            Portability: The operating system should be designed to run on various hardware platforms if necessary.</p><br>
+                            <h4>Performance Optimization:</h4><br>
+                            <p>Implementation should consider factors such as execution time, memory usage, and concurrency.<br>
+                            Critical paths in the system should be optimized to reduce latency and improve responsiveness.</p><br>
+                            <h4>Documentation and Standards:</h4><br>
+                            <p>Proper documentation ensures that system developers and users understand the design and behavior of the operating system.<br>
+                            Adherence to standards helps maintain compatibility and interoperability with other systems.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>System Generations:</h3><br>
+                        <article>
+                            <h4>First Generation (1940s - Early 1950s):</h4><br>
+                            <p>Early computers operated without operating systems.<br>
+                            Programs were manually loaded using punched cards or paper tape.<br>
+                            No batch processing; users programmed directly on the hardware.</p><br>
+                            <h4>Second Generation (Mid-1950s - Early 1960s):</h4><br>
+                            <p>Introduction of batch processing, where jobs were processed sequentially.<br>
+                            Early operating systems managed jobs and provided rudimentary control.<br>
+                            Operating systems were often custom-built for specific hardware.</p><br>
+                            <h4>Third Generation (Mid-1960s - Early 1980s):</h4><br>
+                            <p>Introduction of multiprogramming and time-sharing systems.<br>
+                            Operating systems managed multiple processes simultaneously.<br>
+                            Systems like UNIX emerged, offering a more standardized, multi-user, multi-tasking environment.</p><br>
+                            <h4>Fourth Generation (Mid-1980s - Present):</h4><br>
+                            <p>Development of personal computing and graphical user interfaces (GUIs).<br>
+                            Operating systems became more user-friendly and efficient.<br>
+                            Rise of distributed systems and networked operating systems.</p><br>
+                            <h4>Fifth Generation (Present and Future):</h4><br>
+                            <p>Focus on virtualization, cloud computing, and Internet of Things (IoT).<br>
+                            Operating systems must support a wide range of devices and workloads.<br>
+                            Security and resource management remain critical concerns.</p><br>
+                        </article>
+                    </section>
+                    
                 </div>
 
                 <div id="unit2" class="formatted-text">
                     <!-- Unit 2 text -->
                     <h2>UNIT 2: Processes and CPU Scheduling</h2>
                     <br>
-                    <p>Phasellus aliquet, quam eget posuere feugiat, nunc dui interdum urna, in venenatis lorem tortor eu libero. Nam vitae augue non magna viverra blandit. Ut sed odio et enim gravida viverra. Vestibulum sed varius libero. Ut eleifend lorem vitae ipsum malesuada, sit amet vehicula felis hendrerit. Proin fringilla sem et velit rhoncus ultrices. Suspendisse potenti. Donec vel magna eu sapien suscipit rutrum non at orci. Sed tincidunt, orci at efficitur tempor, arcu libero sollicitudin nunc, at iaculis lorem purus nec eros.</p>
+                    <section>
+                        <h3>Process Concept:</h3><br>
+                        <article>
+                            <p>A process is an instance of a program in execution, including its code, data, and resources.<br>
+                            Processes have attributes such as process ID, memory usage, and execution state.</p><br>
+                            <h4>Process States:</h4><br>
+                            <ul>
+                                <li>New: The process is being created.</li><br>
+                                <li>Ready: The process is waiting to be assigned to a processor.</li><br>
+                                <li>Running: The process is currently being executed by the CPU.</li><br>
+                                <li>Waiting: The process is waiting for an event, such as I/O completion.</li><br>
+                                <li>Terminated: The process has finished execution.</li><br>
+                            </ul><br>
+                            <h4>Process Control Block (PCB):</h4><br>
+                            <p>A data structure that contains information about the process, such as:<br>
+                            - Process ID and state.<br>
+                            - CPU registers and scheduling information.<br>
+                            - Memory management information (e.g., page tables).<br>
+                            - I/O status and accounting information.</p><br>
+                            <h4>Context Switching:</h4><br>
+                            <p>The process of saving the state of one process and loading the state of another.<br>
+                            Occurs during multitasking or when processes yield control.</p><br>
+                            <h4>Creation and Termination:</h4><br>
+                            <p>Processes can be created using system calls (e.g., `fork` in UNIX-like systems).<br>
+                            Processes can terminate normally or abnormally due to errors or user intervention.</p><br>
+                            <h4>Processes and Threads:</h4><br>
+                            <p>A process may consist of multiple threads, which share resources but execute independently.<br>
+                            Threads within a process share the same address space.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Process Scheduling:</h3><br>
+                        <article>
+                            <p>Process scheduling is the activity of determining which process will run on the CPU at a given time.<br>
+                            The scheduler must balance priorities, waiting times, and fairness to optimize performance.</p><br>
+                            <h4>Scheduling Levels:</h4><br>
+                            <ul>
+                                <li>Long-Term Scheduling: Decides which processes are admitted to the ready queue, controlling the degree of multiprogramming.</li><br>
+                                <li>Medium-Term Scheduling: Temporarily removes processes from memory (swapping out) and later swaps them back in when resources are available.</li><br>
+                                <li>Short-Term Scheduling: Also known as the CPU scheduler, it selects which process will execute next from the ready queue.</li><br>
+                            </ul><br>
+                            <h4>Scheduling Criteria:</h4><br>
+                            <ul>
+                                <li>CPU Utilization: Maximizing the use of the CPU.</li><br>
+                                <li>Throughput: Number of processes that complete execution in a given time.</li><br>
+                                <li>Turnaround Time: Total time from submission to completion of a process.</li><br>
+                                <li>Waiting Time: Time a process spends in the ready queue.</li><br>
+                                <li>Response Time: Time from submission to the first response.</li><br>
+                            </ul><br>
+                            <h4>Scheduling Policies:</h4><br>
+                            <p>Preemptive: Allows a process to be interrupted and returned to the ready queue if a higher-priority process arrives.<br>
+                            Non-Preemptive: Once a process starts executing, it runs to completion unless it voluntarily yields control.</p><br>
+                            <h4>Scheduling Algorithms:</h4><br>
+                            <ul>
+                                <li>First-Come, First-Served (FCFS): Processes are scheduled in the order they arrive in the ready queue.</li><br>
+                                <li>Shortest Job First (SJF): Processes with the shortest execution time are scheduled first.</li><br>
+                                <li>Round Robin (RR): Processes are scheduled in a circular queue with a fixed time slice (quantum).</li><br>
+                                <li>Priority Scheduling: Processes are assigned priorities, and higher-priority processes are scheduled first.</li><br>
+                                <li>Multi-Level Queue Scheduling: Processes are grouped into queues based on priority or characteristics, and each queue is scheduled independently.</li><br>
+                            </ul><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Operation on Process:</h3><br>
+                        <article>
+                            <h4>Process Creation:</h4><br>
+                            <p>Processes are created through system calls like <code>fork()</code> in UNIX-like systems.<br>
+                            The parent process creates a child process, which can run concurrently.<br>
+                            Child processes may inherit certain resources and attributes from the parent.</p><br>
+                            <h4>Process Termination:</h4><br>
+                            <p>A process may terminate for several reasons, including normal completion, error, or termination by the user.<br>
+                            Processes may return an exit status, which can be used by the parent process to determine the outcome of the child process.</p><br>
+                            <h4>Zombie and Orphan Processes:</h4><br>
+                            <p>Zombie Process: A process that has completed execution but has not yet been reaped (collected) by the parent process.<br>
+                            Orphan Process: A process whose parent has terminated or does not wait for its child processes. These may be adopted by the init process.</p><br>
+                            <h4>Process Hierarchy:</h4><br>
+                            <p>Processes form a hierarchy with the initial process (<code>init</code>) at the top.<br>
+                            Parent-child relationships exist, and child processes can be managed by their parents.</p><br>
+                            <h4>Inter-process Communication (IPC):</h4><br>
+                            <p>Processes may need to communicate with each other for coordination and data sharing.<br>
+                            IPC mechanisms include pipes, message queues, shared memory, and sockets.</p><br>
+                            <h4>Process Control Commands:</h4><br>
+                            <p>Commands such as <code>kill</code>, <code>wait</code>, and <code>exec</code> allow parent processes to control and manage their child processes.</p><br>
+                            <h4>Process Synchronization:</h4><br>
+                            <p>Ensuring that processes operate in a controlled and predictable manner, avoiding race conditions and deadlocks.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Inter-process Communication:</h3><br>
+                        <article>
+                            <p>Inter-process communication (IPC) refers to mechanisms that allow processes to communicate and synchronize their actions.<br>
+                            IPC enables data sharing and control signals between processes.</p><br>
+                            <h4>IPC Methods:</h4><br>
+                            <ul>
+                                <li>Pipes:<br>
+                                    - Unidirectional data channels between processes.<br>
+                                    - Used for parent-child communication.</li><br>
+                                <li>Message Queues:<br>
+                                    - Allow processes to send and receive messages asynchronously.<br>
+                                    - Useful for complex communication patterns and data exchanges.</li><br>
+                                <li>Shared Memory:<br>
+                                    - Provides a shared region of memory accessible to multiple processes.<br>
+                                    - Offers high-speed communication but requires synchronization.</li><br>
+                                <li>Semaphores:<br>
+                                    - Used for signaling and managing access to shared resources.</li><br>
+                                <li>Sockets:<br>
+                                    - Provide communication over networks (e.g., TCP/IP).<br>
+                                    - Allow processes on different machines to communicate.</li><br>
+                            </ul><br>
+                            <h4>Named Pipes:</h4><br>
+                            <p>Also known as FIFOs, named pipes provide bidirectional communication between unrelated processes.<br>
+                            They are identified by names in the file system and persist beyond the life of the creating process.</p><br>
+                            <h4>RPC (Remote Procedure Call):</h4><br>
+                            <p>Allows a process to invoke a procedure in another address space (commonly on another machine).<br>
+                            Makes distributed computing easier by abstracting network details.</p><br>
+                            <h4>Synchronization Mechanisms:</h4><br>
+                            <ul>
+                                <li>Mutexes: Mutual exclusion locks to prevent race conditions.</li><br>
+                                <li>Condition Variables: Used with mutexes to synchronize processes.</li><br>
+                            </ul><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Cooperating Processes:</h3><br>
+                        <article>
+                            <p>Cooperating processes are processes that can affect or be affected by other processes, typically through sharing data or resources.<br>
+                            They may require synchronization to ensure data integrity and consistency.</p><br>
+                            <h4>Reasons for Cooperation:</h4><br>
+                            <ul>
+                                <li>Information Sharing: Processes may share data or state information.</li><br>
+                                <li>Computation Speed-Up: Parallel processing can be achieved by dividing tasks among processes.</li><br>
+                                <li>Modularization: Different aspects of a problem can be handled by separate processes.</li><br>
+                                <li>Convenience: Simplifies problem-solving and code organization.</li><br>
+                            </ul><br>
+                            <h4>Communication Mechanisms:</h4><br>
+                            <p>Cooperating processes use various IPC mechanisms such as pipes, message queues, shared memory, and sockets to exchange information.<br>
+                            These mechanisms allow data sharing and signaling between processes.</p><br>
+                            <h4>Synchronization Issues:</h4><br>
+                            <p>Cooperating processes must synchronize access to shared data to avoid race conditions and data inconsistencies.<br>
+                            Common synchronization tools include mutexes, semaphores, and condition variables.</p><br>
+                            <h4>Deadlock Prevention:</h4><br>
+                            <p>When processes compete for shared resources, there is a risk of deadlock.<br>
+                            Proper resource allocation and scheduling can help prevent deadlocks.</p><br>
+                            <h4>Examples:</h4><br>
+                            <p>- Producer-Consumer Problem: One process produces data while another consumes it, requiring synchronization to share data safely.<br>
+                            - Readers-Writers Problem: Multiple readers can access a shared resource simultaneously, but exclusive access is required for writers.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Threads:</h3><br>
+                        <article>
+                            <p>A thread (also known as a lightweight process) is a single sequence stream within a process.<br>
+                            Threads share the same address space and resources as other threads in the same process but execute independently.</p><br>
+                            <h4>Advantages of Threads:</h4><br>
+                            <ul>
+                                <li>Improved Performance: Threads allow for concurrent execution of tasks within a process, potentially improving efficiency.</li><br>
+                                <li>Resource Sharing: Threads share resources such as memory and file descriptors, reducing overhead compared to separate processes.</li><br>
+                                <li>Simplified Communication: Since threads share the same address space, they can easily communicate and share data.</li><br>
+                            </ul><br>
+                            <h4>Types of Threads:</h4><br>
+                            <p>- User-Level Threads: Managed by the user-level thread library in the application, without kernel support.<br>
+                            - Kernel-Level Threads: Managed directly by the operating system kernel, allowing preemptive multitasking and better integration with system resources.</p><br>
+                            <h4>Threading Models:</h4><br>
+                            <p>- Many-to-One: Many user-level threads map to one kernel-level thread. Efficient but can lead to blocked processes.<br>
+                            - One-to-One: Each user-level thread maps to a separate kernel-level thread. Provides concurrency but can be resource-intensive.<br>
+                            - Many-to-Many: Allows multiple user-level threads to be mapped to a pool of kernel-level threads, balancing efficiency and concurrency.</p><br>
+                            <h4>Thread Operations:</h4><br>
+                            <p>- Creation: Threads can be created using API calls like <code>pthread_create()</code> in POSIX systems.<br>
+                            - Synchronization: Threads need to be synchronized to avoid data races and maintain consistency (e.g., using mutexes and condition variables).<br>
+                            - Termination: Threads can terminate normally or be joined (waited on) by other threads.</p><br>
+                            <h4>Examples of Thread Usage:</h4><br>
+                            <p>- Multimedia Applications: Concurrent handling of audio, video, and user input.<br>
+                            - Web Servers: Concurrent handling of client requests.</p><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Multithreading Model:</h3><br>
+                        <article>
+                            <p>The multithreading model defines how multiple threads within a process interact with each other and the operating system.<br>
+                            This model determines the mapping of user-level threads to kernel-level threads.</p><br>
+                            <h4>Types of Multithreading Models:</h4><br>
+                            <ul>
+                                <li><b>Many-to-One:</b></li>
+                                <li><b>One-to-One:</b></li>
+                                <li><b>Many-to-Many:</b></li>
+                            </ul><br>
+                            <h4>Two-Level Model:</h4><br>
+                            <p>A variation of the many-to-many model, where user-level threads are grouped into a fixed number of kernel-level threads.<br>
+                            Combines the advantages of the many-to-many model with the simplicity of the one-to-one model.</p><br>
+                            <h4>Thread Management:</h4><br>
+                            <ul>
+                                <li>Thread Creation</li>
+                                <li>Scheduling</li>
+                                <li>Synchronization</li>
+                            </ul><br>
+                            <h4>Advantages and Disadvantages:</h4><br>
+                            <ul>
+                                <li>Many-to-One</li>
+                                <li>One-to-One</li>
+                                <li>Many-to-Many</li>
+                            </ul><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Scheduling Criteria:</h3><br>
+                        <article>
+                            <p>Scheduling criteria are the metrics and goals used to evaluate and compare different CPU scheduling algorithms.</p><br>
+                            <h4>Common Criteria:</h4><br>
+                            <ul>
+                                <li>CPU Utilization</li>
+                                <li>Throughput</li>
+                                <li>Turnaround Time</li>
+                                <li>Waiting Time</li>
+                                <li>Response Time</li>
+                            </ul><br>
+                            <h4>Trade-offs:</h4><br>
+                            <p>Optimizing one criterion may impact others. For example, maximizing CPU utilization could increase waiting time.<br>
+                            A good scheduling algorithm balances these criteria according to the system's needs.</p><br>
+                            <h4>Impact on System Performance:</h4><br>
+                            <p>Scheduling criteria impact overall system performance and user experience.<br>
+                            Different applications and use cases prioritize different criteria (e.g., interactive systems value response time, while batch systems value throughput).</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Scheduling Algorithms:</h3><br>
+                        <article>
+                            <p>Scheduling algorithms determine the order in which processes are executed by the CPU.<br>
+                            The goal is to maximize efficiency and performance while balancing the needs of different processes.</p><br>
+                            <h4>Common Scheduling Algorithms:</h4><br>
+                            <ul>
+                                <li>First-Come, First-Served (FCFS)</li>
+                                <li>Shortest Job First (SJF)</li>
+                                <li>Round Robin (RR)</li>
+                                <li>Priority Scheduling</li>
+                                <li>Multilevel Queue Scheduling</li>
+                                <li>Multilevel Feedback Queue Scheduling</li>
+                            </ul><br>
+                            <h4>Trade-offs:</h4><br>
+                            <p>Different algorithms prioritize different criteria (e.g., throughput, response time).<br>
+                            The choice of algorithm depends on the system's specific needs and use case.</p><br>
+                            <h4>Evaluation:</h4><br>
+                            <p>Scheduling algorithms should be evaluated based on the scheduling criteria, such as CPU utilization, throughput, turnaround time, waiting time, and response time.<br>
+                            Algorithms may need to be adapted based on observed performance and changing system requirements.</p><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Thread Scheduling:</h3><br>
+                        <article>
+                            <p>Thread scheduling is the process of determining which thread will run on the CPU at a given time.<br>
+                            Threads within the same process compete for CPU time and resources, making scheduling an important aspect of multithreading.</p><br>
+                            <h4>Challenges in Thread Scheduling:</h4><br>
+                            <ul>
+                                <li>Synchronization</li>
+                                <li>Fairness</li>
+                                <li>Priorities</li>
+                                <li>Context Switching</li>
+                            </ul><br>
+                            <h4>Thread Scheduling Algorithms:</h4><br>
+                            <ul>
+                                <li>First-Come, First-Served (FCFS)</li>
+                                <li>Round Robin (RR)</li>
+                                <li>Priority Scheduling</li>
+                                <li>Multilevel Queue Scheduling</li>
+                                <li>Multilevel Feedback Queue Scheduling</li>
+                            </ul><br>
+                            <h4>Thread Pooling:</h4><br>
+                            <p>A common technique in modern applications where a pool of threads is created at the beginning, and tasks are assigned to available threads.<br>
+                            Reduces overhead from thread creation and destruction, improving performance.</p><br>
+                            <h4>Evaluation:</h4><br>
+                            <p>Thread scheduling algorithms should be evaluated based on criteria such as fairness, responsiveness, throughput, and resource utilization.<br>
+                            The choice of algorithm depends on the specific needs and workload of the application.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Multiple-Processor Scheduling:</h3><br>
+                        <article>
+                            <p>Multiple-processor scheduling (also known as multiprocessor scheduling) involves the scheduling of processes or threads across multiple processors or cores.<br>
+                            The goal is to optimize CPU utilization and system performance across all processors.</p><br>
+                            <h4>Challenges:</h4><br>
+                            <ul>
+                                <li>Load Balancing</li>
+                                <li>Processor Affinity</li>
+                                <li>Synchronization</li>
+                                <li>Scalability</li>
+                            </ul><br>
+                            <h4>Types of Multiple-Processor Scheduling:</h4><br>
+                            <ul>
+                                <li>Asymmetric Multiprocessing (AMP)</li>
+                                <li>Symmetric Multiprocessing (SMP)</li>
+                                <li>Processor Pooling</li>
+                            </ul><br>
+                            <h4>Scheduling Algorithms:</h4><br>
+                            <ul>
+                                <li>Processor Affinity</li>
+                                <li>Load Balancing</li>
+                                <li>Gang Scheduling</li>
+                                <li>Priority-Based Scheduling</li>
+                            </ul><br>
+                            <h4>Performance Considerations:</h4><br>
+                            <ul>
+                                <li>Throughput</li>
+                                <li>Fairness</li>
+                                <li>Latency</li>
+                            </ul><br>
+                            <h4>Modern Approaches:</h4><br>
+                            <ul>
+                                <li>NUMA (Non-Uniform Memory Access)</li>
+                                <li>Hyper-Threading</li>
+                            </ul><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Scheduling Algorithms Evaluation:</h3><br>
+                        <article>
+                            <p>Scheduling algorithms evaluation involves assessing the performance of various CPU scheduling algorithms using specific criteria.</p><br>
+                            <h4>Criteria for Evaluation:</h4><br>
+                            <ul>
+                                <li>CPU Utilization</li>
+                                <li>Throughput</li>
+                                <li>Turnaround Time</li>
+                                <li>Waiting Time</li>
+                                <li>Response Time</li>
+                            </ul><br>
+                            <h4>Trade-offs:</h4><br>
+                            <p>Balancing Criteria: Optimizing one criterion may negatively affect another (e.g., maximizing throughput may increase waiting time).<br>
+                            System and Application Needs: Different applications and systems have varying requirements, necessitating trade-offs in scheduling.</p><br>
+                            <h4>Quantitative Evaluation:</h4><br>
+                            <p>Average Metrics: Calculate average waiting time, turnaround time, and response time to assess algorithm efficiency.<br>
+                            Statistical Measures: Standard deviation and variance can provide insights into the consistency and reliability of an algorithm.</p><br>
+                            <h4>Simulation and Analysis Tools:</h4><br>
+                            <p>Simulators: Used to model and analyze the performance of different scheduling algorithms under various conditions.<br>
+                            Benchmarks: Standardized tests to measure scheduling performance in real-world scenarios.</p><br>
+                            <h4>Challenges:</h4><br>
+                            <p>Fairness vs. Efficiency: Balancing fair treatment of all processes with maximizing system efficiency.<br>
+                            Workload Variability: Different workloads may favor different algorithms, requiring flexibility in algorithm selection.</p><br>
+                            <h4>Choosing the Right Algorithm:</h4><br>
+                            <p>Consider the specific needs and constraints of the system, such as real-time requirements, interactive workloads, or batch processing.<br>
+                            Evaluate potential algorithms using simulation and real-world tests to determine the most suitable approach.</p><br>
+                        </article>
+                    </section>
+                    
                 </div>
 
                 <div id="unit3" class="formatted-text">
                     <!-- Unit 3 text -->
                     <h2>UNIT 3: Process Synchronization</h2>
                     <br>
-                    <p>Maecenas nec sem justo. Phasellus magna. Fusce ac felis sit amet ligula pharetra condimentum. Sed fringilla mauris sit amet nibh. Phasellus dolor. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Vestibulum at velit eget mauris placerat eleifend.</p>
+                    <section>
+                        <h3>The critical-section problem:</h3><br>
+                        <article>
+                            <p>The critical-section problem is a synchronization challenge that arises when multiple processes or threads access shared resources.<br>
+                            A critical section is a part of a program that accesses shared resources and should not be executed concurrently by more than one process or thread.</p><br>
+                            <h4>Requirements for Solutions:</h4><br>
+                            <ul>
+                                <li>Mutual Exclusion: Only one process or thread should be allowed in the critical section at any time.</li><br>
+                                <li>Progress: If no process is in the critical section and there are processes that wish to enter, one of them must be allowed to proceed.</li><br>
+                                <li>Bounded Waiting: A process should not wait indefinitely to enter the critical section; there should be a bound on waiting time.</li><br>
+                            </ul><br>
+                            <h4>Possible Issues:</h4><br>
+                            <ul>
+                                <li>Deadlock: When processes indefinitely wait for each other to release resources.</li><br>
+                                <li>Starvation: When a process never gets a chance to enter the critical section due to other processes continuously entering.</li><br>
+                                <li>Race Conditions: Inconsistencies that occur when multiple processes access shared data concurrently.</li><br>
+                            </ul><br>
+                            <h4>Solutions:</h4><br>
+                            <ul>
+                                <li>Peterson’s Algorithm: A software-based solution for two processes that ensures mutual exclusion and bounded waiting.</li><br>
+                                <li>Synchronization Hardware: Includes locks, test-and-set, and compare-and-swap instructions for managing access to critical sections.</li><br>
+                                <li>Mutexes and Semaphores: Mutual exclusion and signaling mechanisms to control access to the critical section.</li><br>
+                                <li>Monitors: High-level constructs that encapsulate data and procedures for safe, synchronized access.</li><br>
+                            </ul><br>
+                            <h4>Evaluation of Solutions:</h4><br>
+                            <ul>
+                                <li>Performance: Solutions should minimize waiting and overhead while ensuring mutual exclusion.</li><br>
+                                <li>Ease of Implementation: Simpler solutions are often preferred for reliability and maintainability.</li><br>
+                                <li>Scalability: Solutions should work efficiently with an increasing number of processes or threads.</li><br>
+                            </ul><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Critical regions:</h3><br>
+                        <article>
+                            <p>A critical region (or critical section) is a code segment that accesses a shared resource and must not be executed concurrently by multiple threads or processes.<br>
+                            Protecting critical regions ensures mutual exclusion, preventing race conditions and data corruption.</p><br>
+                            <h4>Mutual Exclusion:</h4><br>
+                            <p>Locking Mechanisms: Common approaches to ensure mutual exclusion in critical regions include:<br>
+                            - Mutexes: Binary locks that allow only one thread to access the critical region.<br>
+                            - Semaphores: Counting variables that can control access to the critical region based on available resources.<br>
+                            - Monitors: High-level language constructs that encapsulate data and procedures, providing synchronized access to critical regions.<br>
+                            - Atomic Operations: Instructions that perform operations atomically, ensuring a single thread or process executes the entire operation.</p><br>
+                            <h4>Design Considerations:</h4><br>
+                            <ul>
+                                <li>Minimal Critical Regions: Keep critical regions as small as possible to minimize contention and increase concurrency.</li><br>
+                                <li>Avoid Deadlocks: Properly order locks and resources to avoid circular dependencies and potential deadlocks.</li><br>
+                                <li>Avoid Starvation: Design mechanisms to prevent processes from being starved of critical region access.</li><br>
+                            </ul><br>
+                            <h4>Synchronization Primitives:</h4><br>
+                            <p>Test-and-Set, Compare-and-Swap: Hardware-supported atomic operations for implementing mutual exclusion.<br>
+                            Spinlocks: Locks that cause a thread to wait in a loop until the lock is available. Useful in cases where waiting is expected to be short.</p><br>
+                            <h4>Performance Considerations:</h4><br>
+                            <ul>
+                                <li>Lock Contention: High contention for locks can lead to performance bottlenecks.</li><br>
+                                <li>Fairness: Ensure fair access to critical regions, preventing some threads or processes from being starved.</li><br>
+                                <li>Scalability: Solutions should scale efficiently with an increasing number of threads or processes.</li><br>
+                            </ul><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Peterson‘s Solution:</h3><br>
+                        <article>
+                            <p>Peterson's solution is a classic software-based approach to solving the critical-section problem for two processes.<br>
+                            It ensures mutual exclusion and bounded waiting without the need for specialized hardware instructions.</p><br>
+                            <h4>How It Works:</h4><br>
+                            <ul>
+                                <li><strong>Variables Used:</strong><br>
+                                    - <code>flag[i]</code>: A boolean array indicating if process <code>i</code> wants to enter the critical section.<br>
+                                    - <code>turn</code>: An integer variable that indicates whose turn it is to enter the critical section (either 0 or 1).</li><br>
+                                <li><strong>Entry Protocol:</strong><br>
+                                    - A process sets its <code>flag</code> to true and then sets <code>turn</code> to the other process.<br>
+                                    - The process then waits while the other process's <code>flag</code> is true and <code>turn</code> is not equal to the current process.</li><br>
+                                <li><strong>Exit Protocol:</strong><br>
+                                    - Once a process exits the critical section, it sets its <code>flag</code> back to false.</li><br>
+                            </ul><br>
+                            <h4>Guarantees:</h4><br>
+                            <ul>
+                                <li>Mutual Exclusion: Only one process can enter the critical section at a time because the entry protocol ensures that only one process proceeds while the other is either waiting or not interested in entering the critical section.</li><br>
+                                <li>Progress: If a process is outside the critical section and another process wishes to enter, the waiting process will be allowed entry, ensuring forward progress.</li><br>
+                                <li>Bounded Waiting: Each process will wait for a bounded amount of time before being allowed entry, as each process alternates access based on the <code>turn</code> variable.</li><br>
+                            </ul><br>
+                            <h4>Limitations:</h4><br>
+                            <ul>
+                                <li>Two Processes Only: Peterson's solution is limited to only two processes. It cannot be generalized for more processes.</li><br>
+                                <li>Busy Waiting: Uses busy waiting (spin-waiting) which can be inefficient if processes spend significant time waiting.</li><br>
+                            </ul><br>
+                            <h4>Significance:</h4><br>
+                            <p>Peterson's solution demonstrates that it is possible to achieve mutual exclusion with software alone, without the need for special hardware instructions.<br>
+                            It is primarily used as a teaching tool to illustrate the principles of process synchronization.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Synchronization Hardware:</h3><br>
+                        <article>
+                            <p>Synchronization hardware refers to specialized hardware mechanisms that support the synchronization of processes or threads.<br>
+                            These mechanisms enable mutual exclusion and synchronization in a more efficient and reliable manner compared to purely software-based solutions.</p><br>
+                            <h4>Hardware Instructions:</h4><br>
+                            <ul>
+                                <li><strong>Test-and-Set:</strong><br>
+                                    - An atomic operation that tests a memory location and sets it to a new value (e.g., true) if it was previously false.<br>
+                                    - Often used to implement locks for mutual exclusion.</li><br>
+                                <li><strong>Compare-and-Swap (CAS):</strong><br>
+                                    - An atomic instruction that compares the contents of a memory location with a given value and, if they match, swaps it with a new value.<br>
+                                    - Useful for implementing locks, semaphores, and other synchronization primitives.</li><br>
+                                <li><strong>Fetch-and-Add:</strong><br>
+                                    - An atomic operation that increments the value of a memory location and returns the original value.<br>
+                                    - Can be used for reference counting or implementing locks.</li><br>
+                            </ul><br>
+                            <h4>Hardware Locks:</h4><br>
+                            <ul>
+                                <li><strong>Spinlocks:</strong><br>
+                                    - Locks that cause a thread to wait in a busy loop (spin) until the lock is available.<br>
+                                    - Efficient for short wait times, but can waste CPU cycles in longer waits.</li><br>
+                                <li><strong>Ticket Locks:</strong><br>
+                                    - A form of lock where each process takes a number (ticket) and waits its turn to acquire the lock.<br>
+                                    - Ensures fairness in access to the critical section.</li><br>
+                            </ul><br>
+                            <h4>Memory Barriers:</h4><br>
+                            <p>Operations that control the ordering of memory accesses, ensuring that operations are executed in the correct sequence.<br>
+                            Useful for maintaining consistency in multiprocessor and multicore environments.</p><br>
+                            <h4>Performance Considerations:</h4><br>
+                            <ul>
+                                <li>Efficiency: Hardware synchronization mechanisms are typically more efficient than software-only solutions.</li><br>
+                                <li>Scalability: Hardware solutions often scale better with an increasing number of threads or processes.</li><br>
+                                <li>Atomicity: Guarantees atomic (indivisible) operations, reducing the risk of race conditions.</li><br>
+                            </ul><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Semaphores:</h3><br>
+                        <article>
+                            <p>A semaphore is a synchronization primitive used to manage access to shared resources by multiple processes or threads.<br>
+                            It is an integer variable that can be incremented or decremented atomically to control access to resources.</p><br>
+                            <h4>Types of Semaphores:</h4><br>
+                            <ul>
+                                <li><strong>Binary Semaphores:</strong><br>
+                                    - Also known as mutexes.<br>
+                                    - Can take only two values: 0 (locked) and 1 (unlocked).<br>
+                                    - Used for mutual exclusion to protect critical sections.</li><br>
+                                <li><strong>Counting Semaphores:</strong><br>
+                                    - Can take any non-negative integer value.<br>
+                                    - Represents the number of available instances of a resource.<br>
+                                    - Useful for managing access to a pool of identical resources.</li><br>
+                            </ul><br>
+                            <h4>Operations:</h4><br>
+                            <ul>
+                                <li><strong>Wait (P):</strong><br>
+                                    - Decrements the semaphore value.<br>
+                                    - If the value is negative, the process is blocked until the semaphore is positive.</li><br>
+                                <li><strong>Signal (V):</strong><br>
+                                    - Increments the semaphore value.<br>
+                                    - If there are any processes waiting, one is unblocked.</li><br>
+                            </ul><br>
+                            <h4>Usage:</h4><br>
+                            <p>Semaphores are used for:<br>
+                            - Mutual Exclusion<br>
+                            - Resource Management<br>
+                            - Producer-Consumer Problem</p><br>
+                            <h4>Implementation:</h4><br>
+                            <p>Semaphores can be implemented using atomic operations such as test-and-set or compare-and-swap to ensure proper synchronization.<br>
+                            Proper management is essential to prevent issues like deadlocks or priority inversion.</p><br>
+                            <h4>Examples and Applications:</h4><br>
+                            <p>Examples include:<br>
+                            - Thread Pools<br>
+                            - Rate Limiting</p><br>
+                            <h4>Challenges and Considerations:</h4><br>
+                            <p>Challenges include:<br>
+                            - Deadlocks<br>
+                            - Priority Inversion</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Classical Problems of synchronization:</h3><br>
+                        <article>
+                            <p>Classical problems of synchronization are well-known challenges in process synchronization that illustrate common issues and solutions.<br>
+                            These problems often involve multiple processes or threads competing for access to shared resources.</p><br>
+                            <h4>1. The Producer-Consumer Problem:</h4><br>
+                            <p>Involves a producer process generating data and a consumer process consuming it.<br>
+                            Requires coordination to ensure that the consumer does not consume data faster than the producer produces it and vice versa.<br>
+                            Solutions include using a buffer with semaphores for synchronization.</p><br>
+                            <h4>2. The Readers-Writers Problem:</h4><br>
+                            <p>Concerns a shared data resource that can be accessed by readers (who only read the data) and writers (who modify the data).<br>
+                            Goals include allowing multiple readers concurrently while ensuring that writers have exclusive access when writing.<br>
+                            Solutions involve using semaphores or mutexes for synchronization.</p><br>
+                            <h4>3. The Dining Philosophers Problem:</h4><br>
+                            <p>Illustrates the challenge of preventing deadlock and ensuring fairness when multiple processes share resources.<br>
+                            Involves philosophers seated around a table, each with a fork between them. They must pick up two forks to eat but must avoid deadlocks.<br>
+                            Solutions include using semaphores, mutexes, or resource hierarchy strategies.</p><br>
+                            <h4>4. The Sleeping Barber Problem:</h4><br>
+                            <p>Involves a barber who sleeps until a customer arrives for a haircut.<br>
+                            The barber must manage multiple customers arriving and leaving the shop, ensuring no customer is left waiting unnecessarily.<br>
+                            Solutions involve using semaphores to manage the waiting customers and the barber.</p><br>
+                            <h4>Considerations and Challenges:</h4><br>
+                            <p>Considerations include:<br>
+                            - Deadlock Prevention<br>
+                            - Starvation Avoidance<br>
+                            - Fairness</p><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Monitors:</h3><br>
+                        <article>
+                            <p>Monitors are high-level synchronization constructs that encapsulate shared data and procedures for manipulating that data.<br>
+                            A monitor ensures mutual exclusion for its procedures, allowing only one process or thread to execute a monitor procedure at a time.</p><br>
+                            <h4>Components of Monitors:</h4><br>
+                            <ul>
+                                <li><strong>Private Data:</strong> Shared data variables encapsulated within the monitor.</li><br>
+                                <li><strong>Procedures:</strong> Functions that operate on the shared data. Only one process can execute a monitor procedure at a time.</li><br>
+                                <li><strong>Condition Variables:</strong> Special variables used to control synchronization within a monitor, allowing processes to wait for or signal events.</li><br>
+                            </ul><br>
+                            <h4>Condition Variables:</h4><br>
+                            <ul>
+                                <li><strong>Wait Operation:</strong> A process calling <code>wait()</code> on a condition variable releases the monitor's lock and goes to sleep until another process signals it.</li><br>
+                                <li><strong>Signal Operation:</strong> A process calling <code>signal()</code> on a condition variable wakes up one waiting process, if any.</li><br>
+                                <li><strong>Broadcast Operation:</strong> Some implementations offer <code>broadcast()</code>, which wakes up all waiting processes on a condition variable.</li><br>
+                            </ul><br>
+                            <h4>Advantages:</h4><br>
+                            <p>Advantages of monitors include:<br>
+                            - Encapsulation<br>
+                            - Ease of Use<br>
+                            - Deadlock Prevention</p><br>
+                            <h4>Limitations:</h4><br>
+                            <p>Limitations of monitors include:<br>
+                            - Lack of Flexibility<br>
+                            - Implementation Overhead</p><br>
+                            <h4>Examples and Applications:</h4><br>
+                            <p>Examples and applications of monitors include:<br>
+                            - Object-Oriented Programming<br>
+                            - Bank Account Management</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Deadlocks: Systems Model:</h3><br>
+                        <article>
+                            <p>Deadlock occurs when a set of processes or threads are blocked, each waiting for a resource held by another process in the set.<br>
+                            A systems model for deadlock involves understanding how processes, resources, and requests interact.</p><br>
+                            <h4>Conditions for Deadlock:</h4><br>
+                            <ul>
+                                <li>Mutual Exclusion</li><br>
+                                <li>Hold and Wait</li><br>
+                                <li>No Preemption</li><br>
+                                <li>Circular Wait</li><br>
+                            </ul><br>
+                            <h4>Resource Allocation Graph:</h4><br>
+                            <p>A graphical representation of processes, resources, and their relationships.<br>
+                            A cycle in the graph indicates the potential for deadlock.</p><br>
+                            <h4>Handling Deadlocks:</h4><br>
+                            <p>Strategies for handling deadlocks include:<br>
+                            - Deadlock Prevention<br>
+                            - Deadlock Avoidance<br>
+                            - Deadlock Detection<br>
+                            - Deadlock Recovery</p><br>
+                            <h4>Performance Considerations:</h4><br>
+                            <p>Considerations regarding deadlocks include:<br>
+                            - Overhead<br>
+                            - System Complexity</p><br>
+                            <h4>Examples and Applications:</h4><br>
+                            <p>Examples and applications of deadlocks include:<br>
+                            - Database Management<br>
+                            - Operating Systems</p><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Deadlock Characterization:</h3><br>
+                        <article>
+                            <p>Deadlock characterization refers to identifying the conditions under which deadlocks can occur and modeling their characteristics in a system.</p><br>
+                            <h4>Necessary Conditions for Deadlock:</h4><br>
+                            <ul>
+                                <li>Mutual Exclusion</li><br>
+                                <li>Hold and Wait</li><br>
+                                <li>No Preemption</li><br>
+                                <li>Circular Wait</li><br>
+                            </ul><br>
+                            <h4>Resource-Allocation Graph:</h4><br>
+                            <p>A graphical representation of the relationships between processes and resources.<br>
+                            A cycle in the graph indicates the potential for deadlock.</p><br>
+                            <h4>Deadlock Modeling and Analysis:</h4><br>
+                            <p>Analysis involves examining the system state and identifying deadlock cycles or unsafe states.</p><br>
+                            <h4>Challenges:</h4><br>
+                            <p>Challenges in deadlock characterization include detection complexity and circular dependencies.</p><br>
+                            <h4>Examples and Applications:</h4><br>
+                            <p>Examples include database transactions and operating system processes.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Methods for Handling Deadlocks:</h3><br>
+                        <article>
+                            <h4>Deadlock Prevention:</h4><br>
+                            <p>Deadlock prevention involves designing a system to avoid one or more of the necessary conditions for deadlock.</p><br>
+                            <h4>Prevention Strategies:</h4><br>
+                            <ul>
+                                <li>Mutual Exclusion</li><br>
+                                <li>Hold and Wait</li><br>
+                                <li>No Preemption</li><br>
+                                <li>Circular Wait</li><br>
+                            </ul><br>
+                            <h4>Challenges:</h4><br>
+                            <p>Challenges in deadlock prevention include resource utilization and throughput impact.</p><br>
+                            <h4>Applications:</h4><br>
+                            <p>Applications include database systems and concurrent programming.</p><br>
+                            <h4>Considerations:</h4><br>
+                            <p>Deadlock prevention requires careful design to balance efficiency and avoidance of deadlocks.</p><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Deadlock Avoidance:</h3><br>
+                        <article>
+                            <p>Deadlock avoidance involves dynamically monitoring resource allocation to prevent the system from entering an unsafe state.</p><br>
+                            <h4>Key Concepts:</h4><br>
+                            <ul>
+                                <li>Safe State</li><br>
+                                <li>Unsafe State</li><br>
+                            </ul><br>
+                            <h4>Methods:</h4><br>
+                            <ul>
+                                <li>Resource-Allocation Graph</li><br>
+                                <li>Banker's Algorithm</li><br>
+                            </ul><br>
+                            <h4>Challenges:</h4><br>
+                            <ul>
+                                <li>Complexity</li><br>
+                                <li>Resource Management</li><br>
+                            </ul><br>
+                            <h4>Applications:</h4><br>
+                            <p>Operating Systems and Database Management Systems.</p><br>
+                            <h4>Considerations:</h4><br>
+                            <p>Efficiency and accuracy are essential in deadlock avoidance strategies.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Deadlock Detection:</h3><br>
+                        <article>
+                            <p>Deadlock detection involves identifying whether a deadlock has occurred and which processes and resources are involved.</p><br>
+                            <h4>Detection Methods:</h4><br>
+                            <ul>
+                                <li>Resource-Allocation Graph</li><br>
+                                <li>Wait-For Graph</li><br>
+                                <li>Detection Algorithms</li><br>
+                            </ul><br>
+                            <h4>Frequency of Detection:</h4><br>
+                            <ul>
+                                <li>On-Demand Detection</li><br>
+                                <li>Periodic Detection</li><br>
+                            </ul><br>
+                            <h4>Challenges:</h4><br>
+                            <ul>
+                                <li>Complexity</li><br>
+                                <li>Accuracy</li><br>
+                            </ul><br>
+                            <h4>Actions after Detection:</h4><br>
+                            <ul>
+                                <li>Notification</li><br>
+                                <li>Recovery</li><br>
+                            </ul><br>
+                            <h4>Applications:</h4><br>
+                            <p>Operating Systems and Database Management Systems.</p><br>
+                            <h4>Considerations:</h4><br>
+                            <p>Efficiency and timeliness are crucial in deadlock detection.</p><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Recovery from Deadlock:</h3><br>
+                        <article>
+                            <p>Recovery from deadlock involves resolving a deadlock situation once it has been detected, allowing the system to continue operating.</p><br>
+                            <h4>Recovery Techniques:</h4><br>
+                            <ul>
+                                <li>Process Termination</li><br>
+                                <li>Resource Preemption</li><br>
+                            </ul><br>
+                            <h4>Challenges in Recovery:</h4><br>
+                            <ul>
+                                <li>Data Integrity</li><br>
+                                <li>Process State</li><br>
+                                <li>User Experience</li><br>
+                            </ul><br>
+                            <h4>Recovery Strategies:</h4><br>
+                            <ul>
+                                <li>Manual Recovery</li><br>
+                                <li>Automated Recovery</li><br>
+                            </ul><br>
+                            <h4>Applications:</h4><br>
+                            <p>Operating Systems and Database Management Systems.</p><br>
+                            <h4>Considerations:</h4><br>
+                            <p>Ensure fairness and consider the performance impact of recovery techniques.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Combined Approach to Deadlock Handling:</h3><br>
+                        <article>
+                            <p>The combined approach to deadlock handling involves using a combination of prevention, avoidance, detection, and recovery strategies.</p><br>
+                            <h4>Strategies:</h4><br>
+                            <ul>
+                                <li>Deadlock Prevention and Avoidance</li><br>
+                                <li>Deadlock Detection and Recovery</li><br>
+                            </ul><br>
+                            <h4>Benefits:</h4><br>
+                            <ul>
+                                <li>Flexibility</li><br>
+                                <li>Efficiency</li><br>
+                                <li>Scalability</li><br>
+                            </ul><br>
+                            <h4>Implementation:</h4><br>
+                            <ul>
+                                <li>Monitoring</li><br>
+                                <li>Decision Making</li><br>
+                                <li>Recovery Mechanisms</li><br>
+                            </ul><br>
+                            <h4>Applications:</h4><br>
+                            <p>Operating Systems and Database Management Systems.</p><br>
+                        </article>
+                    </section>
+                    
                 </div>
 
                 <div id="unit4" class="formatted-text">
                     <!-- Unit 4 text -->
                     <h2>UNIT 4: Memory Management</h2>
                     <br>
-                    <p>Aliquam id dolor. Phasellus nec sem in justo pellentesque facilisis. Curabitur at lacus ac velit ornare lobortis. Curabitur blandit mollis lacus. Praesent vestibulum dapibus nibh. Fusce commodo aliquam arcu. Aliquam erat volutpat. Aliquam vestibulum morbi blandit cursus risus at ultrices. Morbi scelerisque luctus velit. Etiam rhoncus.</p>
+                    <section>
+                        <h3>Basic Concept: Memory Management</h3><br>
+                        <article>
+                            <p>Memory management involves handling the allocation, deallocation, and organization of memory resources for processes and applications.</p><br>
+                            <h4>Primary Functions:</h4><br>
+                            <ul>
+                                <li>Allocation</li>
+                                <li>Deallocation</li>
+                                <li>Protection</li>
+                                <li>Sharing</li>
+                            </ul><br>
+                            <h4>Address Spaces:</h4><br>
+                            <ul>
+                                <li>Logical Address Space</li>
+                                <li>Physical Address Space</li>
+                            </ul><br>
+                            <h4>Memory Hierarchy:</h4><br>
+                            <ul>
+                                <li>Cache</li>
+                                <li>Main Memory</li>
+                                <li>Secondary Storage</li>
+                            </ul><br>
+                            <h4>Memory Allocation Techniques:</h4><br>
+                            <ul>
+                                <li>Static Allocation</li>
+                                <li>Dynamic Allocation</li>
+                                <li>Contiguous Allocation</li>
+                                <li>Non-Contiguous Allocation</li>
+                            </ul><br>
+                            <h4>Fragmentation:</h4><br>
+                            <ul>
+                                <li>Internal Fragmentation</li>
+                                <li>External Fragmentation</li>
+                            </ul><br>
+                            <h4>Protection Mechanisms:</h4><br>
+                            <ul>
+                                <li>Base and Limit Registers</li>
+                                <li>Virtual Memory</li>
+                            </ul><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Logical and Physical Address Map:</h3><br>
+                        <article>
+                            <p>Logical address mapping translates logical (virtual) addresses seen by processes to physical addresses in the computer's memory.</p><br>
+                            <h4>Logical (Virtual) Address Space:</h4><br>
+                            <p>The set of addresses a process can use, starting from 0 and extending up to a maximum value defined by the OS.</p><br>
+                            <h4>Physical Address Space:</h4><br>
+                            <p>The actual addresses in the computer's memory hardware (RAM).</p><br>
+                            <h4>Address Translation:</h4><br>
+                            <ul>
+                                <li>Memory Management Unit (MMU)</li>
+                                <li>Page Tables</li>
+                                <li>Segmented Addresses</li>
+                            </ul><br>
+                            <h4>Mapping Methods:</h4><br>
+                            <ul>
+                                <li>Paging</li>
+                                <li>Segmentation</li>
+                            </ul><br>
+                            <h4>Benefits of Address Mapping:</h4><br>
+                            <ul>
+                                <li>Process Isolation</li>
+                                <li>Memory Protection</li>
+                                <li>Flexibility</li>
+                            </ul><br>
+                            <h4>Challenges and Considerations:</h4><br>
+                            <ul>
+                                <li>Translation Overhead</li>
+                                <li>Hardware Support</li>
+                            </ul><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Memory Allocation</h3><br>
+                        <article>
+                            <p>Memory allocation involves reserving memory for a program or process to ensure efficient execution.</p><br>
+                            <h4>Types of Memory Allocation:</h4><br>
+                            <ul>
+                                <li>Static Allocation</li>
+                                <li>Dynamic Allocation</li>
+                            </ul><br>
+                            <h4>Continuous Memory Allocation:</h4><br>
+                            <ul>
+                                <li>Fixed Partitioning</li>
+                                <li>Variable Partitioning</li>
+                            </ul><br>
+                            <h4>Fragmentation:</h4><br>
+                            <ul>
+                                <li>Internal Fragmentation</li>
+                                <li>External Fragmentation</li>
+                            </ul><br>
+                            <h4>Compaction:</h4><br>
+                            <p>The process of rearranging memory contents to eliminate fragmentation and create larger contiguous blocks.</p><br>
+                            <h4>Dynamic Memory Allocation Techniques:</h4><br>
+                            <ul>
+                                <li>Buddy System</li>
+                                <li>First-Fit, Best-Fit, and Worst-Fit</li>
+                            </ul><br>
+                            <h4>Overlays:</h4><br>
+                            <p>A technique where only part of a program is in memory at a time, swapping out sections as needed.</p><br>
+                            <h4>Heap Management:</h4><br>
+                            <p>Dynamic memory allocation for variable-sized data structures and objects.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Paging</h3><br>
+                        <article>
+                            <p>Paging divides a process's logical address space into fixed-size blocks called pages, which are mapped to frames in physical memory.</p><br>
+                            <h4>Principle of Operation:</h4><br>
+                            <ul>
+                                <li>Pages and Frames</li>
+                                <li>Page Table</li>
+                            </ul><br>
+                            <h4>Page Allocation – Hardware Support for Paging:</h4><br>
+                            <p>Pages from a process are loaded into available frames in physical memory, facilitated by hardware components like the Memory Management Unit (MMU) and page tables.</p><br>
+                            <h4>Hardware Support:</h4><br>
+                            <ul>
+                                <li>Memory Management Unit (MMU)</li>
+                                <li>Page Tables</li>
+                            </ul><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Protection and Sharing</h3><br>
+                        <article>
+                            <h4>Protection:</h4><br>
+                            <ul>
+                                <li>Access Control</li>
+                                <li>Isolation</li>
+                                <li>Segmentation</li>
+                            </ul><br>
+                            <h4>Sharing:</h4><br>
+                            <ul>
+                                <li>Shared Pages</li>
+                                <li>Copy-on-Write</li>
+                                <li>Inter-Process Communication</li>
+                            </ul><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Disadvantages of Paging</h3><br>
+                        <article>
+                            <h4>Page Faults:</h4><br>
+                            <p>Occur when a process tries to access a page not in physical memory, leading to performance delays.</p><br>
+                            <h4>Internal Fragmentation:</h4><br>
+                            <p>Wasted space within fixed-size pages can lead to inefficient memory usage.</p><br>
+                            <h4>Overhead of Page Tables:</h4><br>
+                            <p>Maintaining page tables introduces computational and memory overhead.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Segmentation</h3><br>
+                        <article>
+                            <p>Segmentation divides memory into variable-sized segments based on logical divisions of a program.</p><br>
+                            <h4>Principles:</h4><br>
+                            <ul>
+                                <li>Logical Organization</li>
+                                <li>Variable-sized Segments</li>
+                                <li>Segmented Addressing</li>
+                            </ul><br>
+                            <h4>Segment Management:</h4><br>
+                            <ul>
+                                <li>Segment Tables</li>
+                                <li>Memory Management</li>
+                                <li>Protection</li>
+                            </ul><br>
+                            <h4>Advantages:</h4><br>
+                            <ul>
+                                <li>Flexibility</li>
+                                <li>Protection</li>
+                                <li>Sharing</li>
+                            </ul><br>
+                            <h4>Disadvantages:</h4><br>
+                            <ul>
+                                <li>External Fragmentation</li>
+                                <li>Complexity</li>
+                            </ul><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Basics of Virtual Memory</h3><br>
+                        <article>
+                            <p>Virtual memory extends physical memory using secondary storage, allowing processes to use more memory than available RAM.</p><br>
+                            <h4>Advantages:</h4><br>
+                            <ul>
+                                <li>Flexibility</li>
+                                <li>Isolation</li>
+                                <li>Efficiency</li>
+                            </ul><br>
+                            <h4>Techniques:</h4><br>
+                            <ul>
+                                <li>Paging</li>
+                                <li>Segmentation</li>
+                            </ul><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Hardware and Control Structures</h3><br>
+                        <article>
+                            <h4>Memory Management Unit (MMU):</h4><br>
+                            <p>A hardware component responsible for address translation and memory protection.</p><br>
+                            <h4>Page Tables and Segment Tables:</h4><br>
+                            <p>Structures used to map virtual addresses to physical addresses and enforce access control.</p><br>
+                            <h4>Translation Lookaside Buffer (TLB):</h4><br>
+                            <p>A cache within the MMU that stores recent address translations to speed up access.</p><br>
+                            <h4>Control Structures:</h4><br>
+                            <p>Include paging and segmentation structures, multilevel page tables, and access control mechanisms.</p><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Locality of Reference</h3><br>
+                        <article>
+                            <p>Locality of reference describes the tendency of programs to access memory in predictable patterns.</p><br>
+                            <h4>Types of Locality:</h4><br>
+                            <ul>
+                                <li>Temporal Locality</li>
+                                <li>Spatial Locality</li>
+                            </ul><br>
+                            <h4>Impact on Virtual Memory:</h4><br>
+                            <ul>
+                                <li>Efficiency</li>
+                                <li>Page Replacement</li>
+                            </ul><br>
+                            <h4>Applications:</h4><br>
+                            <p>Optimizing code and memory management strategies to improve performance.</p><br>
+                            <h4>Challenges:</h4><br>
+                            <p>Understanding and predicting access patterns to exploit locality effectively.</p><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Page Fault</h3><br>
+                        <article>
+                            <p>A page fault occurs when a process attempts to access a page not currently in physical memory.</p><br>
+                            <h4>Causes:</h4><br>
+                            <ul>
+                                <li>Page Not in Memory</li>
+                                <li>Invalid Access</li>
+                            </ul><br>
+                            <h4>Handling:</h4><br>
+                            <ul>
+                                <li>Interrupt Handling</li>
+                                <li>Locate the Page</li>
+                                <li>Update Page Table</li>
+                                <li>Restart Process</li>
+                            </ul><br>
+                            <h4>Performance Impact:</h4><br>
+                            <p>Page faults can significantly impact performance due to disk I/O operations.</p><br>
+                            <h4>Minimizing Page Faults:</h4><br>
+                            <ul>
+                                <li>Effective Page Replacement</li>
+                                <li>Locality of Reference</li>
+                                <li>Prefetching</li>
+                            </ul><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Working Set</h3><br>
+                        <article>
+                            <p>The working set represents the set of pages actively used by a process.</p><br>
+                            <h4>Working Set Size:</h4><br>
+                            <p>Defined as the number of pages referenced by the process within a given time window.</p><br>
+                            <h4>Working Set Model:</h4><br>
+                            <ul>
+                                <li>Working Set Window</li>
+                                <li>Working Set Threshold</li>
+                                <li>Adjustable Parameters</li>
+                            </ul><br>
+                            <h4>Benefits:</h4><br>
+                            <ul>
+                                <li>Page Replacement Decisions</li>
+                                <li>Performance Optimization</li>
+                            </ul><br>
+                            <h4>Challenges:</h4><br>
+                            <ul>
+                                <li>Tracking Overhead</li>
+                                <li>Dynamic Adjustments</li>
+                            </ul><br>
+                            <h4>Applications:</h4><br>
+                            <p>Improving system performance, especially in multiprogramming environments.</p><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Dirty Page / Dirty Bit</h3><br>
+                        <article>
+                            <p>A dirty page is a modified page in physical memory, and a dirty bit is a flag in a page table entry indicating whether the page has been modified.</p><br>
+                            <h4>Function of the Dirty Bit:</h4><br>
+                            <ul>
+                                <li>Tracking Modifications</li>
+                                <li>Page Replacement Decisions</li>
+                            </ul><br>
+                            <h4>Benefits:</h4><br>
+                            <ul>
+                                <li>Minimize Unnecessary Writes</li>
+                                <li>Improved Performance</li>
+                            </ul><br>
+                            <h4>Handling Dirty Pages:</h4><br>
+                            <ul>
+                                <li>Write-Back Strategy</li>
+                                <li>Write-Through Strategy</li>
+                                <li>Lazy Write</li>
+                            </ul><br>
+                            <h4>Challenges and Considerations:</h4><br>
+                            <ul>
+                                <li>Disk I/O Overhead</li>
+                                <li>Management Overhead</li>
+                            </ul><br>
+                        </article>
+                    </section>
+                    
+                    <section>
+                        <h3>Demand Paging</h3><br>
+                        <article>
+                            <p>Demand paging is a virtual memory management strategy where pages are loaded into physical memory only when needed by a process.</p><br>
+                            <h4>How Demand Paging Works:</h4><br>
+                            <ul>
+                                <li>Page Fault Handling</li>
+                                <li>Benefits</li>
+                            </ul><br>
+                            <h4>Performance Considerations:</h4><br>
+                            <ul>
+                                <li>Page Faults</li>
+                                <li>Prefetching</li>
+                            </ul><br>
+                            <h4>Applications:</h4><br>
+                            <p>Widely used in modern operating systems to efficiently manage memory for multiple processes.</p><br>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h3>Page Replacement Algorithms</h3><br>
+                        <article>
+                            <h4>Optimal:</h4><br>
+                            <p>The optimal page replacement algorithm aims to minimize page faults by replacing the page that will not be used for the longest time in the future.</p><br>
+                            <h4>First In First Out (FIFO):</h4><br>
+                            <p>In FIFO, pages are replaced in the order they were brought into memory using a queue.</p><br>
+                            <h4>Second Chance (SC):</h4><br>
+                            <p>SC is a variation of FIFO that provides each page with a "second chance" before being replaced, based on a reference bit.</p><br>
+                            <h4>Not Recently Used (NRU):</h4><br>
+                            <p>NRU classifies pages into categories based on their reference and modified bits and selects pages for replacement from least recently used to most recently used.</p><br>
+                            <h4>Least Recently Used (LRU):</h4><br>
+                            <p>LRU replaces the page that has not been used for the longest period, typically implemented using a linked list or a stack to track page usage.</p><br>
+                            <h4>Clock Algorithm:</h4><br>
+                            <p>The Clock algorithm is a circular variant of the Second Chance algorithm that uses a circular queue and a clock hand pointer to balance performance and simplicity.</p><br>
+                        </article>
+                    </section>
+                    
                 </div>
 
                 <div id="unit5" class="formatted-text">
                     <!-- Unit 5 text -->
                     <h2>UNIT 5: File Management</h2>
                     <br>
-                    <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                    <section>
+                        <h2>File Concept</h2><br>
+                        <p><strong>Definition:</strong></p><br>
+                        <ul>
+                            <li>A file is a collection of related data that can be organized in different formats, such as text files, binary files, or executable files.</li><br>
+                            <li>Files are used to store data persistently in secondary storage such as hard drives, SSDs, or other storage devices.</li><br>
+                        </ul><br>
+                        <p><strong>File Attributes:</strong></p><br>
+                        <ul>
+                            <li>Name: The file name, often including the file extension (e.g., <code>.txt</code>, <code>.jpg</code>).</li><br>
+                            <li>Type: The file type or format (e.g., text, binary, image).</li><br>
+                            <li>Size: The file size in bytes.</li><br>
+                            <li>Creation and Modification Dates: The dates and times when the file was created and last modified.</li><br>
+                            <li>Permissions: Access control information indicating who can read, write, or execute the file.</li><br>
+                            <li>Ownership: Information about the user or group that owns the file.</li><br>
+                        </ul><br>
+                        <p><strong>File Operations:</strong></p><br>
+                        <ul>
+                            <li>Creation: Creating a new file in the file system.</li><br>
+                            <li>Deletion: Removing a file from the file system.</li><br>
+                            <li>Reading: Accessing and retrieving data from a file.</li><br>
+                            <li>Writing: Modifying or adding data to a file.</li><br>
+                            <li>Appending: Adding data to the end of a file.</li><br>
+                            <li>Seeking: Moving the file pointer to a specific position in the file.</li><br>
+                        </ul><br>
+                        <p><strong>File Systems:</strong></p><br>
+                        <ul>
+                            <li>Organization: Files are organized within a file system, which provides a structure for managing files on storage devices.</li><br>
+                            <li>Directories: Files are grouped into directories (or folders) for organizational purposes.</li><br>
+                            <li>File Allocation: The file system manages how files are stored and retrieved from storage devices, including allocation and deallocation of disk space.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Access methods</h2><br>
+                        <p><strong>Definition:</strong></p><br>
+                        <ul>
+                            <li>Access methods define how data in a file is accessed and manipulated, including sequential and direct (random) access.</li><br>
+                        </ul><br>
+                        <p><strong>Sequential Access:</strong></p><br>
+                        <ul>
+                            <li>Data in a file is accessed in a linear, sequential order from the beginning to the end.</li><br>
+                            <li>Often used for reading and writing data in a predictable and consistent manner.</li><br>
+                            <li>Suitable for applications like media streaming, where data needs to be read in sequence.</li><br>
+                        </ul><br>
+                        <p><strong>Direct (Random) Access:</strong></p><br>
+                        <ul>
+                            <li>Allows data to be accessed in any order without following a sequential path.</li><br>
+                            <li>Provides flexibility and efficiency when accessing or modifying data at specific positions in the file.</li><br>
+                            <li>Useful for database systems and applications requiring quick access to specific data.</li><br>
+                        </ul><br>
+                        <p><strong>Indexed Access:</strong></p><br>
+                        <ul>
+                            <li>A type of direct access where an index structure is used to map keys to file locations.</li><br>
+                            <li>The index allows efficient access to data based on specific keys or attributes.</li><br>
+                            <li>Commonly used in databases to quickly locate records.</li><br>
+                        </ul><br>
+                        <p><strong>Keyed Access:</strong></p><br>
+                        <ul>
+                            <li>A specific form of indexed access where data is accessed based on keys.</li><br>
+                            <li>Often used in data management systems for quick retrieval and modification of records based on a key attribute.</li><br>
+                        </ul><br>
+                        <p><strong>Considerations:</strong></p><br>
+                        <ul>
+                            <li>Efficiency: Different access methods offer trade-offs in terms of speed and resource usage.</li><br>
+                            <li>Complexity: Indexed and keyed access can introduce complexity in file management due to the additional data structures required.</li><br>
+                            <li>Compatibility: Some applications may require specific access methods for compatibility or performance reasons.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>File Types</h2><br>
+                        <p><strong>Text Files:</strong></p><br>
+                        <ul>
+                            <li>Files containing data that is stored in a human-readable format, typically as ASCII or Unicode text.</li><br>
+                            <li>Examples include source code files, configuration files, and plain text documents.</li><br>
+                        </ul><br>
+                        <p><strong>Binary Files:</strong></p><br>
+                        <ul>
+                            <li>Files containing data in a format not directly readable by humans, often representing complex structures such as images, audio, video, or executable programs.</li><br>
+                            <li>Can include application-specific data structures and file formats.</li><br>
+                        </ul><br>
+                        <p><strong>Executable Files:</strong></p><br>
+                        <ul>
+                            <li>Binary files that contain code and data for a program that can be executed by the operating system.</li><br>
+                            <li>Examples include <code>.exe</code> files on Windows and files with execute permissions on UNIX-like systems.</li><br>
+                        </ul><br>
+                        <p><strong>Archive Files:</strong></p><br>
+                        <ul>
+                            <li>Files that contain one or more other files, often compressed for storage efficiency.</li><br>
+                            <li>Examples include ZIP, TAR, and RAR files.</li><br>
+                        </ul><br>
+                        <p><strong>Device Files:</strong></p><br>
+                        <ul>
+                            <li>Special files in UNIX-like systems that represent hardware devices, allowing them to be accessed through file operations.</li><br>
+                            <li>Types include character device files and block device files.</li><br>
+                        </ul><br>
+                        <p><strong>Special Files:</strong></p><br>
+                        <ul>
+                            <li>Files representing system-related data such as named pipes, sockets, and symbolic links.</li><br>
+                            <li>These files facilitate inter-process communication (IPC) and other system functions.</li><br>
+                        </ul><br>
+                        <p><strong>Attributes and Permissions:</strong></p><br>
+                        <ul>
+                            <li>Different file types may have different attributes, such as creation date, size, and owner.</li><br>
+                            <li>Access control permissions define who can read, write, or execute the file, varying by file type and system.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>File Operations</h2><br>
+                        <p><strong>Definition:</strong></p><br>
+                        <p>File operations refer to the basic actions that can be performed on files, such as creating, deleting, reading, and writing files.</p><br>
+                        <p><strong>File Creation:</strong></p><br>
+                        <ul>
+                            <li><strong>Opening Files:</strong></li><br>
+                            <ul>
+                                <li>Files can be opened in different modes, such as read, write, or append.</li><br>
+                                <li>If the file does not exist and the mode allows, it may be created.</li><br>
+                            </ul><br>
+                            <li><strong>File Descriptors:</strong></li><br>
+                            <ul>
+                                <li>When a file is opened, a file descriptor is assigned, which is used by the operating system to reference the file.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>File Reading:</strong></p><br>
+                        <ul>
+                            <li><strong>Reading Modes:</strong></li><br>
+                            <ul>
+                                <li>Files can be read in different modes: character by character, line by line, or as a block of data.</li><br>
+                            </ul><br>
+                            <li><strong>Reading with Offset:</strong></li><br>
+                            <ul>
+                                <li>Random access allows reading from specific positions within a file.</li><br>
+                            </ul><br>
+                            <li><strong>End of File (EOF):</strong></li><br>
+                            <ul>
+                                <li>Files can be read until the end of the file is reached, indicated by EOF.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>File Writing:</strong></p><br>
+                        <ul>
+                            <li><strong>Writing Modes:</strong></li><br>
+                            <ul>
+                                <li>Files can be written in different modes: overwrite, append, or create new.</li><br>
+                            </ul><br>
+                            <li><strong>Buffering:</strong></li><br>
+                            <ul>
+                                <li>Data can be buffered to improve performance, reducing the frequency of writes.</li><br>
+                            </ul><br>
+                            <li><strong>Handling File Size:</strong></li><br>
+                            <ul>
+                                <li>Files can be truncated or expanded as needed during writing.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>File Closing:</strong></p><br>
+                        <ul>
+                            <li><strong>Releasing Resources:</strong></li><br>
+                            <ul>
+                                <li>Closing a file releases resources such as file descriptors and buffers.</li><br>
+                            </ul><br>
+                            <li><strong>Flushing Buffers:</strong></li><br>
+                            <ul>
+                                <li>Any data still in buffers is flushed to the file before it is closed.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>Other Operations:</strong></p><br>
+                        <ul>
+                            <li><strong>File Deletion:</strong></li><br>
+                            <ul>
+                                <li>Removing a file from the file system.</li><br>
+                            </ul><br>
+                            <li><strong>File Renaming:</strong></li><br>
+                            <ul>
+                                <li>Changing the name of a file in the file system.</li><br>
+                            </ul><br>
+                            <li><strong>File Copying:</strong></li><br>
+                            <ul>
+                                <li>Creating a duplicate of a file.</li><br>
+                            </ul><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Directory and Disk Structure</h2><br>
+                        <h3>Directory Structure</h3><br>
+                        <ul>
+                            <li><strong>Hierarchical Organization:</strong></li><br>
+                            <ul>
+                                <li>Directories are organized in a hierarchical structure (a tree), with a root directory at the top and subdirectories branching from it.</li><br>
+                            </ul><br>
+                            <li><strong>Navigation and Pathnames:</strong></li><br>
+                            <ul>
+                                <li>Files and subdirectories are accessed using pathnames, either absolute (from the root) or relative (from the current directory).</li><br>
+                            </ul><br>
+                            <li><strong>Operations:</strong></li><br>
+                            <ul>
+                                <li>Common directory operations include creating, deleting, and renaming directories.</li><br>
+                            </ul><br>
+                            <li><strong>Current Working Directory:</strong></li><br>
+                            <ul>
+                                <li>Each process has a current working directory, which is the default directory for file operations.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <h3>Disk Structure</h3><br>
+                        <ul>
+                            <li><strong>Tracks and Sectors:</strong></li><br>
+                            <ul>
+                                <li>Disks are divided into tracks (circular rings) and sectors (pie-shaped wedges) to organize data storage.</li><br>
+                            </ul><br>
+                            <li><strong>Blocks:</strong></li><br>
+                            <ul>
+                                <li>Data is stored in blocks, which are groups of sectors and the smallest unit of data that can be read or written.</li><br>
+                            </ul><br>
+                            <li><strong>Disk Partitions:</strong></li><br>
+                            <ul>
+                                <li>Disks can be divided into partitions, which function as separate logical disks with their own file systems.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <h3>Disk Formatting</h3><br>
+                        <ul>
+                            <li><strong>Low-Level Formatting:</strong></li><br>
+                            <ul>
+                                <li>Prepares the disk by defining tracks and sectors and initializing data structures.</li><br>
+                            </ul><br>
+                            <li><strong>High-Level Formatting:</strong></li><br>
+                            <ul>
+                                <li>Initializes the disk with a file system and directories, making it ready for use by the operating system.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <h3>Superblock</h3><br>
+                        <ul>
+                            <li><p>A superblock is a data structure containing metadata about the file system, such as file system type, size, and layout.</p></li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>File System Structure</h2><br>
+                        <h3>Layers of a File System</h3><br>
+                        <ul>
+                            <li><strong>Application Layer:</strong></li><br>
+                            <ul>
+                                <li>The top layer, where user applications interact with the file system via system calls.</li><br>
+                            </ul><br>
+                            <li><strong>File Organization Layer:</strong></li><br>
+                            <ul>
+                                <li>Handles the mapping of files to logical storage units, including directories and file metadata.</li><br>
+                            </ul><br>
+                            <li><strong>File System Implementation Layer:</strong></li><br>
+                            <ul>
+                                <li>Manages how files are stored on the disk, including allocation methods and data structures.</li><br>
+                            </ul><br>
+                            <li><strong>Device Layer:</strong></li><br>
+                            <ul>
+                                <li>Handles the physical storage devices, including drivers and hardware-specific operations.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <h3>File System Components</h3><br>
+                        <ul>
+                            <li><strong>Metadata:</strong></li><br>
+                            <ul>
+                                <li>Information about files, such as name, type, permissions, size, and timestamps.</li><br>
+                            </ul><br>
+                            <li><strong>Inodes:</strong></li><br>
+                            <ul>
+                                <li>Data structures that store metadata and pointers to data blocks.</li><br>
+                            </ul><br>
+                            <li><strong>Data Blocks:</strong></li><br>
+                            <ul>
+                                <li>Units of storage where file data is actually stored.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <h3>Directory Structure</h3><br>
+                        <ul>
+                            <li><strong>Hierarchical Organization:</strong></li><br>
+                            <ul>
+                                <li>Files and directories are organized in a tree-like structure for easy navigation.</li><br>
+                            </ul><br>
+                            <li><strong>Pathnames:</strong></li><br>
+                            <ul>
+                                <li>Files are identified by pathnames, which specify the route through the directory hierarchy.</li><br>
+                            </ul><br>
+                            <li><strong>Operations:</strong></li><br>
+                            <ul>
+                                <li>Common operations include creating, deleting, renaming, and searching for files and directories.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <h3>File System Mounting</h3><br>
+                        <ul>
+                            <li><strong>Mount Points:</strong></li><br>
+                            <ul>
+                                <li>Directories where file systems are attached to integrate different file systems into a single namespace.</li><br>
+                            </ul><br>
+                            <li><strong>Mounting Process:</strong></li><br>
+                            <ul>
+                                <li>Involves attaching a file system to the directory hierarchy at a specific mount point.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <h3>Types of File Systems</h3><br>
+                        <ul>
+                            <li><strong>Local File Systems:</strong></li><br>
+                            <ul>
+                                <li>File systems on local storage devices, such as hard drives or SSDs.</li><br>
+                            </ul><br>
+                            <li><strong>Network File Systems:</strong></li><br>
+                            <ul>
+                                <li>File systems that manage files on remote networked storage devices.</li><br>
+                            </ul><br>
+                            <li><strong>Distributed File Systems:</strong></li><br>
+                            <ul>
+                                <li>File systems that manage files across multiple servers, providing data redundancy and load balancing.</li><br>
+                            </ul><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>File System Implementation</h2><br>
+                        <h3>Data Structures</h3><br>
+                        <ul>
+                            <li><strong>Inodes:</strong></li><br>
+                            <ul>
+                                <li>Inodes contain metadata about files, such as ownership, permissions, and pointers to data blocks.</li><br>
+                            </ul><br>
+                            <li><strong>Data Blocks:</strong></li><br>
+                            <ul>
+                                <li>Units of storage that hold the actual content of files.</li><br>
+                            </ul><br>
+                            <li><strong>Superblocks:</strong></li><br>
+                            <ul>
+                                <li>Data structures containing information about the file system itself, such as the size and location of data blocks, inodes, and free space.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <h3>Allocation Methods</h3><br>
+                        <ul>
+                            <li><strong>Contiguous Allocation:</strong></li><br>
+                            <ul>
+                                <li><strong>Description:</strong></li><br>
+                                <li>In contiguous allocation, a file is stored in a single contiguous block of data on the disk.</li><br>
+                                <li><strong>Advantages:</strong></li><br>
+                                <li>Fast access and efficient read/write operations due to the file being stored in a single block.</li><br>
+                                <li>Easy implementation of random access within a file.</li><br>
+                                <li><strong>Disadvantages:</strong></li><br>
+                                <li>External fragmentation can occur as files are created and deleted, leading to unusable free spaces.</li><br>
+                                <li>Allocation might be difficult if a large enough contiguous block is not available.</li><br>
+                            </ul><br>
+                            <li><strong>Linked Allocation:</strong></li><br>
+                            <ul>
+                                <li><strong>Description:</strong></li><br>
+                                <li>In linked allocation, a file is stored in a linked list of disk blocks, where each block contains a pointer to the next block.</li><br>
+                                <li><strong>Advantages:</strong></li><br>
+                                <li>Can accommodate files that grow dynamically without fragmentation.</li><br>
+                                <li>Does not require contiguous space, so it is easier to allocate space on a full disk.</li><br>
+                                <li><strong>Disadvantages:</strong></li><br>
+                                <li>Slower access times, as finding a block requires following pointers.</li><br>
+                                <li>Not suitable for direct or random access; more suited for sequential access.</li><br>
+                            </ul><br>
+                            <li><strong>Indexed Allocation:</strong></li><br>
+                            <ul>
+                                <li><strong>Description:</strong></li><br>
+                                <li>In indexed allocation, a file's data blocks are indexed by an index block that contains pointers to the file's data blocks.</li><br>
+                                <li><strong>Advantages:</strong></li><br>
+                                <li>Allows direct access to data blocks, providing efficient random access.</li><br>
+                                <li>Can handle files that grow dynamically without fragmentation.</li><br>
+                                <li><strong>Disadvantages:</strong></li><br>
+                                <li>Uses extra space for the index block, which can increase overhead.</li><br>
+                                <li>Access to data blocks requires an additional level of indirection via the index block.</li><br>
+                            </ul><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Free-space Management</h2><br>
+                        <h3>Bit Vector</h3><br>
+                        <ul>
+                            <li><strong>Description:</strong></li><br>
+                            <li>A bit vector (bitmap) is an array of bits where each bit represents a block on the disk.</li><br>
+                            <li><strong>Implementation:</strong></li><br>
+                            <li>A bit set to 0 indicates the block is free, while a bit set to 1 indicates the block is allocated.</li><br>
+                            <li><strong>Advantages:</strong></li><br>
+                            <li>Simple to implement and allows quick determination of free blocks.</li><br>
+                            <li><strong>Disadvantages:</strong></li><br>
+                            <li>Requires large storage for large disks; e.g., 1 bit per block.</li><br>
+                        </ul><br>
+                        <h3>Linked List</h3><br>
+                        <ul>
+                            <li><strong>Description:</strong></li><br>
+                            <li>Free blocks are linked together in a list, with each block pointing to the next free block.</li><br>
+                            <li><strong>Implementation:</strong></li><br>
+                            <li>A pointer in each free block leads to the next free block, and the head of the list indicates the starting point.</li><br>
+                            <li><strong>Advantages:</strong></li><br>
+                            <li>Reduces memory overhead since only pointers in the free blocks are stored.</li><br>
+                            <li><strong>Disadvantages:</strong></li><br>
+                            <li>Finding a contiguous block of a specific size can be time-consuming.</li><br>
+                        </ul><br>
+                        <h3>Grouping</h3><br>
+                        <ul>
+                            <li><strong>Description:</strong></li><br>
+                            <li>Grouping is a variation of linked list management where groups of free blocks are tracked instead of individual blocks.</li><br>
+                            <li><strong>Implementation:</strong></li><br>
+                            <li>A free block holds pointers to multiple subsequent free blocks, reducing the length of the list.</li><br>
+                            <li><strong>Advantages:</strong></li><br>
+                            <li>Reduces the number of pointers to be followed, making allocation more efficient.</li><br>
+                            <li><strong>Disadvantages:</strong></li><br>
+                            <li>Can still be challenging to find large contiguous blocks.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Directory Implementation</h2><br>
+                        <h3>Linear List</h3><br>
+                        <ul>
+                            <li><strong>Description:</strong></li><br>
+                            <li>Directories can be implemented as a linear list of file and directory entries.</li><br>
+                            <li><strong>Structure:</strong></li><br>
+                            <li>Each entry in the list contains the file or directory name and a pointer to its inode or data.</li><br>
+                            <li><strong>Advantages:</strong></li><br>
+                            <li>Simple implementation with straightforward sequential access.</li><br>
+                            <li><strong>Disadvantages:</strong></li><br>
+                            <li>Searching for a specific file or directory can be slow, especially in large directories, as a linear search is required.</li><br>
+                        </ul><br>
+                        <h3>Hash Table</h3><br>
+                        <ul>
+                            <li><strong>Description:</strong></li><br>
+                            <li>Directories can be implemented as hash tables to improve search efficiency.</li><br>
+                            <li><strong>Structure:</strong></li><br>
+                            <li>Each entry in the hash table is a key-value pair, with the key being the file or directory name and the value being a pointer to its inode or data.</li><br>
+                            <li><strong>Advantages:</strong></li><br>
+                            <li>Faster search times, as hash tables allow direct access to entries based on file names.</li><br>
+                            <li>Reduces time complexity from linear to constant time in the best case.</li><br>
+                            <li><strong>Disadvantages:</strong></li><br>
+                            <li>Hash collisions may occur, which can degrade performance if not handled properly.</li><br>
+                            <li>Hash table size and hash function selection are critical for performance.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Efficiency and Performance</h2><br>
+                        <p><strong>Definition:</strong> Efficiency and performance in file management refer to how well the file system manages files and directories, ensuring fast access, storage, and retrieval while optimizing resource utilization.</p><br>
+                        <h3>Performance Metrics</h3><br>
+                        <ul>
+                            <li><strong>Access Time:</strong> The time taken to locate a file or data within a file and retrieve it. Influenced by the directory structure, file allocation methods, and storage device speed.</li><br>
+                            <li><strong>Throughput:</strong> The rate at which data can be read from or written to files. Affected by the file system's ability to handle large data transfers and efficiently manage I/O operations.</li><br>
+                            <li><strong>Response Time:</strong> The time taken to respond to a file operation request. Impacted by the efficiency of file system algorithms and storage device performance.</li><br>
+                        </ul><br>
+                        <h3>File System Optimization</h3><br>
+                        <ul>
+                            <li><strong>Buffering and Caching:</strong> Use of buffers and caches to store frequently accessed data temporarily, reducing the need for repeated disk access.</li><br>
+                            <li><strong>Prefetching:</strong> Anticipating which data will be needed next and loading it into memory in advance, reducing access times.</li><br>
+                            <li><strong>Lazy Writing:</strong> Delaying writes to disk to optimize I/O operations, grouping them into larger blocks for efficiency.</li><br>
+                            <li><strong>Journaling:</strong> Maintaining a log of file system changes to ensure data integrity and enable quick recovery after failures.</li><br>
+                        </ul><br>
+                        <h3>Data Organization</h3><br>
+                        <ul>
+                            <li><strong>Clustering:</strong> Storing related data blocks close together on the disk to improve access times and minimize disk head movement.</li><br>
+                            <li><strong>File Allocation Strategies:</strong> Optimizing allocation methods (e.g., contiguous, linked, or indexed) based on the access patterns and storage characteristics.</li><br>
+                        </ul><br>
+                        <h3>Challenges</h3><br>
+                        <ul>
+                            <li><strong>Fragmentation:</strong> Both internal and external fragmentation can impact performance by scattering data across the disk.</li><br>
+                            <li><strong>Disk Contention:</strong> In multi-user or networked environments, concurrent access to files can cause contention and reduce performance.</li><br>
+                            <li><strong>Scalability:</strong> As file systems grow larger, maintaining efficient performance requires careful management of data structures and algorithms.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Mass-Storage Structure</h2><br>
+                        <p><strong>Definition:</strong> Mass-storage structure refers to the organization and management of large storage devices such as hard disk drives (HDDs) and solid-state drives (SSDs).</p><br>
+                        <h3>Disk Structure</h3><br>
+                        <ul>
+                            <li><strong>Tracks and Sectors:</strong> Disks are divided into concentric tracks, which are further subdivided into sectors.</li><br>
+                            <li><strong>Platters and Heads:</strong> HDDs have platters (circular disks) coated with magnetic material, and each platter has a read/write head that moves over the surface.</li><br>
+                            <li><strong>Cylinders:</strong> A cylinder is a set of tracks at the same position on each platter, providing a logical grouping of data.</li><br>
+                            <li><strong>Zones and Zones Per Track:</strong> In zoned-bit recording, tracks are divided into zones with different data densities, maximizing storage capacity.</li><br>
+                        </ul><br>
+                        <h3>Disk Attachment</h3><br>
+                        <ul>
+                            <li><strong>Direct-Attached Storage (DAS):</strong> Storage devices directly attached to a computer system, offering high performance and lower latency.</li><br>
+                            <li><strong>Network-Attached Storage (NAS):</strong> Storage devices connected to a network and accessed via network protocols, allowing for shared access across multiple systems.</li><br>
+                            <li><strong>Storage Area Network (SAN):</strong> Dedicated network for connecting storage devices to multiple servers, providing centralized storage management.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Disk Scheduling</h2><br>
+                        <p><strong>Goals:</strong> Minimize disk head movement and access time to improve performance and throughput.</p><br>
+                        <h3>Algorithms</h3><br>
+                        <ul>
+                            <li><strong>First-Come, First-Served (FCFS):</strong> Requests are processed in the order they arrive, leading to potential inefficiency.</li><br>
+                            <li><strong>Shortest Seek Time First (SSTF):</strong> Requests closest to the current head position are serviced first, reducing seek time.</li><br>
+                            <li><strong>SCAN (Elevator):</strong> The disk head moves back and forth across the disk, servicing requests in order.</li><br>
+                            <li><strong>LOOK:</strong> Similar to SCAN, but the head only goes as far as the last request before reversing direction.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Disk Management</h2><br>
+                        <p><strong>Definition:</strong> Disk management refers to the tasks and operations involved in managing storage devices and their data, including partitioning, formatting, and monitoring.</p><br>
+                        <h3>Partitioning</h3><br>
+                        <ul>
+                            <li><strong>Primary and Extended Partitions:</strong> Disks typically have primary partitions, with one being the active or boot partition, and an extended partition that can contain logical drives.</li><br>
+                            <li><strong>Partition Tables:</strong> Information about partitions is stored in a partition table, allowing the operating system to recognize and manage them.</li><br>
+                        </ul><br>
+                        <h3>Disk Formatting</h3><br>
+                        <ul>
+                            <li><strong>Low-Level Formatting:</strong> Also known as physical formatting, this process creates the tracks and sectors on a disk.</li><br>
+                            <li><strong>High-Level Formatting:</strong> Also known as logical formatting, this process initializes the disk with a file system, making it ready for use.</li><br>
+                            <li><strong>Quick Formatting:</strong> A faster version of formatting that typically only resets the file system data structures without affecting the data blocks.</li><br>
+                        </ul><br>
+                        <h3>Mounting and Unmounting</h3><br>
+                        <ul>
+                            <li><strong>Mounting:</strong> The process of making a file system available for use by attaching it to the directory structure at a mount point.</li><br>
+                            <li><strong>Unmounting:</strong> The process of safely detaching a file system from the directory structure, ensuring data integrity and consistency.</li><br>
+                        </ul><br>
+                        <h3>Swap Space Management</h3><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Swap space is used for virtual memory, providing additional memory capacity by using storage space.</li><br>
+                            <li><strong>Management:</strong> Swap space can be located on a separate partition or file on the file system.</li><br>
+                            <li><strong>Monitoring:</strong> Efficient swap space management ensures that the system can handle memory-intensive applications and avoid thrashing.</li><br>
+                        </ul><br>
+                        <h3>Disk Maintenance</h3><br>
+                        <ul>
+                            <li><strong>Disk Cleaning:</strong> Periodic cleaning of the disk, such as removing temporary files, to free up space and improve performance.</li><br>
+                            <li><strong>Defragmentation:</strong> Reorganizing files on the disk to reduce fragmentation and improve access times.</li><br>
+                            <li><strong>Disk Check:</strong> Checking for and repairing file system errors or bad sectors to maintain disk health and data integrity.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Swap Space Management</h2><br>
+                        <p><strong>Definition:</strong></p><br>
+                        <p>Swap space management involves the allocation and management of space on a storage device (usually a hard drive or SSD) that is used as an extension of physical memory (RAM) for virtual memory purposes.</p><br>
+                        <p><strong>Swap Space Uses:</strong></p><br>
+                        <ul>
+                            <li><strong>Virtual Memory:</strong></li><br>
+                            <ul>
+                                <li>Swap space is used to store pages from physical memory that are swapped out when memory is full, allowing processes to exceed the available RAM.</li><br>
+                            </ul><br>
+                            <li><strong>Paging:</strong></li><br>
+                            <ul>
+                                <li>Pages from processes that are not currently active can be swapped to the swap space and later swapped back to RAM when needed.</li><br>
+                            </ul><br>
+                            <li><strong>Overcommitment:</strong></li><br>
+                            <ul>
+                                <li>Swap space allows the system to overcommit memory, running more applications than the available RAM would normally allow.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>Allocation:</strong></p><br>
+                        <ul>
+                            <li><strong>Separate Partition:</strong></li><br>
+                            <ul>
+                                <li>Swap space is often allocated as a separate partition on the disk, allowing for efficient access and management.</li><br>
+                            </ul><br>
+                            <li><strong>Swap Files:</strong></li><br>
+                            <ul>
+                                <li>Swap space can also be allocated as a swap file within the file system, offering more flexibility but possibly slower performance.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>Management Techniques:</strong></p><br>
+                        <ul>
+                            <li><strong>Dynamic Allocation:</strong></li><br>
+                            <ul>
+                                <li>Swap space can be managed dynamically, resizing the swap space as needed based on system demands.</li><br>
+                            </ul><br>
+                            <li><strong>Page Replacement Policies:</strong></li><br>
+                            <ul>
+                                <li>Efficient page replacement policies, such as least recently used (LRU), can minimize swapping and improve performance.</li><br>
+                            </ul><br>
+                            <li><strong>Monitoring and Tuning:</strong></li><br>
+                            <ul>
+                                <li>Monitoring swap space usage and tuning its size can improve overall system performance and stability.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>Challenges:</strong></p><br>
+                        <ul>
+                            <li><strong>Performance Overhead:</strong></li><br>
+                            <ul>
+                                <li>Accessing swap space is slower than accessing RAM, so excessive swapping can lead to performance degradation.</li><br>
+                            </ul><br>
+                            <li><strong>Swap Thrashing:</strong></li><br>
+                            <ul>
+                                <li>Excessive swapping can lead to thrashing, where the system spends more time swapping pages in and out than executing processes.</li><br>
+                            </ul><br>
+                            <li><strong>Disk Space Usage:</strong></li><br>
+                            <ul>
+                                <li>Large swap spaces can consume significant disk space, potentially affecting available space for other uses.</li><br>
+                            </ul><br>
+                        </ul><br>
+                    </section>
+                    
                 </div>
 
             </div>

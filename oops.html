@@ -57,7 +57,7 @@
 
             </ul>
 
-            <div id="logo"><a href="main.html"><img src="logo.png" height="30px" width="160px"></a></div>
+            <div id="logo"><a href="main.html"><img src="logo.png" height="55px" width="65px"></a></div>
 
             <ul class="interactions">
                 
@@ -661,7 +661,7 @@
                     
                     <section>
                         <h3>1.7 Classes</h3><br>
-                        <ol start="1">
+                        <ol >
                             <li>
                                 <strong>Definition:</strong><br>
                                 <ul>
@@ -2281,21 +2281,2120 @@
                     <!-- Unit 3 text -->
                     <h2>UNIT 3: Arrays</h2>
                     <br>
-                    <p>Maecenas nec sem justo. Phasellus magna. Fusce ac felis sit amet ligula pharetra condimentum. Sed fringilla mauris sit amet nibh. Phasellus dolor. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Vestibulum at velit eget mauris placerat eleifend.</p>
+                    <section>
+                        <h3>1. Declaring and Creating Arrays in Java</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Declaring Arrays:</strong><br>
+                                <ul>
+                                    <li>An array is declared by specifying the type of elements it will hold, followed by square brackets (<code>[]</code>), and then the array name.</li>
+                                    <pre><code>int[] numbers; // Array of integers
+                    String[] names; // Array of strings</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Creating Arrays:</strong><br>
+                                <ul>
+                                    <li>Arrays are created using the <code>new</code> keyword, followed by the element type and the size (number of elements).</li>
+                                    <li>The size is specified in square brackets.</li>
+                                    <pre><code>int[] numbers = new int[5]; // Creates an array of size 5
+                    String[] names = new String[3]; // Creates an array of size 3</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Initialization with Values:</strong><br>
+                                <ul>
+                                    <li>Arrays can also be initialized with values at the time of creation.</li>
+                                    <pre><code>int[] numbers = {1, 2, 3, 4, 5}; // Initializes array with values
+                    String[] names = {"Alice", "Bob", "Charlie"}; // Initializes array with values</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Default Values:</strong><br>
+                                <ul>
+                                    <li>When an array is created, its elements are initialized to default values:</li>
+                                    <li>Primitive types (e.g., <code>int</code>, <code>double</code>) default to <code>0</code>.</li>
+                                    <li>Reference types (e.g., <code>String</code>) default to <code>null</code>.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Array Length:</strong><br>
+                                <ul>
+                                    <li>The length of an array can be obtained using the <code>length</code> attribute.</li>
+                                    <pre><code>int[] numbers = new int[5];
+                    int arrayLength = numbers.length; // Returns 5</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Array Indexing:</strong><br>
+                                <ul>
+                                    <li>Arrays in Java are zero-based, so indexing starts from <code>0</code>.</li>
+                                    <li>Array elements can be accessed and modified using the index in square brackets (<code>[]</code>).</li>
+                                    <pre><code>int[] numbers = {10, 20, 30, 40, 50};
+                    int firstNumber = numbers[0]; // Accessing the first element
+                    numbers[2] = 35; // Modifying the third element</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Multidimensional Arrays:</strong><br>
+                                <ul>
+                                    <li>Java supports multidimensional arrays, such as 2D arrays, which can be declared and created similarly.</li>
+                                    <pre><code>int[][] matrix = new int[3][3]; // Creates a 3x3 matrix
+                    
+                    // Initializing a 2D array
+                    int[][] matrix = {
+                        {1, 2, 3},
+                        {4, 5, 6},
+                        {7, 8, 9}
+                    };</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Declare arrays with appropriate sizes based on the expected usage.</li>
+                                    <li>Use meaningful variable names for arrays to improve readability.</li>
+                                    <li>Consider using data structures like <code>ArrayList</code> for dynamic arrays when the size may change.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Examples:</strong><br>
+                                <ul>
+                                    <li>
+                                        <strong>Creating and Initializing an Array:</strong><br>
+                                        <pre><code>// Declaring and creating an array
+                    int[] scores = new int[5];
+                    
+                    // Initializing an array with values
+                    int[] ages = {25, 30, 35, 40, 45};</code></pre>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <strong>Accessing and Modifying Array Elements:</strong><br>
+                                        <pre><code>int[] values = {10, 20, 30, 40, 50};
+                    
+                    // Accessing the second element
+                    int secondElement = values[1]; // 20
+                    
+                    // Modifying the fourth element
+                    values[3] = 45; // Changes 40 to 45</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol><br>
+                    </section>
+                    
+                    <section>
+                        <h3>2. Passing Arrays to Methods</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Definition:</strong><br>
+                                <ul>
+                                    <li>Arrays can be passed as arguments to methods in Java, just like primitive data types.</li>
+                                    <li>Methods receive a reference to the array, not a copy, which allows them to modify the array.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Syntax:</strong><br>
+                                <ul>
+                                    <li>Declare a method that takes an array as a parameter:</li>
+                                    <pre><code>public void processArray(int[] arr) {
+                        // Method body
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Passing an Array to a Method:</strong><br>
+                                <ul>
+                                    <li>When calling a method, pass the array as an argument.</li>
+                                    <pre><code>public class ArrayExample {
+                        // Method that takes an array as a parameter
+                        public static void printArray(int[] arr) {
+                            for (int num : arr) {
+                                System.out.println(num);
+                            }
+                        }
+                    
+                        public static void main(String[] args) {
+                            int[] numbers = {10, 20, 30, 40, 50};
+                            // Passing the array to the method
+                            printArray(numbers);
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Modifying Arrays in Methods:</strong><br>
+                                <ul>
+                                    <li>Since methods receive a reference to the array, they can modify the original array.</li>
+                                    <li>Any changes made to the array in the method are reflected in the original array.</li>
+                                    <pre><code>public class ArrayExample {
+                        // Method to modify an array by doubling each element
+                        public static void doubleArray(int[] arr) {
+                            for (int i = 0; i < arr.length; i++) {
+                                arr[i] *= 2; // Double each element
+                            }
+                        }
+                    
+                        public static void main(String[] args) {
+                            int[] numbers = {1, 2, 3, 4, 5};
+                            // Passing the array to the method
+                            doubleArray(numbers);
+                            
+                            // Printing the modified array
+                            for (int num : numbers) {
+                                System.out.println(num);
+                            }
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Passing a Portion of an Array:</strong><br>
+                                <ul>
+                                    <li>It is possible to pass a portion of an array to a method using the <code>Arrays.copyOfRange()</code> method.</li>
+                                    <pre><code>import java.util.Arrays;
+                    
+                    public class ArrayExample {
+                        public static void main(String[] args) {
+                            int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+                    
+                            // Passing a portion of the array (from index 2 to 6)
+                            int[] subArray = Arrays.copyOfRange(numbers, 2, 7);
+                            
+                            // Printing the subarray
+                            for (int num : subArray) {
+                                System.out.println(num);
+                            }
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Avoid modifying arrays in methods unless necessary.</li>
+                                    <li>Use descriptive method names that reflect the operations performed on the array.</li>
+                                </ul>
+                            </li>
+                        </ol><br>
+                    </section>
+
+                    <section>
+                        <h3>3. Multidimensional Arrays</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Definition:</strong><br>
+                                <ul>
+                                    <li>Multidimensional arrays in Java are arrays of arrays.</li>
+                                    <li>The most common type of multidimensional array is a 2D array (an array of arrays), but arrays can have more than two dimensions.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Declaration and Creation:</strong><br>
+                                <ul>
+                                    <li>Declare a multidimensional array by specifying the type of elements and multiple sets of square brackets (<code>[]</code>).</li>
+                                    <li>Create a multidimensional array using the <code>new</code> keyword, specifying the size for each dimension.</li>
+                                    <pre><code>// Declaration and creation of a 2D array
+                                       int[][] matrix = new int[3][3];</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Initialization with Values:</strong><br>
+                                <ul>
+                                    <li>Multidimensional arrays can be initialized with values at the time of creation.</li>
+                                    <pre><code>int[][] matrix = {
+                        {1, 2, 3},
+                        {4, 5, 6},
+                        {7, 8, 9}
+                    };</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Accessing and Modifying Elements:</strong><br>
+                                <ul>
+                                    <li>Access and modify elements using multiple indexes in square brackets (<code>[]</code>), representing each dimension.</li>
+                                    <pre><code>int[][] matrix = {
+                        {1, 2, 3},
+                        {4, 5, 6},
+                        {7, 8, 9}
+                    };
+
+                    // Accessing an element
+                    int value = matrix[1][2]; // Accessing the element at row 1, column 2 (value is 6)
+
+                    // Modifying an element
+                    matrix[2][1] = 10; // Changing the value at row 2, column 1 to 10</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Iterating Over Multidimensional Arrays:</strong><br>
+                                <ul>
+                                    <li>Iterate over a multidimensional array using nested loops.</li>
+                                    <pre><code>int[][] matrix = {
+                        {1, 2, 3},
+                        {4, 5, 6},
+                        {7, 8, 9}
+                    };
+
+                    for (int i = 0; i &lt; matrix.length; i++) {
+                        for (int j = 0; j &lt; matrix[i].length; j++) {
+                            System.out.println("Element at [" + i + "][" + j + "] is: " + matrix[i][j]);
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Use descriptive names for multidimensional arrays for clarity.</li>
+                                    <li>Be mindful of array bounds to avoid <code>ArrayIndexOutOfBoundsException</code>.</li>
+                                    <li>For complex array operations, consider using third-party libraries such as Apache Commons Math or NumPy.</li>
+                                </ul>
+                            </li>
+                        </ol><br>
+                    </section>
+
+                    <section>
+                        <h3>4. Variable Length Argument Lists</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Definition:</strong><br>
+                                <ul>
+                                    <li>Variable-length argument lists, also known as varargs, allow methods to accept a variable number of arguments of a specified type.</li>
+                                    <li>Varargs are useful when you don't know how many arguments a method will receive.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Syntax:</strong><br>
+                                <ul>
+                                    <li>Define a varargs parameter by appending <code>...</code> to the type in the method signature.</li>
+                                    <li>Inside the method, varargs are treated as an array of the specified type.</li>
+                                    <pre><code>public void methodWithVarargs(int... numbers) {
+                        // Method body
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Passing Arguments:</strong><br>
+                                <ul>
+                                    <li>Arguments can be passed as a comma-separated list, or an array can be passed directly.</li>
+                                    <pre><code>public class VarargsExample {
+                        public static void printNumbers(int... numbers) {
+                            for (int num : numbers) {
+                                System.out.println(num);
+                            }
+                        }
+                    
+                        public static void main(String[] args) {
+                            // Passing variable-length arguments
+                            printNumbers(1, 2, 3, 4, 5);
+                            
+                            // Passing an array as an argument
+                            int[] numArray = {6, 7, 8, 9, 10};
+                            printNumbers(numArray);
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Restrictions and Usage:</strong><br>
+                                <ul>
+                                    <li>A method can have only one varargs parameter, and it must be the last parameter in the method signature.</li>
+                                    <li>Varargs are flexible and useful for handling operations with a variable number of inputs.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Combining Varargs with Other Parameters:</strong><br>
+                                <ul>
+                                    <li>Varargs can be combined with other parameters in the method signature.</li>
+                                    <li>The varargs parameter must always be the last parameter.</li>
+                                    <pre><code>public class VarargsExample {
+                        public static void greet(String greeting, String... names) {
+                            for (String name : names) {
+                                System.out.println(greeting + ", " + name + "!");
+                            }
+                        }
+                    
+                        public static void main(String[] args) {
+                            greet("Hello", "Alice", "Bob", "Charlie");
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Use varargs judiciously, as it can make method signatures less explicit and code harder to understand.</li>
+                                    <li>Ensure clarity in the method's purpose when using varargs by using descriptive method names.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section><br>
+                    <section>
+                        <h3>5. Using Command Line Arguments</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Definition:</strong><br>
+                                <ul>
+                                    <li>Command-line arguments are values passed to a program when it is executed from the command line.</li>
+                                    <li>In Java, command-line arguments are provided as an array of strings (<code>String[]</code>) to the <code>main</code> method.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Accessing Command-line Arguments:</strong><br>
+                                <ul>
+                                    <li>Command-line arguments can be accessed through the <code>String[] args</code> parameter of the <code>main</code> method.</li>
+                                    <pre><code>public class CommandLineArgs {
+                        public static void main(String[] args) {
+                            // Accessing the first command-line argument
+                            if (args.length > 0) {
+                                System.out.println("First argument: " + args[0]);
+                            }
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Example Usage:</strong><br>
+                                <ul>
+                                    <li>To run a Java program with command-line arguments, provide the arguments after the program name when running the program from the command line.</li>
+                                    <li>Example:</li>
+                                    <pre><code>java CommandLineArgs Hello World</code></pre>
+                                    <li>Inside the program, the <code>args</code> array will contain the strings <code>"Hello"</code> and <code>"World"</code>.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Parsing Command-line Arguments:</strong><br>
+                                <ul>
+                                    <li>Command-line arguments are strings and may need to be parsed into other data types (e.g., integers) depending on the program's requirements.</li>
+                                    <li>Use <code>Integer.parseInt()</code> or other parsing methods as needed.</li>
+                                    <pre><code>public class CommandLineArgs {
+                        public static void main(String[] args) {
+                            if (args.length > 0) {
+                                // Parse the first command-line argument as an integer
+                                int number = Integer.parseInt(args[0]);
+                                System.out.println("Parsed integer: " + number);
+                            }
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Handling Missing or Invalid Arguments:</strong><br>
+                                <ul>
+                                    <li>Always check the length of the <code>args</code> array to ensure there are enough arguments before trying to access them.</li>
+                                    <li>Handle invalid arguments (e.g., a string that cannot be parsed to an integer) using try-catch blocks.</li>
+                                    <pre><code>public class CommandLineArgs {
+                        public static void main(String[] args) {
+                            if (args.length > 0) {
+                                try {
+                                    int number = Integer.parseInt(args[0]);
+                                    System.out.println("Parsed integer: " + number);
+                                } catch (NumberFormatException e) {
+                                    System.out.println("Invalid integer: " + args[0]);
+                                }
+                            } else {
+                                System.out.println("No arguments provided.");
+                            }
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Provide usage instructions in the program for users when the arguments are missing or invalid.</li>
+                                    <li>Keep the number of command-line arguments limited to simplify handling and improve usability.</li>
+                                    <li>Use descriptive argument names and clear documentation for better understanding.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <br>
                 </div>
 
                 <div id="unit4" class="formatted-text">
                     <!-- Unit 4 text -->
                     <h2>UNIT 4: Inheritance and Polymorphism in Java</h2>
                     <br>
-                    <p>Aliquam id dolor. Phasellus nec sem in justo pellentesque facilisis. Curabitur at lacus ac velit ornare lobortis. Curabitur blandit mollis lacus. Praesent vestibulum dapibus nibh. Fusce commodo aliquam arcu. Aliquam erat volutpat. Aliquam vestibulum morbi blandit cursus risus at ultrices. Morbi scelerisque luctus velit. Etiam rhoncus.</p>
+                    <section>
+                        <h3>1. Inheritance</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Definition:</strong><br>
+                                <ul>
+                                    <li>Inheritance is a core concept in object-oriented programming (OOP) where a class (subclass) derives from another class (superclass), inheriting its fields and methods.</li>
+                                    <li>Inheritance promotes code reuse and allows for a hierarchical organization of classes.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Declaration:</strong><br>
+                                <ul>
+                                    <li>A subclass extends a superclass using the <code>extends</code> keyword.</li>
+                                    <pre><code>public class Animal {
+                        public void eat() {
+                            System.out.println("Animal eats");
+                        }
+                    }
+                    
+                    public class Dog extends Animal {
+                        public void bark() {
+                            System.out.println("Dog barks");
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Superclasses and Subclasses:</strong><br>
+                                <ul>
+                                    <li>Superclass: The class being inherited from.</li>
+                                    <li>Subclass: The class that inherits from the superclass.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Method Overriding:</strong><br>
+                                <ul>
+                                    <li>Subclasses can provide a specific implementation of a method that is already defined in the superclass.</li>
+                                    <li>Use the <code>@Override</code> annotation to indicate method overriding, which can improve code readability and detect errors.</li>
+                                    <pre><code>public class Dog extends Animal {
+                        @Override
+                        public void eat() {
+                            System.out.println("Dog eats");
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Advantages of Inheritance:</strong><br>
+                                <ul>
+                                    <li>Code Reuse: Subclasses inherit methods and fields from the superclass, reducing duplication.</li>
+                                    <li>Maintainability: Changes in the superclass automatically propagate to subclasses.</li>
+                                    <li>Polymorphism: Inheritance enables polymorphism, where an object can take many forms.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Use inheritance judiciously and only when there is a true is-a relationship between classes.</li>
+                                    <li>Keep the superclass general and the subclass specific.</li>
+                                    <li>Avoid deep inheritance hierarchies to maintain readability and manageability.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>2. Superclasses and Subclasses</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Definitions:</strong><br>
+                                <ul>
+                                    <li>Superclass: A class that is inherited from. It contains common attributes and methods that can be shared with one or more subclasses.</li>
+                                    <li>Subclass: A class that inherits from a superclass. It can extend or override the attributes and methods of the superclass.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Declaring a Subclass:</strong><br>
+                                <ul>
+                                    <li>Use the <code>extends</code> keyword to declare a subclass that inherits from a superclass.</li>
+                                    <pre><code>public class Animal {
+                        public void eat() {
+                            System.out.println("Animal eats");
+                        }
+                    }
+                    
+                    public class Dog extends Animal {
+                        public void bark() {
+                            System.out.println("Dog barks");
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Inheritance Hierarchy:</strong><br>
+                                <ul>
+                                    <li>Inheritance creates a hierarchy of classes, with the superclass at the top and subclasses below.</li>
+                                    <li>Subclasses can inherit from other subclasses, creating a multilevel hierarchy.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Accessing Superclass Members:</strong><br>
+                                <ul>
+                                    <li>Subclasses inherit fields and methods from the superclass and can access them directly.</li>
+                                    <li>The <code>super</code> keyword can be used to explicitly call superclass methods or constructors.</li>
+                                    <pre><code>public class Dog extends Animal {
+                        public void showBehavior() {
+                            super.eat(); // Calls the eat method from the superclass
+                            bark(); // Calls the bark method from the subclass
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Overriding Methods:</strong><br>
+                                <ul>
+                                    <li>Subclasses can override superclass methods to provide specific implementations.</li>
+                                    <li>Use the <code>@Override</code> annotation to indicate method overriding.</li>
+                                    <pre><code>public class Dog extends Animal {
+                        @Override
+                        public void eat() {
+                            System.out.println("Dog eats");
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Use inheritance to express is-a relationships between classes.</li>
+                                    <li>Avoid excessive inheritance levels to keep code understandable and manageable.</li>
+                                    <li>Keep superclasses general and subclasses specific.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section><br>
+                    <section>
+                        <h3>3. Protected Members</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Definition:</strong><br>
+                                <ul>
+                                    <li>Protected members (fields and methods) in Java have <code>protected</code> access, allowing them to be accessible within the class where they are declared, any subclasses, and within the same package.</li>
+                                    <li>Protected members provide a balance between encapsulation and inheritance.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Syntax:</strong><br>
+                                <ul>
+                                    <li>Use the <code>protected</code> keyword to declare a protected field or method in a class.</li>
+                                    <pre><code>public class Animal {
+                        protected String name;
+                        
+                        protected void speak() {
+                            System.out.println("Animal speaks");
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Accessing Protected Members:</strong><br>
+                                <ul>
+                                    <li>Protected members can be accessed within the class, any subclasses, and other classes in the same package.</li>
+                                    <li>Subclasses can access protected members directly, just like they access public members.</li>
+                                    <pre><code>public class Dog extends Animal {
+                        public void dogSpeak() {
+                            // Accessing protected field and method from the superclass
+                            name = "Buddy";
+                            speak(); // Calls the speak method from Animal
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Benefits of Protected Access:</strong><br>
+                                <ul>
+                                    <li>Allows subclasses to access and modify inherited fields and methods, supporting the principle of inheritance.</li>
+                                    <li>Provides encapsulation while still enabling code reuse in subclasses.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Example:</strong><br>
+                                <ul>
+                                    <li>The example demonstrates a superclass with protected members and a subclass accessing them.</li>
+                                    <pre><code>public class Animal {
+                        protected String name;
+                    
+                        protected void speak() {
+                            System.out.println("Animal speaks");
+                        }
+                    }
+                    
+                    public class Dog extends Animal {
+                        public void dogSpeak() {
+                            // Accessing protected field and method from the superclass
+                            name = "Buddy";
+                            speak(); // Calls the speak method from Animal
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Limitations:</strong><br>
+                                <ul>
+                                    <li>Protected members are not as encapsulated as private members since they are accessible in subclasses and classes in the same package.</li>
+                                    <li>Overusing protected members can lead to tight coupling between classes.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Use protected members judiciously to maintain encapsulation.</li>
+                                    <li>Prefer using private members with public or protected getter and setter methods when possible to control access to fields.</li>
+                                    <li>Document protected members clearly to indicate their intended use by subclasses.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>4. Relationship Between Superclasses and Subclasses</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Definition:</strong><br>
+                                <ul>
+                                    <li>Inheritance creates a relationship between superclasses and subclasses where the subclass inherits from the superclass.</li>
+                                    <li>The relationship allows for code reuse, shared behavior, and a hierarchical structure.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Is-a Relationship:</strong><br>
+                                <ul>
+                                    <li>Subclasses represent a more specific form of the superclass, known as an is-a relationship.</li>
+                                    <li>For example, a <code>Dog</code> class is a specific form of an <code>Animal</code> class, so it can inherit from <code>Animal</code>.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Inheritance Hierarchy:</strong><br>
+                                <ul>
+                                    <li>Superclasses and subclasses form an inheritance hierarchy, starting with a base class (superclass) at the top.</li>
+                                    <li>Subclasses can further extend from other subclasses, creating multiple levels of inheritance.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Method and Field Inheritance:</strong><br>
+                                <ul>
+                                    <li>Subclasses inherit public and protected fields and methods from the superclass.</li>
+                                    <li>Subclasses can access inherited members directly or modify them as needed.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Overriding Methods:</strong><br>
+                                <ul>
+                                    <li>Subclasses can override methods from the superclass to provide specific implementations.</li>
+                                    <li>The <code>@Override</code> annotation can be used to indicate method overriding.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Constructors:</strong><br>
+                                <ul>
+                                    <li>Subclasses inherit constructors from the superclass, but they must explicitly call a superclass constructor if there isn't a default constructor.</li>
+                                    <li>This call is made using the <code>super()</code> keyword at the beginning of the subclass constructor.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Polymorphism:</strong><br>
+                                <ul>
+                                    <li>Inheritance enables polymorphism, allowing objects to be treated as instances of their superclass type.</li>
+                                    <li>This facilitates writing flexible and maintainable code by working with objects through their superclass interface.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Example:</strong><br>
+                                <ul>
+                                    <li>An example demonstrating the relationship between superclasses and subclasses.</li>
+                                    <pre><code>public class Animal {
+                        public void speak() {
+                            System.out.println("Animal speaks");
+                        }
+                    }
+                    
+                    public class Dog extends Animal {
+                        @Override
+                        public void speak() {
+                            System.out.println("Dog barks");
+                        }
+                    }
+                    
+                    public class Test {
+                        public static void main(String[] args) {
+                            Animal myAnimal = new Dog(); // Polymorphism: Dog object treated as Animal
+                            myAnimal.speak(); // Outputs "Dog barks"
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Use inheritance judiciously to model is-a relationships, not has-a relationships.</li>
+                                    <li>Avoid deep inheritance hierarchies for simplicity and readability.</li>
+                                    <li>Prefer composition over inheritance in cases where the is-a relationship is not clear.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>5. Constructors in Subclasses</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Definition:</strong><br>
+                                <ul>
+                                    <li>A constructor in a subclass is responsible for initializing the new instance of the subclass.</li>
+                                    <li>Subclass constructors may need to call the superclass constructor to ensure the superclass part of the object is properly initialized.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Calling Superclass Constructors:</strong><br>
+                                <ul>
+                                    <li>Subclasses call the superclass constructor using the <code>super()</code> keyword.</li>
+                                    <li>This call must be the first statement in the subclass constructor.</li>
+                                    <li>If no explicit call to the superclass constructor is made, Java will implicitly call the no-argument constructor of the superclass (if it exists).</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Passing Arguments to Superclass Constructor:</strong><br>
+                                <ul>
+                                    <li>Arguments can be passed to the superclass constructor from the subclass constructor using <code>super()</code>.</li>
+                                    <pre><code>public class Animal {
+                        private String name;
+                    
+                        public Animal(String name) {
+                            this.name = name;
+                            System.out.println("Animal: " + name);
+                        }
+                    }
+                    
+                    public class Dog extends Animal {
+                        public Dog(String name) {
+                            super(name); // Calls the superclass constructor with name argument
+                            System.out.println("Dog: " + name);
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Constructor Overloading:</strong><br>
+                                <ul>
+                                    <li>Subclasses can overload constructors just like methods, allowing for multiple constructors with different parameters.</li>
+                                    <li>If the superclass does not have a no-argument constructor, subclasses must call one of the superclass constructors explicitly.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Inheritance of Constructors:</strong><br>
+                                <ul>
+                                    <li>Subclass constructors do not inherit constructors from the superclass.</li>
+                                    <li>Each subclass must define its own constructors and explicitly call a superclass constructor.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Default Constructor in Subclasses:</strong><br>
+                                <ul>
+                                    <li>If a subclass does not define any constructors, a default no-argument constructor is provided by the compiler, which calls the no-argument constructor of the superclass.</li>
+                                    <li>If the superclass does not have a no-argument constructor, an explicit call to a superclass constructor must be made.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Example of Constructor Chaining:</strong><br>
+                                <ul>
+                                    <li>Chaining of constructors using the <code>super()</code> keyword can help to create a chain of initialization starting from the base class.</li>
+                                    <pre><code>public class Animal {
+                        public Animal(String name) {
+                            System.out.println("Animal: " + name);
+                        }
+                    }
+                    
+                    public class Dog extends Animal {
+                        public Dog(String name) {
+                            super(name); // Calls the superclass constructor
+                            System.out.println("Dog: " + name);
+                        }
+                    }
+                    
+                    public class GermanShepherd extends Dog {
+                        public GermanShepherd(String name) {
+                            super(name); // Calls the Dog constructor, which in turn calls the Animal constructor
+                            System.out.println("German Shepherd: " + name);
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Always call the appropriate superclass constructor using <code>super()</code> in subclass constructors.</li>
+                                    <li>Use constructor overloading for flexibility and to provide various options for initializing objects.</li>
+                                    <li>Ensure superclass constructors are called in the correct order to initialize inherited fields and methods properly.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>6. Object Class</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Definition:</strong><br>
+                                <ul>
+                                    <li>The <code>Object</code> class is the root class of all classes in Java.</li>
+                                    <li>All classes in Java inherit directly or indirectly from the <code>Object</code> class.</li>
+                                    <li>It provides common methods that can be overridden by subclasses as needed.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Methods in the Object Class:</strong><br>
+                                <ul>
+                                    <li><code>equals(Object obj)</code>: Compares this object to another for equality.</li>
+                                    <li><code>hashCode()</code>: Returns a hash code for the object.</li>
+                                    <li><code>toString()</code>: Returns a string representation of the object.</li>
+                                    <li><code>getClass()</code>: Returns the runtime class of the object.</li>
+                                    <li><code>clone()</code>: Creates and returns a copy of the object (requires implementing <code>Cloneable</code> interface).</li>
+                                    <li><code>notify()</code>, <code>notifyAll()</code>, and <code>wait()</code>: Used for thread synchronization.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Overriding Methods from the Object Class:</strong><br>
+                                <ul>
+                                    <li>Subclasses can override methods from the <code>Object</code> class to provide specific functionality.</li>
+                                    <li>For example, <code>equals(Object obj)</code> can be overridden to provide custom equality comparison.</li>
+                                    <li><code>toString()</code> can be overridden to return a meaningful string representation of the object.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong><code>toString()</code> Method:</strong><br>
+                                <ul>
+                                    <li>By default, <code>toString()</code> returns the class name followed by the "@" symbol and the object's hash code.</li>
+                                    <li>Override <code>toString()</code> to provide a more meaningful representation of the object.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong><code>equals(Object obj)</code> Method:</strong><br>
+                                <ul>
+                                    <li>By default, <code>equals</code> compares references (memory addresses) of two objects.</li>
+                                    <li>Override <code>equals</code> to compare object properties for equality, such as fields in a class.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong><code>hashCode()</code> Method:</strong><br>
+                                <ul>
+                                    <li>Works with <code>equals</code> for efficient storage in hash-based collections like <code>HashMap</code>.</li>
+                                    <li>Override <code>hashCode()</code> when <code>equals</code> is overridden to maintain consistency.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>When overriding <code>equals()</code>, also override <code>hashCode()</code> for proper functioning in collections.</li>
+                                    <li>Use <code>@Override</code> annotation when overriding methods from <code>Object</code> for better code readability and error detection.</li>
+                                    <li>When overriding <code>toString()</code>, provide a meaningful representation of the object for easy debugging.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>7. Abstract Classes and Methods</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Abstract Classes:</strong><br>
+                                <ul>
+                                    <li>An abstract class is a class that cannot be instantiated on its own and is declared with the <code>abstract</code> keyword.</li>
+                                    <li>Abstract classes may contain abstract methods, which are methods without a body (implementation).</li>
+                                    <li>Abstract classes are meant to be extended by other classes, which provide implementations for the abstract methods.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Abstract Methods:</strong><br>
+                                <ul>
+                                    <li>Abstract methods are methods declared in an abstract class with the <code>abstract</code> keyword and without an implementation.</li>
+                                    <li>Subclasses extending an abstract class must provide an implementation for each abstract method or be declared abstract themselves.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Syntax:</strong><br>
+                                <ul>
+                                    <li>Declare an abstract class with the <code>abstract</code> keyword:</li>
+                                    <pre><code>public abstract class Animal {
+                        public abstract void sound();
+                    }</code></pre>
+                                    <li>Declare an abstract method in an abstract class:</li>
+                                    <pre><code>public abstract void sound();</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Extending Abstract Classes:</strong><br>
+                                <ul>
+                                    <li>Subclasses that extend an abstract class must provide concrete implementations for all abstract methods.</li>
+                                    <li>If a subclass does not implement all abstract methods, it must also be declared abstract.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Advantages of Abstract Classes and Methods:</strong><br>
+                                <ul>
+                                    <li>Provide a blueprint for subclasses, ensuring they implement necessary methods.</li>
+                                    <li>Allow for the creation of a common base class for related classes.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Example:</strong><br>
+                                <ul>
+                                    <li>The example demonstrates the use of an abstract class and method.</li>
+                                    <pre><code>public abstract class Animal {
+                        public abstract void sound(); // Abstract method
+                    
+                        public void eat() {
+                            System.out.println("Animal eats");
+                        }
+                    }
+                    
+                    public class Dog extends Animal {
+                        @Override
+                        public void sound() {
+                            System.out.println("Dog barks"); // Implementing the abstract method
+                    }
+                    }
+                    
+                    public class Test {
+                        public static void main(String[] args) {
+                            Animal myDog = new Dog(); // Polymorphism
+                            myDog.sound(); // Outputs "Dog barks"
+                            myDog.eat(); // Outputs "Animal eats"
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Use abstract classes and methods to define a contract for subclasses and establish a common interface.</li>
+                                    <li>Document abstract methods clearly to guide subclasses in implementing the required behavior.</li>
+                                    <li>Choose between abstract classes and interfaces based on the design needs (use abstract classes for common implementation and state).</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>8. Final Methods and Classes</h3><br>
+                        <ol>
+                            <li>
+                                <strong>Final Methods:</strong><br>
+                                <ul>
+                                    <li>A method declared with the <code>final</code> keyword cannot be overridden by subclasses.</li>
+                                    <li>Using <code>final</code> ensures that the method's implementation is preserved across the class hierarchy.</li>
+                                    <li>This can improve performance and reliability as the method behavior remains consistent.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Syntax:</strong><br>
+                                <ul>
+                                    <li>Declare a method as final using the <code>final</code> keyword:</li>
+                                    <pre><code>public class Animal {
+                        public final void eat() {
+                            System.out.println("Animal eats");
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Final Classes:</strong><br>
+                                <ul>
+                                    <li>A class declared with the <code>final</code> keyword cannot be subclassed.</li>
+                                    <li>This enforces a strict design decision and helps prevent further modifications to the class.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Syntax:</strong><br>
+                                <ul>
+                                    <li>Declare a class as final using the <code>final</code> keyword:</li>
+                                    <pre><code>public final class Animal {
+                        public void eat() {
+                            System.out.println("Animal eats");
+                        }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Use Cases for Final Methods and Classes:</strong><br>
+                                <ul>
+                                    <li><strong>Final Methods:</strong></li>
+                                    <ul>
+                                        <li>Prevents unintended method overrides.</li>
+                                        <li>Useful when a method's functionality should remain unchanged.</li>
+                                    </ul>
+                                    <li><strong>Final Classes:</strong></li>
+                                    <ul>
+                                        <li>Prevents any subclassing, thus ensuring the class remains as is.</li>
+                                        <li>Useful for security, stability, or design reasons.</li>
+                                    </ul>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Example of Final Methods and Classes:</strong><br>
+                                <ul>
+                                    <li>An example showing the use of final methods and classes.</li>
+                                    <pre><code>public final class Animal {
+                        public final void eat() {
+                            System.out.println("Animal eats");
+                        }
+                    }
+                    
+                    // This will cause a compilation error because `Animal` is final
+                    // and cannot be subclassed.
+                    // public class Dog extends Animal { }
+                    
+                    public class Plant {
+                        public final void grow() {
+                            System.out.println("Plant grows");
+                        }
+                    }
+                    
+                    public class Flower extends Plant {
+                        // This will cause a compilation error because `grow()` is final
+                        // and cannot be overridden.
+                        // @Override
+                        // public void grow() {
+                        //     System.out.println("Flower grows");
+                        // }
+                    }</code></pre>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Best Practices:</strong><br>
+                                <ul>
+                                    <li>Use final methods when you want to guarantee a specific implementation.</li>
+                                    <li>Use final classes when you want to prevent inheritance and protect the integrity of the class.</li>
+                                    <li>Avoid overusing final, as it can limit flexibility and the ability to extend classes.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>9. Polymorphism Examples and Interfaces</h3><br>
+                        <article>
+                            <h4>Polymorphism</h4>
+                            <ol>
+                                <li>
+                                    <strong>Definition:</strong><br>
+                                    <ul>
+                                        <li>Polymorphism is the ability of a method or object to take on multiple forms.</li>
+                                        <li>It allows a single method to have different implementations or a reference of a superclass type to point to different subclass objects.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Method Overriding:</strong><br>
+                                    <ul>
+                                        <li>A subclass provides its own implementation of a method inherited from its superclass.</li>
+                                        <li>When the method is called on a superclass reference, the method in the subclass is executed.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Example of Polymorphism:</strong><br>
+                                    <pre><code>public class Animal {
+                        public void speak() {
+                            System.out.println("Animal speaks");
+                        }
+                    }
+                    
+                    public class Dog extends Animal {
+                        @Override
+                        public void speak() {
+                            System.out.println("Dog barks");
+                        }
+                    }
+                    
+                    public class Cat extends Animal {
+                        @Override
+                        public void speak() {
+                            System.out.println("Cat meows");
+                        }
+                    }
+                    
+                    public class TestPolymorphism {
+                        public static void main(String[] args) {
+                            Animal myAnimal = new Dog(); // myAnimal is a Dog
+                            myAnimal.speak(); // Outputs "Dog barks"
+                    
+                            myAnimal = new Cat(); // myAnimal now points to a Cat
+                            myAnimal.speak(); // Outputs "Cat meows"
+                        }
+                    }</code></pre>
+                                </li>
+                            </ol>
+                        </article><br>
+                        <article>
+                            <h4>Interfaces</h4>
+                            <ol>
+                                <li>
+                                    <strong>Definition:</strong><br>
+                                    <ul>
+                                        <li>An interface is a reference type that specifies a set of methods without implementation.</li>
+                                        <li>A class that implements an interface must provide concrete implementations for all methods declared in the interface.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Declaring an Interface:</strong><br>
+                                    <ul>
+                                        <li>Use the <code>interface</code> keyword to declare an interface:</li>
+                                        <pre><code>public interface Animal {
+                        void eat(); // Abstract method
+                    }</code></pre>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Implementing an Interface:</strong><br>
+                                    <ul>
+                                        <li>Use the <code>implements</code> keyword to declare a class that implements an interface.</li>
+                                        <li>The class must provide concrete implementations for all methods declared in the interface.</li>
+                                    </ul>
+                                    <pre><code>public class Dog implements Animal {
+                        @Override
+                        public void eat() {
+                            System.out.println("Dog eats");
+                        }
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Multiple Interfaces:</strong><br>
+                                    <ul>
+                                        <li>A class can implement multiple interfaces, promoting flexibility and code reuse.</li>
+                                    </ul>
+                                    <pre><code>public interface Swimmer {
+                        void swim();
+                    }
+                    
+                    public class Dog implements Animal, Swimmer {
+                        @Override
+                        public void eat() {
+                            System.out.println("Dog eats");
+                        }
+                    
+                        @Override
+                        public void swim() {
+                            System.out.println("Dog swims");
+                        }
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Polymorphism with Interfaces:</strong><br>
+                                    <ul>
+                                        <li>Interfaces allow for polymorphism by providing a common contract that multiple classes can implement.</li>
+                                        <li>Objects can be treated as instances of the interface, regardless of their actual class.</li>
+                                    </ul>
+                                    <pre><code>public class TestInterfaces {
+                        public static void main(String[] args) {
+                            Animal myAnimal = new Dog(); // myAnimal is a Dog
+                            myAnimal.eat(); // Outputs "Dog eats"
+                    
+                            Swimmer mySwimmer = new Dog(); // mySwimmer is a Dog
+                            mySwimmer.swim(); // Outputs "Dog swims"
+                        }
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Best Practices:</strong><br>
+                                    <ul>
+                                        <li>Use polymorphism to write flexible and maintainable code.</li>
+                                        <li>Use interfaces to define contracts and enable multiple inheritance.</li>
+                                        <li>Document interfaces clearly to guide implementing classes.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </article>
+                    </section>
+                    <br>
+                
                 </div>
 
                 <div id="unit5" class="formatted-text">
                     <!-- Unit 5 text -->
                     <h2>UNIT 5: Exception-handling and Java script</h2>
                     <br>
-                    <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                    <section>
+                        <h3>1. Exception Handling Overview</h3><br>
+                        <article>
+                            <ol>
+                                <li>
+                                    <strong>Definition:</strong><br>
+                                    <ul>
+                                        <li>Exception handling is a mechanism in Java that allows a program to handle runtime errors and exceptional conditions.</li>
+                                        <li>An exception is an event that occurs during the execution of a program, disrupting the normal flow of control.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Types of Exceptions:</strong><br>
+                                    <ul>
+                                        <li>Checked Exceptions: These must be either caught or declared in the method signature using the <code>throws</code> keyword.</li>
+                                        <li>Unchecked Exceptions: Also known as runtime exceptions, these are not required to be caught or declared.</li>
+                                        <li>Errors: Severe problems such as <code>OutOfMemoryError</code> that applications typically should not catch.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Exception Handling Keywords:</strong><br>
+                                    <ul>
+                                        <li><code>try</code>: Block of code where exceptions may occur.</li>
+                                        <li><code>catch</code>: Block of code to handle the exception.</li>
+                                        <li><code>finally</code>: Block of code that executes regardless of whether an exception is thrown.</li>
+                                        <li><code>throws</code>: Used in method signatures to declare the types of exceptions that the method may throw.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Handling Exceptions:</strong><br>
+                                    <pre><code>try {
+                        int result = 10 / 0; // May throw an ArithmeticException
+                    } catch (ArithmeticException e) {
+                        System.out.println("Cannot divide by zero");
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Multiple Catch Blocks:</strong><br>
+                                    <pre><code>try {
+                        int[] numbers = new int[3];
+                        int number = numbers[5]; // May throw ArrayIndexOutOfBoundsException
+                    } catch (ArrayIndexOutOfBoundsException e) {
+                        System.out.println("Index out of bounds");
+                    } catch (Exception e) {
+                        System.out.println("An unexpected exception occurred");
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>The <code>finally</code> Block:</strong><br>
+                                    <ul>
+                                        <li>The <code>finally</code> block is optional and executes after the <code>try</code> and <code>catch</code> blocks, regardless of whether an exception is thrown.</li>
+                                        <li>It is commonly used for resource cleanup (e.g., closing files or network connections).</li>
+                                    </ul>
+                                    <pre><code>try {
+                        // Code that may throw an exception
+                    } catch (Exception e) {
+                        // Handle the exception
+                    } finally {
+                        // Code that always executes, such as resource cleanup
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Throwing Exceptions:</strong><br>
+                                    <pre><code>public void checkNumber(int number) {
+                        if (number < 0) {
+                            throw new IllegalArgumentException("Number must be non-negative");
+                        }
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Declaring Exceptions:</strong><br>
+                                    <pre><code>public void riskyOperation() throws IOException {
+                        // Method body that may throw an IOException
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Best Practices:</strong><br>
+                                    <ul>
+                                        <li>Catch specific exceptions rather than general exceptions (e.g., <code>Exception</code>) for better error handling.</li>
+                                        <li>Avoid catching <code>Throwable</code> or <code>Error</code> unless absolutely necessary.</li>
+                                        <li>Use <code>finally</code> blocks for resource cleanup to ensure proper release of resources.</li>
+                                        <li>Declare only exceptions that are truly unexpected and cannot be handled within the method.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </article>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>2. Arithmetic Exception</h3><br>
+                        <article>
+                            <ol>
+                                <li>
+                                    <strong>Definition:</strong><br>
+                                    <ul>
+                                        <li><code>ArithmeticException</code> is an unchecked exception that is thrown when an arithmetic operation results in an invalid calculation, such as division by zero.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Handling ArithmeticException:</strong><br>
+                                    <pre><code>try {
+                        int result = 10 / 0; // This will cause ArithmeticException
+                    } catch (ArithmeticException e) {
+                        System.out.println("Error: Division by zero is not allowed.");
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Best Practices:</strong><br>
+                                    <ul>
+                                        <li>Avoid arithmetic errors by checking for potential issues before performing calculations.</li>
+                                        <li>Provide meaningful error messages in the <code>catch</code> block to help with debugging and user understanding.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </article>
+                        <h3>3. InputMismatch Exception</h3><br>
+                        <article>
+                            <ol >
+                                <li>
+                                    <strong>Definition:</strong><br>
+                                    <ul>
+                                        <li><code>InputMismatchException</code> is an unchecked exception thrown by the <code>Scanner</code> class when the input does not match the expected data type.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Handling InputMismatchException:</strong><br>
+                                    <pre><code>import java.util.InputMismatchException;
+                    import java.util.Scanner;
+                    
+                    public class Example {
+                        public static void main(String[] args) {
+                            Scanner scanner = new Scanner(System.in);
+                            try {
+                                System.out.print("Enter an integer: ");
+                                int num = scanner.nextInt(); // May throw InputMismatchException
+                                System.out.println("You entered: " + num);
+                            } catch (InputMismatchException e) {
+                                System.out.println("Error: Please enter a valid integer.");
+                            } finally {
+                                scanner.close(); // Always close the Scanner
+                            }
+                        }
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Best Practices:</strong><br>
+                                    <ul>
+                                        <li>Check input format and data types before processing to avoid exceptions.</li>
+                                        <li>Provide user-friendly error messages in the <code>catch</code> block.</li>
+                                        <li>Use <code>finally</code> block to close resources like <code>Scanner</code> and prevent resource leaks.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </article>
+                        <h3>4. When to Use Exception Handling</h3><br>
+                        <article>
+                            <ol >
+                                <li>
+                                    <strong>Appropriate Scenarios for Exception Handling:</strong><br>
+                                    <ul>
+                                        <li>Unexpected Errors: Use exception handling for unexpected errors during program execution (e.g., file not found, division by zero).</li>
+                                        <li>Input/Output Operations: When performing I/O operations, such as file handling or network communication, where many issues can arise.</li>
+                                        <li>Data Validation: When user input needs to be validated, and improper input can lead to exceptions.</li>
+                                        <li>Resource Management: To handle exceptions that may arise when allocating and deallocating resources such as memory, file streams, or network connections.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Best Practices for Using Exception Handling:</strong><br>
+                                    <ul>
+                                        <li>Design for Errors: Anticipate possible errors in the code and handle them gracefully.</li>
+                                        <li>Use Specific Exceptions: Catch specific exceptions instead of general exceptions (e.g., <code>Exception</code>) for better error handling.</li>
+                                        <li>Use Finally Block: Use a <code>finally</code> block to release resources and perform cleanup regardless of whether an exception is thrown.</li>
+                                        <li>Avoid Suppressing Exceptions: Don't catch exceptions without handling them properly or logging information about them.</li>
+                                        <li>Re-throw Exceptions: Re-throw exceptions when necessary, such as when the exception should be propagated to a higher-level method.</li>
+                                        <li>Custom Exceptions: Create custom exceptions when the existing exceptions do not adequately represent specific error scenarios in your application.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Exceptions vs. Errors:</strong><br>
+                                    <ul>
+                                        <li>Exceptions: Represent problems in the application that can be anticipated and handled (e.g., <code>IOException</code>, <code>ArithmeticException</code>).</li>
+                                        <li>Errors: Represent severe problems that are generally beyond the control of the application (e.g., <code>OutOfMemoryError</code>, <code>StackOverflowError</code>).</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Common Mistakes to Avoid:</strong><br>
+                                    <ul>
+                                        <li>Catching All Exceptions: Avoid catching all exceptions using <code>catch (Exception e)</code>, as it may hide critical problems.</li>
+                                        <li>Ignoring Exceptions: Don't ignore exceptions in <code>catch</code> blocks; provide meaningful error handling or re-throw the exception.</li>
+                                        <li>Overusing Exception Handling: Avoid using exceptions for normal control flow, as it can lead to inefficient and confusing code.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Example:</strong><br>
+                                    <ul>
+                                        <li>An example of when to use exception handling for file reading.</li>
+                                    </ul>
+                                    <pre><code>import java.io.BufferedReader;
+                    import java.io.FileReader;
+                    import java.io.IOException;
+                    
+                    public class FileReaderExample {
+                        public void readFile(String filePath) {
+                            BufferedReader reader = null;
+                            try {
+                                reader = new BufferedReader(new FileReader(filePath));
+                                String line;
+                                while ((line = reader.readLine()) != null) {
+                                    System.out.println(line);
+                                }
+                            } catch (IOException e) {
+                                System.out.println("Error reading file: " + e.getMessage());
+                            } finally {
+                                if (reader != null) {
+                                    try {
+                                        reader.close();
+                                    } catch (IOException e) {
+                                        System.out.println("Error closing reader: " + e.getMessage());
+                                    }
+                                }
+                            }
+                        }
+                    }</code></pre>
+                                </li>
+                            </ol>
+                        </article>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>5. Java Exception Hierarchy</h3><br>
+                        <article>
+                            <ol>
+                                <li>
+                                    <strong>Hierarchy Overview:</strong><br>
+                                    <ul>
+                                        <li>Java exceptions are organized in a hierarchy of classes, with <code>Throwable</code> as the root class.</li>
+                                        <li><code>Throwable</code> has two main subclasses: <code>Error</code> and <code>Exception</code>.</li>
+                                        <li>Exceptions are further divided into checked and unchecked (runtime) exceptions.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Throwable:</strong><br>
+                                    <ul>
+                                        <li><code>Throwable</code> is the root class of the exception hierarchy.</li>
+                                        <li>It includes <code>Exception</code> and <code>Error</code> as its two main subclasses.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Errors:</strong><br>
+                                    <ul>
+                                        <li>Subclass of <code>Throwable</code>.</li>
+                                        <li>Represents severe problems that typically cannot be handled by the application (e.g., <code>OutOfMemoryError</code>, <code>StackOverflowError</code>).</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Exceptions:</strong><br>
+                                    <ul>
+                                        <li>Subclass of <code>Throwable</code>.</li>
+                                        <li>Represents problems that can be anticipated and handled within the application.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Types of Exceptions:</strong><br>
+                                    <ul>
+                                        <li><strong>Checked Exceptions:</strong>
+                                            <ul>
+                                                <li>Inherit from <code>Exception</code> but not from <code>RuntimeException</code>.</li>
+                                                <li>Must be declared in the method signature using the <code>throws</code> keyword or handled with a <code>try-catch</code> block.</li>
+                                                <li>Examples: <code>IOException</code>, <code>SQLException</code>, <code>FileNotFoundException</code>.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Unchecked (Runtime) Exceptions:</strong>
+                                            <ul>
+                                                <li>Inherit from <code>RuntimeException</code>.</li>
+                                                <li>Do not need to be declared in the method signature or handled explicitly.</li>
+                                                <li>Examples: <code>NullPointerException</code>, <code>ArithmeticException</code>, <code>ArrayIndexOutOfBoundsException</code>.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Exception Hierarchy in Detail:</strong><br>
+                                    <ul>
+                                        <li><code>Throwable</code>
+                                            <ul>
+                                                <li><code>Error</code>: Represents serious problems.
+                                                    <ul>
+                                                        <li><code>OutOfMemoryError</code>, <code>StackOverflowError</code>, etc.</li>
+                                                    </ul>
+                                                </li>
+                                                <li><code>Exception</code>: Represents exceptions that need to be caught and handled.
+                                                    <ul>
+                                                        <li><code>IOException</code>: File I/O problems.</li>
+                                                        <li><code>SQLException</code>: Database access problems.</li>
+                                                        <li><code>RuntimeException</code>: Represents unchecked exceptions.
+                                                            <ul>
+                                                                <li><code>NullPointerException</code></li>
+                                                                <li><code>ArithmeticException</code></li>
+                                                                <li><code>ArrayIndexOutOfBoundsException</code></li>
+                                                                <li>And others...</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Using Exceptions:</strong><br>
+                                    <ul>
+                                        <li>Catch specific exceptions for better error handling.</li>
+                                        <li>Use custom exceptions if necessary for more specific error reporting.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Best Practices:</strong><br>
+                                    <ul>
+                                        <li>Understand the hierarchy to handle exceptions effectively.</li>
+                                        <li>Handle checked exceptions using <code>try-catch</code> blocks or declare them using the <code>throws</code> keyword.</li>
+                                        <li>Avoid catching <code>Throwable</code> or <code>Error</code> unless necessary.</li>
+                                        <li>Properly document exceptions in your methods to guide other developers.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </article>
+                        <h3>6. Finally Block</h3><br>
+                        <article>
+                            <ol >
+                                <li>
+                                    <strong>Definition:</strong><br>
+                                    <ul>
+                                        <li>The <code>finally</code> block is an optional block of code that follows the <code>try</code> and <code>catch</code> blocks in Java.</li>
+                                        <li>It is used to execute code regardless of whether an exception is thrown in the <code>try</code> block.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Purpose:</strong><br>
+                                    <ul>
+                                        <li>The <code>finally</code> block is often used for resource cleanup (e.g., closing files or database connections) to ensure resources are properly released.</li>
+                                        <li>It provides a guarantee that the code inside the block will execute, even if an exception occurs.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Syntax:</strong><br>
+                                    <ul>
+                                        <li>A <code>try-catch-finally</code> block has the following syntax:</li>
+                                    </ul>
+                                    <pre><code>try {
+                        // Code that may throw an exception
+                    } catch (Exception e) {
+                        // Code to handle the exception
+                    } finally {
+                        // Code that always executes, whether an exception is thrown or not
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Behavior:</strong><br>
+                                    <ul>
+                                        <li>The <code>finally</code> block executes after the <code>try</code> and <code>catch</code> blocks, regardless of whether an exception was thrown.</li>
+                                        <li>The <code>finally</code> block executes even if there is an exception not caught by a <code>catch</code> block.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Common Uses of Finally Block:</strong><br>
+                                    <ul>
+                                        <li>Resource Cleanup: Close files, network connections, database connections, or other resources.</li>
+                                        <li>Releasing Locks: Release synchronization locks that were acquired in the <code>try</code> block.</li>
+                                        <li>Logging: Perform logging or other monitoring activities that should always occur.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Example:</strong><br>
+                                    <ul>
+                                        <li>An example demonstrating the use of the <code>finally</code> block for resource cleanup.</li>
+                                    </ul>
+                                    <pre><code>import java.io.BufferedReader;
+                    import java.io.FileReader;
+                    import java.io.IOException;
+                    
+                    public class FileReaderExample {
+                        public void readFile(String filePath) {
+                            BufferedReader reader = null;
+                            try {
+                                reader = new BufferedReader(new FileReader(filePath));
+                                String line;
+                                while ((line = reader.readLine()) != null) {
+                                    System.out.println(line);
+                                }
+                            } catch (IOException e) {
+                                System.out.println("Error reading file: " + e.getMessage());
+                            } finally {
+                                if (reader != null) {
+                                    try {
+                                        reader.close();
+                                    } catch (IOException e) {
+                                        System.out.println("Error closing reader: " + e.getMessage());
+                                    }
+                                }
+                            }
+                        }
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Best Practices:</strong><br>
+                                    <ul>
+                                        <li>Use the <code>finally</code> block for resource cleanup to ensure that resources are released properly.</li>
+                                        <li>Avoid using <code>return</code> statements in the <code>try</code> and <code>catch</code> blocks to allow the <code>finally</code> block to execute.</li>
+                                        <li>Handle exceptions in the <code>finally</code> block appropriately, especially when dealing with resources.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </article>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>7. Introduction to Java Applets</h3><br>
+                        <article>
+                            <ol>
+                                <li>
+                                    <strong>Definition:</strong><br>
+                                    <ul>
+                                        <li>Java applets are small applications written in Java that can be embedded in web pages and run in a browser.</li>
+                                        <li>They were once popular for creating interactive and dynamic web content.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Applet Lifecycle:</strong><br>
+                                    <ul>
+                                        <li>The applet lifecycle consists of the following methods:
+                                            <ul>
+                                                <li><code>init()</code>: Called when the applet is initialized; used for setting up resources.</li>
+                                                <li><code>start()</code>: Called when the applet starts; used to begin the applet's operation.</li>
+                                                <li><code>stop()</code>: Called when the applet is stopped; used to suspend the applet's operation.</li>
+                                                <li><code>destroy()</code>: Called when the applet is destroyed; used to release resources.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Applet Structure:</strong><br>
+                                    <ul>
+                                        <li>Applets are subclasses of <code>java.applet.Applet</code> or <code>javax.swing.JApplet</code>.</li>
+                                        <li>They can override lifecycle methods and other methods as needed.</li>
+                                    </ul>
+                                    <pre><code>import java.applet.Applet;
+                    import java.awt.Graphics;
+                    
+                    public class HelloWorldApplet extends Applet {
+                        @Override
+                        public void paint(Graphics g) {
+                            g.drawString("Hello, World!", 20, 20);
+                        }
+                    }</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Embedding Applets in Web Pages:</strong><br>
+                                    <ul>
+                                        <li>Applets can be embedded in HTML pages using the <code>&lt;applet&gt;</code> or <code>&lt;object&gt;</code> tags.</li>
+                                    </ul>
+                                    <pre><code>&lt;applet code="HelloWorldApplet.class" width="200" height="50"&gt;&lt;/applet&gt;</code></pre>
+                                </li><br>
+                                <li>
+                                    <strong>Security and Sandboxing:</strong><br>
+                                    <ul>
+                                        <li>Applets run in a sandboxed environment with limited access to the host system.</li>
+                                        <li>Security restrictions are applied to prevent applets from performing unauthorized actions.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Limitations of Java Applets:</strong><br>
+                                    <ul>
+                                        <li>Applets require a compatible browser and Java plugin to run, which has become less common over time.</li>
+                                        <li>Security concerns and compatibility issues have led to decreased support for applets in modern browsers.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Alternatives to Applets:</strong><br>
+                                    <ul>
+                                        <li>Modern web technologies such as JavaScript, HTML5, and CSS3 provide better alternatives for creating interactive and dynamic web content.</li>
+                                        <li>JavaFX is another option for creating rich media applications, with the ability to deploy as web applications.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Best Practices:</strong><br>
+                                    <ul>
+                                        <li>Avoid using applets for new projects due to browser compatibility and security concerns.</li>
+                                        <li>For existing projects using applets, consider migrating to modern web technologies or standalone Java applications.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </article>
+                    </section>
+                    <section>
+                        <h3>8. JavaScript</h3><br>
+                        <article>
+                            <ol >
+                                <li>
+                                    <strong>Definition:</strong><br>
+                                    <p>JavaScript (JS) is a high-level, interpreted programming language primarily used for creating interactive and dynamic content on web pages. It is often used alongside HTML and CSS for front-end web development.</p>
+                                </li><br>
+                                <li>
+                                    <strong>Introduction to Clientside Scripting</strong><br>
+                                    <ul>
+                                        <li><strong>Definition:</strong> Client-side scripting involves writing scripts that run on the client (user's browser) to create dynamic and interactive web pages.</li>
+                                        <li><strong>Common Languages:</strong> JavaScript is the most common language used for client-side scripting.</li>
+                                        <li><strong>Functionality:</strong> Manipulate the Document Object Model (DOM), handle events, validate forms, create animations, and perform AJAX requests.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Syntax Basics</strong><br>
+                                    <ul>
+                                        <li><strong>JavaScript Syntax:</strong> Follows C-like syntax with statements ending in semicolons.</li>
+                                        <li><strong>Variable Declaration:</strong> Use <code>let</code> and <code>const</code> for block-scoped variables, or <code>var</code> for function-scoped variables.</li>
+                                        <li><strong>Control Structures:</strong> Similar to other languages (<code>if</code>, <code>while</code>, <code>for</code>, etc.).</li>
+                                        <li><strong>Functions:</strong> Defined using the <code>function</code> keyword or arrow function syntax (<code>=&gt;</code>).</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Operators</strong><br>
+                                    <ul>
+                                        <li><strong>Arithmetic Operators:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, <code>**</code> (exponentiation).</li>
+                                        <li><strong>Comparison Operators:</strong> <code>==</code>, <code>===</code>, <code>!=</code>, <code>!==</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>.</li>
+                                        <li><strong>Logical Operators:</strong> <code>&amp;&amp;</code>, <code>||</code>, <code>!</code>.</li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Comparisons</strong><br>
+                                    <ul>
+                                        <li><strong>Equality Operators:</strong> <code>==</code> vs <code>===</code>: Double equals performs type coercion; triple equals checks both value and type.</li>
+                                        <li><strong>Comparison Operators:</strong> Used for conditional statements and loops.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </article>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>13. Statements</h3><br>
+                        <article>
+                            <ul>
+                                <li>
+                                    <strong>Conditional Statements:</strong>
+                                    <ul>
+                                        <li><code>if</code>, <code>else if</code>, and <code>else</code> for branching logic.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Looping Statements:</strong>
+                                    <ul>
+                                        <li><code>for</code>, <code>while</code>, and <code>do...while</code> for iteration.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Switch Statement:</strong>
+                                    <ul>
+                                        <li>Used for multiple branching based on a value.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section>
+                        <h3>14. Loops</h3><br>
+                        <article>
+                            <ul>
+                                <li>
+                                    <strong>Types:</strong>
+                                    <ul>
+                                        <li><code>for</code>, <code>while</code>, and <code>do...while</code> loops for repeated execution of code.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>For...of Loop:</strong>
+                                    <ul>
+                                        <li>Iterates over iterable objects like arrays and strings.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section>
+                        <h3>15. Events</h3><br>
+                        <article>
+                            <ul>
+                                <li>
+                                    <strong>Event Handling:</strong>
+                                    <ul>
+                                        <li>Responding to user actions like clicks, keystrokes, and mouse movements.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Event Listeners:</strong>
+                                    <ul>
+                                        <li>Attach event listeners using methods like <code>addEventListener</code>.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Event Object:</strong>
+                                    <ul>
+                                        <li>Provides information about the event, like type and target element.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section>
+                        <h3>16. Objects and Userdefined Functions</h3><br>
+                        <article>
+                            <ul>
+                                <li>
+                                    <strong>JavaScript Objects:</strong>
+                                    <ul>
+                                        <li>Objects are collections of key-value pairs.</li>
+                                        <li>They are created using object literals (<code>{}</code>) or with the <code>new Object()</code> constructor.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>User-defined Functions:</strong>
+                                    <ul>
+                                        <li>Functions in JavaScript can be created using the <code>function</code> keyword or arrow function syntax (<code>=&gt;</code>).</li>
+                                        <li>Functions can be methods within objects or standalone.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Methods:</strong>
+                                    <ul>
+                                        <li>Functions defined inside objects are called methods.</li>
+                                        <li>Access object properties using <code>this</code> keyword inside methods.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Constructor Functions:</strong>
+                                    <ul>
+                                        <li>Constructor functions are used to create object instances with specific properties and methods.</li>
+                                        <li>The <code>new</code> keyword is used to create instances from constructor functions.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section>
+                        <h3>17. Validations Using Object Functions</h3><br>
+                        <article>
+                            <ul>
+                                <li>
+                                    <strong>Input Validation:</strong>
+                                    <ul>
+                                        <li>Validate user inputs to ensure data integrity and avoid security issues.</li>
+                                        <li>Can be done using methods within objects or standalone functions.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Validation Functions:</strong>
+                                    <ul>
+                                        <li>Use functions or methods to validate data according to specified criteria (e.g., data type, format, range).</li>
+                                        <li>Common Validation Functions:
+                                            <ul>
+                                                <li><code>isNaN</code>: Checks if a value is not a number.</li>
+                                                <li><code>parseInt</code> and <code>parseFloat</code>: Convert strings to integers or floating-point numbers.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Example Validation Function:</strong>
+                                    <pre><code>function validateInput(input) {
+                        if (isNaN(input)) {
+                            console.log("Input is not a number");
+                        } else {
+                            console.log("Valid input");
+                        }
+                    }</code></pre>
+                                </li>
+                                <li>
+                                    <strong>Object Functions for Validation:</strong>
+                                    <ul>
+                                        <li>Define methods within objects to validate properties or data specific to the object.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Example of Validation in an Object:</strong>
+                                    <pre><code>const user = {
+                        name: "John",
+                        age: 25,
+                        validateAge: function() {
+                            if (this.age < 18) {
+                                console.log("User is underaged");
+                            } else {
+                                console.log("User is an adult");
+                            }
+                        }
+                    };
+                    
+                    user.validateAge(); // Outputs: "User is an adult"</code></pre>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>18. Validations Using Regular Expressions</h3><br>
+                        <article>
+                            <ul>
+                                <li>
+                                    <strong>Regular Expressions:</strong>
+                                    <ul>
+                                        <li>Regular expressions (regex) are patterns used to match character combinations in strings.</li>
+                                        <li>Useful for data validation, searching, and manipulating strings.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Syntax:</strong>
+                                    <ul>
+                                        <li>Patterns are defined using <code>/pattern/</code> syntax.</li>
+                                        <li>Use flags for case-insensitive (<code>i</code>), global search (<code>g</code>), and multiline (<code>m</code>) matching.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Common Uses:</strong>
+                                    <ul>
+                                        <li>String Matching: Check if a string contains a pattern.</li>
+                                        <li>Data Validation: Validate user inputs (e.g., email, phone numbers, etc.).</li>
+                                        <li>String Manipulation: Replace or extract parts of a string.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Examples:</strong>
+                                    <ul>
+                                        <li>Email Validation:
+                                            <pre><code>const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                    const isValidEmail = emailPattern.test("example@domain.com");</code></pre>
+                                        </li>
+                                        <li>Phone Number Validation:
+                                            <pre><code>const phonePattern = /^\d{10}$/; // Validates 10-digit phone numbers
+                    const isValidPhone = phonePattern.test("1234567890");</code></pre>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section>
+                        <h3>19. JS Document Object Model</h3><br>
+                        <article>
+                            <ul>
+                                <li>
+                                    <strong>Definition:</strong>
+                                    <ul>
+                                        <li>The Document Object Model (DOM) is a programming interface for HTML and XML documents.</li>
+                                        <li>It represents the document as a tree of nodes, allowing manipulation of the structure, style, and content.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Accessing DOM Elements:</strong>
+                                    <ul>
+                                        <li>Use methods like <code>document.getElementById()</code>, <code>document.querySelector()</code>, or <code>document.getElementsByClassName()</code> to access elements.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Manipulating DOM Elements:</strong>
+                                    <ul>
+                                        <li>Change content, attributes, and styles of elements using properties and methods (e.g., <code>innerHTML</code>, <code>style</code>).</li>
+                                        <li>Create, modify, and remove elements from the DOM.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Event Handling:</strong>
+                                    <ul>
+                                        <li>Add event listeners to elements using <code>addEventListener()</code> to handle user interactions.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Example:</strong>
+                                    <ul>
+                                        <li>Changing an Element's Content:
+                                            <pre><code>const element = document.getElementById("myElement");
+                    element.innerHTML = "New content";</code></pre>
+                                        </li>
+                                        <li>Adding an Event Listener:
+                                            <pre><code>const button = document.querySelector("button");
+                    button.addEventListener("click", function() {
+                        alert("Button clicked!");
+                    });</code></pre>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <br>
+                    <section>
+                        <h3>20. Popovers</h3><br>
+                        <article>
+                            <ul>
+                                <li>
+                                    <strong>Definition:</strong>
+                                    <ul>
+                                        <li>Popovers are small overlays or tooltips that appear on the screen to provide additional information or actions.</li>
+                                        <li>Often used to enhance user interaction and provide contextual information.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Implementation in JavaScript:</strong>
+                                    <ul>
+                                        <li>Popovers can be implemented using JavaScript and HTML/CSS for styling.</li>
+                                        <li>Popular libraries like Bootstrap provide built-in support for creating and managing popovers.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Creating Popovers:</strong>
+                                    <ul>
+                                        <li>Define a trigger element (e.g., button) with a data attribute for the content.</li>
+                                        <li>Use JavaScript to initialize and display the popover on the trigger event (e.g., click, hover).</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Example:</strong>
+                                    <pre><code>&lt;button id="popoverButton" title="Popover Title" data-content="This is a popover."&gt;
+                      Click me
+                    &lt;/button&gt;
+                    
+                    &lt;script&gt;
+                      document.addEventListener("DOMContentLoaded", function() {
+                        const button = document.getElementById("popoverButton");
+                        button.addEventListener("click", function() {
+                          // Display the popover
+                          alert(button.getAttribute("data-content"));
+                        });
+                      });
+                    &lt;/script&gt;
+                                    </code></pre>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section>
+                        <h3>21. Windows</h3><br>
+                        <article>
+                            <ul>
+                                <li>
+                                    <strong>Definition:</strong>
+                                    <ul>
+                                        <li>In JavaScript, the global <code>window</code> object represents the browser's window.</li>
+                                        <li>Provides access to global properties, functions, and browser operations.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Common Methods:</strong>
+                                    <ul>
+                                        <li><code>window.open()</code>: Opens a new browser window or tab.</li>
+                                        <li><code>window.close()</code>: Closes the current browser window or tab.</li>
+                                        <li><code>window.alert()</code>: Displays a pop-up alert with a message.</li>
+                                        <li><code>window.prompt()</code>: Displays a prompt dialog for user input.</li>
+                                        <li><code>window.confirm()</code>: Displays a confirmation dialog with OK and Cancel options.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Window Properties:</strong>
+                                    <ul>
+                                        <li><code>window.location</code>: Represents the URL of the current document and allows navigation.</li>
+                                        <li><code>window.history</code>: Provides access to the browser's session history.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Example:</strong>
+                                    <ul>
+                                        <li>Opening a New Window:
+                                            <pre><code>function openNewWindow() {
+                      window.open("https://www.example.com", "_blank");
+                    }</code></pre>
+                                        </li>
+                                        <li>Prompting User Input:
+                                            <pre><code>function promptUser() {
+                      const name = window.prompt("What is your name?");
+                      if (name) {
+                        alert("Hello, " + name + "!");
+                      }
+                    }</code></pre>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Best Practices:</strong>
+                                    <ul>
+                                        <li>Avoid excessive use of pop-ups as they can be disruptive to the user experience.</li>
+                                        <li>Be mindful of modern browser security policies that may restrict window operations.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    
                 </div>
 
             </div>

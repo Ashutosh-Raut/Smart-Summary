@@ -57,7 +57,7 @@
 
             </ul>
 
-            <div id="logo"><a href="main.html"><img src="logo.png" height="30px" width="160px"></a></div>
+            <div id="logo"><a href="main.html"><img src="logo.png" height="55px" width="65px"></a></div>
 
             <ul class="interactions">
                 
@@ -100,8 +100,566 @@
                     <!-- Unit 1 text -->
                     <h2>UNIT 1: Introduction</h2>
                     <br>
+                    <section>
+                        <h2>Database System Applications</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Database systems are collections of data organized for storage, retrieval, and management. Database applications leverage these systems to support various types of operations and workflows.</li><br>
+                            <li><strong>Examples:</strong> Database applications can range from simple data storage systems to complex transactional systems supporting enterprise operations.</li><br>
+                        </ul><br>
+                        <p><strong>Applications in Real-World Scenarios:</strong></p><br>
+                        <ul>
+                            <li><strong>Business Operations:</strong> CRM (Customer Relationship Management), SCM (Supply Chain Management), HR (Human Resources) databases.</li><br>
+                            <li><strong>E-commerce:</strong> Inventory management, customer orders, product cataloging.</li><br>
+                            <li><strong>Financial Services:</strong> Bank transactions, fraud detection, customer profiles.</li><br>
+                            <li><strong>Healthcare:</strong> Electronic health records, patient history, prescription management.</li><br>
+                            <li><strong>Education:</strong> Student records, course registration, learning management systems.</li><br>
+                        </ul><br>
+                        <p><strong>Types of Database Applications:</strong></p><br>
+                        <ul>
+                            <li><strong>Transactional Applications:</strong> Support day-to-day operations such as sales, payroll, or manufacturing.</li><br>
+                            <li><strong>Decision Support Applications:</strong> Facilitate data analysis for strategic decisions; include data warehouses and OLAP (Online Analytical Processing).</li><br>
+                            <li><strong>Distributed Applications:</strong> Operate across multiple sites and synchronize data for consistency.</li><br>
+                            <li><strong>Mobile Applications:</strong> Use databases for local storage and synchronization with remote servers.</li><br>
+                        </ul><br>
+                        <p><strong>Benefits:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Integrity:</strong> Ensures accuracy and consistency of data.</li><br>
+                            <li><strong>Scalability:</strong> Handles growing volumes of data efficiently.</li><br>
+                            <li><strong>Security:</strong> Protects data against unauthorized access.</li><br>
+                            <li><strong>Concurrency:</strong> Manages multiple users accessing data simultaneously.</li><br>
+                            <li><strong>Performance:</strong> Optimizes data retrieval and storage operations.</li><br>
+                        </ul><br>
+                        <p><strong>Challenges:</strong></p><br>
+                        <ul>
+                            <li><strong>Complexity:</strong> Designing and maintaining complex database applications requires expertise.</li><br>
+                            <li><strong>Data Privacy:</strong> Handling sensitive data in compliance with regulations like GDPR and HIPAA.</li><br>
+                            <li><strong>Performance:</strong> Balancing between fast data retrieval and efficient storage.</li><br>
+                        </ul><br>
+                    </section>
                     
+                    <section>
+                        <h2>Purpose of Database Systems</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Management:</strong> Database systems manage vast amounts of data efficiently and reliably.</li><br>
+                            <li><strong>Data Storage:</strong> Store data in an organized manner for easy retrieval and management.</li><br>
+                            <li><strong>Data Access:</strong> Provides mechanisms for accessing data quickly and efficiently.</li><br>
+                            <li><strong>Data Security:</strong> Implement access control and security mechanisms to protect data.</li><br>
+                            <li><strong>Data Integrity:</strong> Ensures data remains accurate and consistent over time.</li><br>
+                            <li><strong>Data Redundancy Control:</strong> Minimizes data redundancy through normalization and efficient design.</li><br>
+                        </ul><br>
+                        <p><strong>Objectives of Database Systems:</strong></p><br>
+                        <ul>
+                            <li><strong>Efficiency:</strong> Maximize performance for data storage and retrieval operations.</li><br>
+                            <li><strong>Consistency:</strong> Maintain uniform data across different parts of the database.</li><br>
+                            <li><strong>Flexibility:</strong> Provide ways to define and manipulate data according to user needs.</li><br>
+                            <li><strong>Scalability:</strong> Allow the system to handle increasing data volume and users.</li><br>
+                            <li><strong>Reliability:</strong> Ensure data availability and fault tolerance.</li><br>
+                            <li><strong>Security:</strong> Protect data from unauthorized access and provide user authentication.</li><br>
+                        </ul><br>
+                        <p><strong>Roles in Different Scenarios:</strong></p><br>
+                        <ul>
+                            <li><strong>OLTP Systems:</strong> Online Transaction Processing systems handle frequent, short transactions such as banking, retail, and reservations.</li><br>
+                            <li><strong>OLAP Systems:</strong> Online Analytical Processing systems support complex queries for data analysis and decision-making.</li><br>
+                        </ul><br>
+                        <p><strong>Use Cases:</strong></p><br>
+                        <ul>
+                            <li><strong>Financial:</strong> Managing accounts, transactions, and statements.</li><br>
+                            <li><strong>Healthcare:</strong> Storing medical records and appointment scheduling.</li><br>
+                            <li><strong>Retail:</strong> Managing inventory, orders, and sales.</li><br>
+                        </ul><br>
+                        <p><strong>Important Points for Exam and Interview Preparation:</strong></p><br>
+                        <ul>
+                            <li>Understand the different types of database systems and their uses.</li><br>
+                            <li>Familiarize with the concepts of data security, integrity, and scalability.</li><br>
+                            <li>Know how databases support efficient data storage and retrieval.</li><br>
+                            <li>Grasp the nuances between OLTP and OLAP systems.</li><br>
+                        </ul><br>
+                    </section>
 
+                    <section>
+                        <h2>View of Data</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Abstraction:</strong> Abstracts the details of data storage and presents data in a simplified form to the user.</li><br>
+                            <li><strong>Levels of Data Abstraction:</strong> Database systems provide three levels of abstraction:</li><br>
+                            <ul>
+                                <li><strong>Physical Level:</strong> Deals with the physical storage of data, including hardware considerations such as file organization, indexing, and data storage methods.</li><br>
+                                <li><strong>Logical Level:</strong> Focuses on the structure of data in the form of tables, views, and relationships between data. This level abstracts the physical storage details.</li><br>
+                                <li><strong>View Level:</strong> The highest level of abstraction; it presents a tailored view of the data to users, hiding unnecessary complexity.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>View Level:</strong></p><br>
+                        <ul>
+                            <li><strong>Purpose:</strong> To provide data in a way that is most useful to a specific set of users.</li><br>
+                            <li><strong>Advantages:</strong></li><br>
+                            <ul>
+                                <li><strong>Security:</strong> Views can hide sensitive data by restricting access to certain columns or rows.</li><br>
+                                <li><strong>Simplification:</strong> Users work with a simplified representation of data without dealing with underlying complexities.</li><br>
+                                <li><strong>Customizability:</strong> Different views can be created for different types of users, focusing on specific data sets.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>Creation of Views:</strong></p><br>
+                        <ul>
+                            <li><strong>SQL Views:</strong> Created using the <code>CREATE VIEW</code> statement in SQL. They are essentially saved queries that act as virtual tables.</li><br>
+                            <li><strong>Example:</strong></li><br>
+                            <pre><code>CREATE VIEW employee_view AS
+                    SELECT name, department FROM employees;
+                            </code></pre><br>
+                            <li><strong>Types of Views:</strong></li><br>
+                            <ul>
+                                <li><strong>Materialized Views:</strong> Store the query result physically for faster access and efficient data retrieval.</li><br>
+                                <li><strong>Virtual Views:</strong> Only store the query definition and calculate the result each time the view is accessed.</li><br>
+                            </ul><br>
+                            <li><strong>Benefits of Using Views:</strong></li><br>
+                            <ul>
+                                <li><strong>Data Security:</strong> Can provide limited access to sensitive data.</li><br>
+                                <li><strong>Data Independence:</strong> Changes to the underlying data structure do not affect the view.</li><br>
+                                <li><strong>Simplified Queries:</strong> Users work with simplified queries without complex joins.</li><br>
+                            </ul><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Database Languages</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Database languages provide the means to interact with a database. They include data definition, manipulation, control, and query languages.</li><br>
+                        </ul><br>
+                        <p><strong>Types of Database Languages:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Definition Language (DDL):</strong> Used for defining and modifying the database schema (e.g., creating, altering, and dropping tables).</li><br>
+                            <li><strong>Data Manipulation Language (DML):</strong> Used for accessing and manipulating data within the database.</li><br>
+                            <li><strong>Data Control Language (DCL):</strong> Manages user access and controls permissions.</li><br>
+                        </ul><br>
+                        <p><strong>SQL Language:</strong></p><br>
+                        <ul>
+                            <li><strong>Structured Query Language (SQL):</strong> A popular database language that combines DDL, DML, and DCL functionality.</li><br>
+                            <li><strong>SQL Features:</strong></li><br>
+                            <ul>
+                                <li><strong>Declarative language,</strong> focusing on what data is needed rather than how to retrieve it.</li><br>
+                                <li><strong>Standardized,</strong> with variations across different database management systems (DBMS).</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>NoSQL Languages:</strong></p><br>
+                        <ul>
+                            <li><strong>Non-Relational Database Languages:</strong> Typically designed for specific NoSQL databases, such as MongoDB, Cassandra, or Redis.</li><br>
+                            <li><strong>Advantages of Database Languages:</strong></li><br>
+                            <ul>
+                                <li><strong>Consistency:</strong> Helps maintain data integrity and consistency.</li><br>
+                                <li><strong>Efficiency:</strong> Offers optimized methods for data manipulation.</li><br>
+                                <li><strong>Abstraction:</strong> Abstracts complex operations for ease of use.</li><br>
+                                <li><strong>Security:</strong> Facilitates secure data access through permissions and access control.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>Considerations:</strong></p><br>
+                        <ul>
+                            <li><strong>Familiarity</strong> with the syntax and functionality of different database languages is essential.</li><br>
+                            <li><strong>Optimization techniques</strong> often involve using the language efficiently (e.g., using appropriate indexes, avoiding unnecessary operations).</li><br>
+                            <li>Advanced features such as stored procedures and triggers add complexity but can improve performance and security.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Relational Databases</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Relational databases organize data into tables, each consisting of rows (records) and columns (attributes). Relationships between tables are defined through common fields.</li><br>
+                        </ul><br>
+                        <p><strong>Characteristics of Relational Databases:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Organization:</strong> Data is stored in tables, with each row representing an entity and each column representing an attribute.</li><br>
+                            <li><strong>Keys:</strong> Unique identifiers such as primary keys and foreign keys define relationships between tables.</li><br>
+                            <li><strong>Normalization:</strong> The process of organizing data to minimize redundancy and improve data integrity.</li><br>
+                            <li><strong>Data Integrity:</strong> Relational databases enforce rules to maintain data accuracy and consistency.</li><br>
+                        </ul><br>
+                        <p><strong>Relational Model:</strong></p><br>
+                        <ul>
+                            <li><strong>Tables:</strong> Composed of rows and columns; tables represent entities and attributes.</li><br>
+                            <li><strong>Primary Keys:</strong> Unique identifiers for records in a table.</li><br>
+                            <li><strong>Foreign Keys:</strong> References to primary keys in other tables, establishing relationships.</li><br>
+                            <li><strong>Constraints:</strong> Rules such as not null, unique, and check constraints ensure data integrity.</li><br>
+                        </ul><br>
+                        <p><strong>Advantages:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Consistency:</strong> Ensures data is accurate and consistent across the database.</li><br>
+                            <li><strong>Flexibility:</strong> Allows for complex queries and data retrieval operations.</li><br>
+                            <li><strong>Scalability:</strong> Can handle large volumes of data and high concurrency.</li><br>
+                            <li><strong>Security:</strong> Offers fine-grained control over data access.</li><br>
+                        </ul><br>
+                        <p><strong>Querying Relational Databases:</strong></p><br>
+                        <ul>
+                            <li><strong>SQL:</strong> The primary language for querying relational databases. Supports complex queries with joins, subqueries, and aggregations.</li><br>
+                            <li><strong>Joins:</strong> Combine data from multiple tables based on relationships.</li><br>
+                            <li><strong>Indexes:</strong> Enhance query performance by speeding up data retrieval.</li><br>
+                        </ul><br>
+                        <p><strong>Relational Database Management Systems (RDBMS):</strong></p><br>
+                        <ul>
+                            <li>Examples include MySQL, PostgreSQL, Oracle, and Microsoft SQL Server.</li><br>
+                            <li>Provide features like data integrity, security, transaction management, and backup.</li><br>
+                        </ul><br>
+                        <p><strong>Considerations:</strong></p><br>
+                        <ul>
+                            <li><strong>Design:</strong> Good relational database design involves normalization and efficient schema structuring.</li><br>
+                            <li><strong>Performance:</strong> Proper indexing and query optimization techniques are key to maintaining performance.</li><br>
+                            <li><strong>Security:</strong> Ensure proper data access control and backup strategies.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Database Design</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Purpose:</strong> Database design involves structuring data in a way that is efficient, logical, and easy to maintain.</li><br>
+                        </ul><br>
+                        <p><strong>Key Aspects:</strong></p><br>
+                        <ul>
+                            <li><strong>Entity Relationship (ER) Model:</strong> A conceptual representation of the database structure, outlining entities, attributes, and relationships.</li><br>
+                            <li><strong>Normalization:</strong> The process of organizing data to minimize redundancy and ensure data integrity.</li><br>
+                            <li><strong>Constraints:</strong> Rules that define how data must adhere to certain conditions to maintain integrity (e.g., primary key, foreign key, unique, not null).</li><br>
+                            <li><strong>Keys:</strong> Identifiers for records in tables. Includes primary keys, foreign keys, candidate keys, and superkeys.</li><br>
+                        </ul><br>
+                        <p><strong>Steps in Database Design:</strong></p><br>
+                        <ol>
+                            <li><strong>Requirement Analysis:</strong> Identify the data needs and functional requirements of the application.</li><br>
+                            <li><strong>Conceptual Design:</strong> Create an ER model to represent the data and relationships.</li><br>
+                            <li><strong>Logical Design:</strong> Convert the ER model into a relational schema with tables and keys.</li><br>
+                            <li><strong>Physical Design:</strong> Define how data will be stored (e.g., file organization, indexing).</li><br>
+                        </ol><br>
+                        <p><strong>Tools and Techniques:</strong></p><br>
+                        <ul>
+                            <li><strong>ER Diagrams:</strong> Visual representations of the database's entities, attributes, and relationships.</li><br>
+                            <li><strong>Normalization:</strong> Applying normal forms (1NF, 2NF, 3NF, BCNF) to reduce redundancy and improve data integrity.</li><br>
+                            <li><strong>Denormalization:</strong> Sometimes applied to improve performance, especially in data warehouses.</li><br>
+                        </ul><br>
+                        <p><strong>Considerations:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Integrity:</strong> Ensuring data accuracy and consistency across the database.</li><br>
+                            <li><strong>Performance:</strong> Designing schemas that optimize query performance and data retrieval.</li><br>
+                            <li><strong>Flexibility:</strong> Allowing for changes and extensions to the database schema as requirements evolve.</li><br>
+                        </ul><br>
+                        <p><strong>Challenges:</strong></p><br>
+                        <ul>
+                            <li><strong>Complexity:</strong> Balancing data normalization with query performance.</li><br>
+                            <li><strong>Data Security:</strong> Designing access controls and data protection strategies.</li><br>
+                            <li><strong>Data Maintenance:</strong> Regularly reviewing and optimizing database design as the application evolves.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Data Storage and Querying</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Storage:</strong> Refers to the physical storage of data on disk or other media in a structured manner that supports efficient access and manipulation.</li><br>
+                        </ul><br>
+                        <p><strong>Storage Techniques:</strong></p><br>
+                        <ul>
+                            <li><strong>File Organization:</strong> Organizing data on the disk in ways that facilitate efficient access, such as sequential, heap, or index-based organization.</li><br>
+                            <li><strong>Data Partitioning:</strong> Splitting data into smaller, more manageable pieces for better performance and scalability.</li><br>
+                            <li><strong>Indexing:</strong> Structures such as B-trees and hash tables that speed up data retrieval.</li><br>
+                        </ul><br>
+                        <p><strong>Querying:</strong></p><br>
+                        <ul>
+                            <li><strong>Query Optimization:</strong> Techniques for improving the performance of database queries, including:</li><br>
+                            <ul>
+                                <li>Index Usage: Utilizing indexes to quickly locate data.</li><br>
+                                <li>Join Optimization: Efficiently combining data from multiple tables.</li><br>
+                                <li>Query Rewrite: Modifying queries to improve efficiency.</li><br>
+                            </ul><br>
+                            <li><strong>Query Execution Plan:</strong> A step-by-step plan that the database system uses to execute a query, showing how it will access and join data.</li><br>
+                            <li><strong>Data Access Methods:</strong></li><br>
+                            <ul>
+                                <li>Sequential Access: Accessing data in a sequence, which can be efficient for large data scans.</li><br>
+                                <li>Direct Access: Using indexes for fast, direct access to specific records.</li><br>
+                            </ul><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Transaction Management</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Transaction:</strong> A sequence of database operations that are treated as a single unit of work, ensuring that either all operations succeed or none do.</li><br>
+                        </ul><br>
+                        <p><strong>Properties of Transactions (ACID):</strong></p><br>
+                        <ul>
+                            <li><strong>Atomicity:</strong> Ensures that a transaction is either fully completed or fully aborted; there is no partial completion.</li><br>
+                            <li><strong>Consistency:</strong> Ensures that a transaction transforms the database from one valid state to another, maintaining database integrity.</li><br>
+                            <li><strong>Isolation:</strong> Ensures that concurrent transactions do not interfere with each other; each transaction appears isolated from others.</li><br>
+                            <li><strong>Durability:</strong> Ensures that once a transaction is committed, its effects persist in the database even in case of a system failure.</li><br>
+                        </ul><br>
+                        <p><strong>Transaction Lifecycle:</strong></p><br>
+                        <ul>
+                            <li><strong>Begin:</strong> Transaction is started and resources are allocated.</li><br>
+                            <li><strong>Execute:</strong> Database operations are performed.</li><br>
+                            <li><strong>Commit:</strong> If all operations are successful, the transaction is committed and changes are made permanent.</li><br>
+                            <li><strong>Rollback:</strong> If an error occurs, all operations are undone and the transaction is aborted.</li><br>
+                        </ul><br>
+                        <p><strong>Concurrency Control:</strong></p><br>
+                        <ul>
+                            <li><strong>Purpose:</strong> Manage simultaneous execution of transactions to avoid conflicts.</li><br>
+                            <li><strong>Techniques:</strong></li><br>
+                            <ul>
+                                <li>Locking: Locks are used to manage access to data resources.</li><br>
+                                <li>Timestamping: Transactions are ordered based on timestamps.</li><br>
+                                <li>Optimistic Concurrency Control: Transactions execute without locking and are validated before committing.</li><br>
+                            </ul><br>
+                        </ul><br>
+                        <p><strong>Deadlock Handling:</strong></p><br>
+                        <ul>
+                            <li><strong>Deadlock:</strong> Occurs when two or more transactions are waiting for each other to release resources.</li><br>
+                            <li><strong>Detection:</strong> Monitoring system resources and transactions to identify deadlocks.</li><br>
+                            <li><strong>Prevention:</strong> Avoiding deadlock-prone scenarios through resource ordering or lock timeouts.</li><br>
+                            <li><strong>Resolution:</strong> Releasing one of the deadlocked transactions (e.g., rolling back a transaction).</li><br>
+                        </ul><br>
+                        <p><strong>Recovery Mechanisms:</strong></p><br>
+                        <ul>
+                            <li><strong>Log-Based Recovery:</strong> Maintains a log of all transactions for undoing or redoing changes in case of failure.</li><br>
+                            <li><strong>Checkpoints:</strong> Points in time where the state of the database is saved to facilitate faster recovery.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Database Architecture</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Database architecture outlines how a database system is structured and functions, including its components and how they interact.</li><br>
+                        </ul><br>
+                        <p><strong>Layers of Database Architecture:</strong></p><br>
+                        <ol>
+                            <li><strong>Physical Layer:</strong> Deals with the storage of data on hardware devices such as hard disks. Includes file organization and indexing methods.</li><br>
+                            <li><strong>Logical Layer:</strong> Manages the structure of the database, such as tables and views, and enforces data integrity and security.</li><br>
+                            <li><strong>View Layer:</strong> Provides customized views of the database tailored for specific applications or users.</li><br>
+                        </ol><br>
+                        <p><strong>Types of Database Architecture:</strong></p><br>
+                        <ul>
+                            <li><strong>Centralized Architecture:</strong> All data and database functions are managed in a single location.</li><br>
+                            <li><strong>Client-Server Architecture:</strong> Database server manages storage and processing while clients access data remotely.</li><br>
+                            <li><strong>Distributed Architecture:</strong> Database is distributed across multiple locations, improving performance and reliability.</li><br>
+                            <li><strong>Cloud-Based Architecture:</strong> Database is hosted on the cloud, offering scalability and easy access.</li><br>
+                        </ul><br>
+                        <p><strong>Key Components:</strong></p><br>
+                        <ul>
+                            <li><strong>DBMS:</strong> Manages data storage, querying, transaction processing, and security.</li><br>
+                            <li><strong>Database Instances:</strong> Running instances of the DBMS where operations occur.</li><br>
+                            <li><strong>Query Processor:</strong> Translates queries into low-level instructions and optimizes query execution plans.</li><br>
+                            <li><strong>Storage Manager:</strong> Handles data storage and retrieval, including file organization, indexing, and buffer management.</li><br>
+                            <li><strong>Transaction Manager:</strong> Manages transactions, ensuring ACID properties.</li><br>
+                            <li><strong>Recovery Manager:</strong> Restores data consistency in case of failures.</li><br>
+                        </ul><br>
+                        <p><strong>Additional Features:</strong></p><br>
+                        <ul>
+                            <li><strong>Security:</strong> Access control mechanisms to protect data.</li><br>
+                            <li><strong>Backup and Recovery:</strong> Strategies to back up data and restore it after failure.</li><br>
+                            <li><strong>Replication and Mirroring:</strong> Techniques for creating copies of data for reliability and high availability.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Data Modeling using the Entity Relationship Model</h2>
+                        <br>
+                        <p><strong>Key Concepts:</strong></p>
+                        <ul>
+                            <li><strong>Entity-Relationship (ER) Model:</strong> A conceptual representation of data in terms of entities, attributes, and relationships. It is commonly used in database design.</li>
+                            <li><strong>ER Model Concepts:</strong>
+                                <ul>
+                                    <li><strong>Entities:</strong> Represented as rectangles.</li>
+                                    <li><strong>Attributes:</strong> Represented as ovals, connected to entities by lines.</li>
+                                    <li><strong>Relationships:</strong> Represented as diamonds, connected to entities by lines.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Constraints, Keys:</strong>
+                                <ul>
+                                    <li><strong>Primary Key:</strong> A unique identifier for an entity in a table.</li>
+                                    <li><strong>Foreign Key:</strong> An attribute in one table that references the primary key of another table.</li>
+                                    <li><strong>Unique Constraints:</strong> Ensure that certain attributes have unique values.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Mapping Cardinality:</strong>
+                                <ul>
+                                    <li><strong>One-to-One:</strong> Each instance of entity A is associated with one instance of entity B.</li>
+                                    <li><strong>One-to-Many:</strong> Each instance of entity A is associated with multiple instances of entity B.</li>
+                                    <li><strong>Many-to-Many:</strong> Multiple instances of entity A are associated with multiple instances of entity B.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Concepts of Super Key, Candidate Key & Primary Key:</strong>
+                                <ul>
+                                    <li><strong>Super Key:</strong> A set of attributes that uniquely identifies an instance within an entity.</li>
+                                    <li><strong>Candidate Key:</strong> A minimal super key, i.e., a super key with no unnecessary attributes.</li>
+                                    <li><strong>Primary Key:</strong> The candidate key chosen as the unique identifier for the entity.</li>
+                                </ul>
+                            </li>
+                            <li><strong>ER Diagrams:</strong>
+                                <ul>
+                                    <li><strong>Representation:</strong> Visualize entities, attributes, and relationships.</li>
+                                    <li><strong>Cardinality:</strong> Specifies the number of instances of one entity that can be associated with another.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Weak Entity Sets:</strong>
+                                <ul>
+                                    <li><strong>Weak Entity:</strong> An entity that does not have a primary key of its own and relies on a foreign key referencing another entity.</li>
+                                    <li><strong>Identifying Relationship:</strong> A relationship that links the weak entity to its identifying entity.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <br>
+                        <h2>Codd‘s Rules:</h2>
+                        <br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Codd's 12 Rules:</strong><br><br>
+                                <ol>
+                                    <li><strong>Rule 0:</strong> The system must be able to manage databases entirely through its relational capabilities.</li><br>
+                                    <li><strong>Rule 1:</strong> Information Rule: All information must be represented as data values in tables.</li><br>
+                                    <li><strong>Rule 2:</strong> Guaranteed Access: All data should be accessible without ambiguity using a combination of table name, primary key, and column name.</li><br>
+                                    <li><strong>Rule 3:</strong> Systematic Treatment of Nulls: The system must handle null values consistently.</li><br>
+                                    <li><strong>Rule 4:</strong> Active Online Catalog: The database system must provide an active data dictionary accessible to authorized users.</li><br>
+                                    <li><strong>Rule 5:</strong> Powerful and Flexible Language: A single language must be used to define, manipulate, and control data.</li><br>
+                                    <li><strong>Rule 6:</strong> View Updating Rule: Views must be updatable in the same way that base tables are.</li><br>
+                                    <li><strong>Rule 7:</strong> Relational-Level Operations: Data manipulation operations must operate on sets of rows.</li><br>
+                                    <li><strong>Rule 8:</strong> Physical Data Independence: Changes in the physical storage should not affect data access at the logical level.</li><br>
+                                    <li><strong>Rule 9:</strong> Logical Data Independence: Changes in the logical structure should not impact applications using the data.</li><br>
+                                    <li><strong>Rule 10:</strong> Integrity Independence: Integrity constraints should be enforced at the relational level.</li><br>
+                                    <li><strong>Rule 11:</strong> Distribution Independence: The system should not be affected by data distribution across different locations.</li><br>
+                                    <li><strong>Rule 12:</strong> Nonsubversion Rule: Users should not bypass or subvert the database system's integrity and consistency.</li><br>
+                                </ol>
+                            </li><br>   
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Extended ER model</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Extension of ER Model:</strong> The Extended ER (EER) model builds upon the basic ER model by incorporating additional concepts such as specialization, generalization, and aggregation.</li><br>
+                        </ul><br>
+                        <p><strong>Concepts:</strong></p><br>
+                        <ol>
+                            <li>
+                                <strong>Specialization:</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> Specialization is a process of breaking down a higher-level entity into more specific lower-level entities.</li>
+                                    <li><strong>Example:</strong> A "Vehicle" entity can be specialized into "Car," "Truck," and "Motorcycle" entities.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Generalization:</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> Generalization is the opposite of specialization; it is the process of combining lower-level entities into a higher-level entity.</li>
+                                    <li><strong>Example:</strong> "Employee" and "Manager" entities can be generalized into a higher-level "Person" entity.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Aggregation:</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> Aggregation is a concept that allows a relationship between entities to be treated as an entity itself.</li>
+                                    <li><strong>Example:</strong> A "Course" and "Instructor" relationship can be aggregated into a higher-level "Teaching Assignment" entity.</li>
+                                </ul>
+                            </li><br>
+                        </ol><br>
+                        <p><strong>Key Features:</strong></p><br>
+                        <ul>
+                            <li><strong>ISA Relationships:</strong> Indicates "is a" relationship, typically used in specialization and generalization.</li><br>
+                            <li><strong>Hierarchy:</strong> EER supports hierarchies in data modeling, which can be represented using the ISA relationship.</li><br>
+                        </ul><br>
+                        <p><strong>Usage:</strong></p><br>
+                        <ul>
+                            <li><strong>Designing Complex Relationships:</strong> Useful for representing hierarchical relationships and complex data structures.</li><br>
+                            <li><strong>Flexible Data Modeling:</strong> Provides a richer set of concepts for data modeling compared to the basic ER model.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Generalization & Aggregation</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Generalization and Aggregation:</strong> These are two advanced concepts in data modeling used to represent complex relationships between entities.</li><br>
+                        </ul><br>
+                        <p><strong>Generalization:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Generalization is the process of creating a higher-level entity from a set of lower-level entities. The higher-level entity captures the shared attributes and relationships of the lower-level entities.</li><br>
+                            <li><strong>Example:</strong> In a company, "Manager" and "Employee" entities can be generalized into a higher-level "Person" entity.</li><br>
+                            <li><strong>ISA Relationship:</strong> Generalization creates an "is a" relationship, showing that a lower-level entity is a specific type of a higher-level entity.</li><br>
+                        </ul><br>
+                        <p><strong>Aggregation:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Aggregation is a concept that allows a relationship between entities to be treated as a higher-level entity. It is a form of abstraction representing the whole-part relationship between entities.</li><br>
+                            <li><strong>Example:</strong> In a university, a "Course" entity and "Student" entity have a relationship called "Enrollment." This relationship can be aggregated into a higher-level entity called "Course Registration" to represent the whole-part relationship.</li><br>
+                            <li><strong>Usage:</strong> Aggregation is used to model complex relationships where the relationship itself is treated as an entity.</li><br>
+                        </ul><br>
+                        <p><strong>Benefits:</strong></p><br>
+                        <ul>
+                            <li><strong>Generalization:</strong> Allows for efficient and consistent representation of shared attributes and relationships among entities.</li><br>
+                            <li><strong>Aggregation:</strong> Simplifies the model by abstracting complex relationships into a single entity.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Reduction of ER diagrams to tables</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Purpose:</strong> Converting an Entity-Relationship (ER) diagram to tables is an essential step in creating a relational database schema.</li><br>
+                        </ul><br>
+                        <p><strong>Steps for Reduction:</strong></p><br>
+                        <ol>
+                            <li>
+                                <strong>Entities to Tables:</strong><br><br>
+                                <ul>
+                                    <li>Each entity in the ER diagram is converted to a table.</li>
+                                    <li>Attributes of the entity become columns in the table.</li>
+                                    <li>The primary key of the entity becomes the primary key of the table.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Relationships to Foreign Keys:</strong><br><br>
+                                <ul>
+                                    <li><strong>One-to-One Relationship:</strong><br>
+                                        <ul>
+                                            <li>Convert into a single table by merging the tables of both entities.</li>
+                                            <li>Alternatively, add the primary key of one table as a foreign key in the other.</li>
+                                        </ul>
+                                    </li><br>
+                                    <li><strong>One-to-Many Relationship:</strong><br>
+                                        <ul>
+                                            <li>Add the primary key of the "one" side as a foreign key in the "many" side's table.</li>
+                                        </ul>
+                                    </li><br>
+                                    <li><strong>Many-to-Many Relationship:</strong><br>
+                                        <ul>
+                                            <li>Create a separate table to represent the relationship.</li>
+                                            <li>Include foreign keys from both entities in the table.</li>
+                                            <li>Optionally, include other attributes of the relationship.</li>
+                                        </ul>
+                                    </li><br>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Weak Entities:</strong><br>
+                                <ul>
+                                    <li>Create a table for each weak entity.</li>
+                                    <li>Include its attributes as columns.</li>
+                                    <li>Add a foreign key referencing the primary key of its identifying (strong) entity.</li>
+                                    <li>Include the partial key, if applicable.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Multi-Valued Attributes:</strong><br>
+                                <ul>
+                                    <li>Create a separate table to represent the multi-valued attribute.</li>
+                                    <li>Include the primary key of the parent entity as a foreign key.</li>
+                                    <li>Include the multi-valued attribute as a column.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <strong>Inheritance in Specialization/Generalization:</strong><br><br>
+                                <ul>
+                                    <li><strong>Single Table Approach:</strong> Combine all entities in the hierarchy into a single table, with a type attribute to distinguish between different entities.</li><br>
+                                    <li><strong>Multiple Table Approach:</strong> Create separate tables for each entity in the hierarchy, with foreign key relationships between the tables.</li>
+                                </ul>
+                            </li><br>
+                        </ol><br>
+                    </section>
                     
                 </div>
 
@@ -109,35 +667,1641 @@
                     <!-- Unit 2 text -->
                     <h2>UNIT 2: Relational Data Model, Relational Algebra and Calculus</h2>
                     <br>
-                    <p>Phasellus aliquet, quam eget posuere feugiat, nunc dui interdum urna, in venenatis lorem tortor eu libero. Nam vitae augue non magna viverra blandit. Ut sed odio et enim gravida viverra. Vestibulum sed varius libero. Ut eleifend lorem vitae ipsum malesuada, sit amet vehicula felis hendrerit. Proin fringilla sem et velit rhoncus ultrices. Suspendisse potenti. Donec vel magna eu sapien suscipit rutrum non at orci. Sed tincidunt, orci at efficitur tempor, arcu libero sollicitudin nunc, at iaculis lorem purus nec eros.</p>
+                    <section>
+                        <h2>Structure of Relational Databases:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> A relational database is structured around tables, which consist of rows (tuples) and columns (attributes).</li><br>
+                        </ul><br>
+                        <h3>Components of Relational Databases:</h3><br>
+                        <ul>
+                            <li><strong>Tables:</strong> Store data in a two-dimensional structure with rows and columns.</li><br>
+                                <ul>
+                                    <li>Rows: Each row, also called a tuple, represents a record or entity.</li><br>
+                                    <li>Columns: Each column, also called an attribute, represents a property of the entity.</li><br>
+                                </ul><br>
+                            <li><strong>Schema:</strong> The database schema defines the structure of the database, including tables, columns, data types, and constraints.</li><br>
+                            <li><strong>Keys:</strong></li><br>
+                                <ul>
+                                    <li>Primary Key: Uniquely identifies a row in a table.</li><br>
+                                    <li>Foreign Key: References a primary key in another table, establishing a relationship.</li><br>
+                                    <li>Unique Key: Ensures the uniqueness of a column or a set of columns.</li><br>
+                                </ul><br>
+                            <li><strong>Relationships:</strong> Associations between tables established through foreign keys.</li><br>
+                        </ul><br>
+                        <h3>Data Types and Constraints:</h3><br>
+                        <ul>
+                            <li><strong>Data Types:</strong> Specify the kind of data that can be stored in a column, such as integer, varchar, date, etc.</li><br>
+                            <li><strong>Constraints:</strong> Rules that ensure data integrity, including:</li><br>
+                                <ul>
+                                    <li>Not Null: Prevents null values in a column.</li><br>
+                                    <li>Check: Validates data against a specific condition.</li><br>
+                                    <li>Unique: Ensures that values in a column are unique.</li><br>
+                                </ul><br>
+                        </ul><br>
+                        <h3>Integrity Constraints:</h3><br>
+                        <ul>
+                            <li><strong>Referential Integrity:</strong> Ensures that relationships between tables are consistent.</li><br>
+                            <li><strong>Domain Integrity:</strong> Ensures data values fall within a specified range or set.</li><br>
+                            <li><strong>Entity Integrity:</strong> Ensures that each table has a primary key and that no primary key values are null.</li><br>
+                        </ul><br>
+                        <h3>Advantages of Relational Databases:</h3><br>
+                        <ul>
+                            <li>Data Integrity: Enforce rules to maintain data consistency.</li><br>
+                            <li>Flexibility: Support complex queries and relationships between tables.</li><br>
+                            <li>Scalability: Handle large data volumes and high user loads.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Database Schema:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> The database schema is a blueprint that defines the structure and organization of the database, including tables, views, relationships, and other objects.</li><br>
+                        </ul><br>
+                        <h3>Components of a Database Schema:</h3><br>
+                        <ul>
+                            <li><strong>Tables:</strong> Define the data structure and types stored in the database, including columns, data types, and constraints.</li><br>
+                            <li><strong>Views:</strong> Virtual tables that provide a filtered or aggregated perspective of the data from one or more tables.</li><br>
+                            <li><strong>Indexes:</strong> Data structures that enhance query performance by allowing efficient data retrieval.</li><br>
+                            <li><strong>Constraints:</strong> Rules that ensure data integrity, such as primary keys, foreign keys, unique, and check constraints.</li><br>
+                            <li><strong>Procedures:</strong> Stored procedures and functions encapsulate business logic within the database.</li><br>
+                            <li><strong>Triggers:</strong> Automatically executed code in response to specific database events (e.g., insert, update, delete).</li><br>
+                        </ul><br>
+                        <h3>Schema Design Considerations:</h3><br>
+                        <ul>
+                            <li><strong>Normalization:</strong> The process of organizing data to reduce redundancy and improve data integrity.</li><br>
+                            <li><strong>Denormalization:</strong> May be applied to improve performance in specific cases.</li><br>
+                            <li><strong>Relationships:</strong> Define relationships between tables using foreign keys.</li><br>
+                            <li><strong>Data Types:</strong> Choose appropriate data types for each column to optimize performance and storage.</li><br>
+                            <li><strong>Constraints:</strong> Use constraints such as not null, check, and unique to enforce data integrity.</li><br>
+                        </ul><br>
+                        <h3>Schema Management:</h3><br>
+                        <ul>
+                            <li><strong>Schema Changes:</strong> Schema evolves as application requirements change, involving schema migrations.</li><br>
+                            <li><strong>Schema Versioning:</strong> Managing different schema versions to support application evolution.</li><br>
+                        </ul><br>
+                        <h3>Advantages of a Well-Designed Schema:</h3><br>
+                        <ul>
+                            <li>Data Integrity: Enforces rules to maintain data consistency and accuracy.</li><br>
+                            <li>Performance: Optimized for efficient data access and manipulation.</li><br>
+                            <li>Scalability: Allows the database to handle large volumes of data and high concurrency.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Keys :</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Keys are attributes or sets of attributes that uniquely identify records within a table and establish relationships between tables.</li><br>
+                        </ul><br>
+                        <h3>Types of Keys:</h3><br>
+                        <ul>
+                            <li><strong>Primary Key:</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> A unique identifier for each record in a table.</li><br>
+                                    <li><strong>Characteristics:</strong><br>
+                                        <ul>
+                                            <li>Must be unique across all records.</li><br>
+                                            <li>Cannot contain null values.</li><br>
+                                        </ul>
+                                    </li><br>
+                                    <li><strong>Example:</strong> In a "Customer" table, a "CustomerID" column could serve as the primary key.<br></li>
+                                </ul><br>
+                            <li><strong>Foreign Key:</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> An attribute in a table that references the primary key of another table.</li><br>
+                                    <li><strong>Purpose:</strong> Establishes a relationship between two tables, linking related data.</li><br>
+                                    <li><strong>Example:</strong> In an "Order" table, a "CustomerID" column could be a foreign key referencing "CustomerID" in the "Customer" table.<br></li>
+                                </ul><br>
+                            <li><strong>Candidate Key:</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> A minimal super key; a set of attributes that can uniquely identify a record in a table.</li><br>
+                                    <li><strong>Primary Key Selection:</strong> One of the candidate keys is chosen as the primary key.</li><br>
+                                    <li><strong>Example:</strong> In an "Employee" table, both "EmployeeID" and "Email" may be candidate keys.<br></li>
+                                </ul><br>
+                            <li><strong>Super Key:</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> A set of attributes that uniquely identify a record in a table.</li><br>
+                                    <li><strong>Composition:</strong> Can include additional attributes beyond the minimum required for uniqueness.</li><br>
+                                    <li><strong>Example:</strong> In a "Product" table, a super key could be composed of "ProductID" and "ProductName."<br></li>
+                                </ul><br>
+                            <li><strong>Composite Key:</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> A primary key composed of multiple attributes.</li><br>
+                                    <li><strong>Usage:</strong> Often used when a single attribute cannot uniquely identify a record.</li><br>
+                                    <li><strong>Example:</strong> In an "OrderDetail" table, a composite key could consist of "OrderID" and "ProductID."<br></li>
+                                </ul><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Relational algebra:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Relational algebra is a procedural query language that consists of a set of operations for manipulating and retrieving data from relational databases.</li><br>
+                        </ul><br>
+                        <h3>Fundamental Operations:</h3><br>
+                        <ul>
+                            <li><strong>Select (`σ`):</strong> Retrieves tuples (rows) that satisfy a specified condition.<br>
+                                <ul>
+                                    <li><strong>Syntax:</strong> `σ[condition](table)`</li><br>
+                                    <li><strong>Example:</strong> `σ[Age > 30](Employees)` retrieves rows from the "Employees" table where "Age" is greater than 30.</li><br>
+                                </ul><br>
+                            <li><strong>Project (`π`):</strong> Returns a set of specified columns (attributes) from a table.<br>
+                                <ul>
+                                    <li><strong>Syntax:</strong> `π[column1, column2, ...](table)`</li><br>
+                                    <li><strong>Example:</strong> `π[Name, Age](Employees)` retrieves the "Name" and "Age" columns from the "Employees" table.</li><br>
+                                </ul><br>
+                            <li><strong>Union (`∪`):</strong> Combines the results of two queries, returning only distinct tuples.<br>
+                                <ul>
+                                    <li><strong>Syntax:</strong> `table1 ∪ table2`</li><br>
+                                    <li><strong>Example:</strong> `Employees ∪ Contractors` returns the distinct rows from both the "Employees" and "Contractors" tables.</li><br>
+                                </ul><br>
+                            <li><strong>Set Difference (`−`):</strong> Returns tuples present in the first table but not in the second.<br>
+                                <ul>
+                                    <li><strong>Syntax:</strong> `table1 − table2`</li><br>
+                                    <li><strong>Example:</strong> `Employees − Contractors` returns rows present in "Employees" but not in "Contractors."</li><br>
+                                </ul><br>
+                            <li><strong>Cartesian Product (`×`):</strong> Combines each row of the first table with each row of the second table.<br>
+                                <ul>
+                                    <li><strong>Syntax:</strong> `table1 × table2`</li><br>
+                                    <li><strong>Example:</strong> `Employees × Departments` creates a Cartesian product of the "Employees" and "Departments" tables.</li><br>
+                                </ul><br>
+                            <li><strong>Rename (`ρ`):</strong> Renames the result of an expression.<br>
+                                <ul>
+                                    <li><strong>Syntax:</strong> `ρ[new_name](expression)`</li><br>
+                                    <li><strong>Example:</strong> `ρ[NewEmployees](σ[Age > 30](Employees))` renames the selection result to "NewEmployees."</li><br>
+                                </ul><br>
+                        </ul><br>
+                        <h3>Additional Operations:</h3><br>
+                        <ul>
+                            <li><strong>Intersection (`∩`):</strong> Returns tuples that are common to both tables.<br>
+                                <ul>
+                                    <li><strong>Syntax:</strong> `table1 ∩ table2`</li><br>
+                                    <li><strong>Example:</strong> `Employees ∩ Contractors` returns rows present in both the "Employees" and "Contractors" tables.</li><br>
+                                </ul><br>
+                            <li><strong>Join (`⨝`):</strong> Combines tuples from two tables based on a common attribute.<br>
+                                <ul>
+                                    <li><strong>Types:</strong> Inner join, outer join, natural join, etc.</li><br>
+                                    <li><strong>Syntax:</strong> `table1 ⨝[condition] table2`</li><br>
+                                    <li><strong>Example:</strong> `Employees ⨝[DepartmentID] Departments` joins the "Employees" and "Departments" tables on the "DepartmentID" attribute.</li><br>
+                                </ul><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Additional Relational Algebra Operations:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Additional relational algebra operations build on the fundamental operations and offer more ways to manipulate and retrieve data in a relational database.</li><br>
+                        </ul><br>
+                        <h3>Operations:</h3><br>
+                        <ul>
+                            <li><strong>Natural Join (`⨝`):</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> Combines tuples from two tables based on the common attributes (i.e., attributes with the same name in both tables).</li><br>
+                                    <li><strong>Syntax:</strong> `table1 ⨝ table2`</li><br>
+                                    <li><strong>Example:</strong> `Employees ⨝ Departments` joins "Employees" and "Departments" tables on their common attributes.</li><br>
+                                </ul><br>
+                            <li><strong>Theta Join (`⨝_θ`):</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> Similar to natural join but allows for a specific condition (θ) to be specified.</li><br>
+                                    <li><strong>Syntax:</strong> `table1 ⨝_θ table2`</li><br>
+                                    <li><strong>Example:</strong> `Employees ⨝_[Employees.DepartmentID = Departments.DepartmentID] Departments` joins "Employees" and "Departments" tables based on the specified condition.</li><br>
+                                </ul><br>
+                            <li><strong>Equi Join:</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> A special case of theta join where the condition is based on equality (e.g., table1.column = table2.column).</li><br>
+                                    <li><strong>Example:</strong> `table1 ⨝_table1.column = table2.column table2` performs an equi join.</li><br>
+                                </ul><br>
+                            <li><strong>Outer Join:</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> Combines tuples from two tables and includes unmatched tuples from one or both tables.</li><br>
+                                    <li><strong>Types:</strong></li><br>
+                                        <ul>
+                                            <li>Left Outer Join: Returns all tuples from the left table and matching tuples from the right table. Unmatched tuples from the left table are included with nulls for the right table's attributes.</li><br>
+                                            <li>Right Outer Join: Returns all tuples from the right table and matching tuples from the left table. Unmatched tuples from the right table are included with nulls for the left table's attributes.</li><br>
+                                            <li>Full Outer Join: Returns all tuples from both tables, including unmatched tuples from each.</li><br>
+                                        </ul>
+                                    <li><strong>Syntax:</strong></li><br>
+                                        <ul>
+                                            <li>`table1 ⟖ table2` for left outer join.</li><br>
+                                            <li>`table1 ⟗ table2` for right outer join.</li><br>
+                                            <li>`table1 ⟖⟗ table2` for full outer join.</li><br>
+                                        </ul>
+                                    <li><strong>Example:</strong> `Employees ⟖ Departments` performs a left outer join on the "Employees" and "Departments" tables.</li><br>
+                                </ul><br>
+                            <li><strong>Division (`÷`):</strong><br>
+                                <ul>
+                                    <li><strong>Definition:</strong> Used to find tuples in one relation that are associated with all tuples in another relation.</li><br>
+                                    <li><strong>Syntax:</strong> `table1 ÷ table2`</li><br>
+                                    <li><strong>Example:</strong> If you have a "Students" table with student IDs and a "Courses" table with student IDs and course IDs, `Students ÷ Courses` would return student IDs who have taken all courses.</li><br>
+                                </ul><br>
+                        </ul><br>
+
+                        <h3>Extended Relational Algebra Operations:</h3><br>
+                            <p><strong>Key Concepts:</strong></p><br>
+                            <ul>
+                                <li><strong>Definition:</strong> Extended relational algebra operations expand upon fundamental and additional operations, providing more flexibility and power in querying relational databases.</li><br>
+                            </ul><br>
+                            <h3>Operations:</h3><br>
+                            <ul>
+                                <li><strong>Group By:</strong><br>
+                                    <ul>
+                                        <li><strong>Definition:</strong> Groups tuples based on a specified attribute(s), allowing aggregate functions to be applied to each group.</li><br>
+                                        <li><strong>Syntax:</strong> `GROUP BY column`</li><br>
+                                        <li><strong>Example:</strong> `GROUP BY DepartmentID` groups rows by department, allowing you to apply aggregate functions like count, sum, or average.</li><br>
+                                    </ul><br>
+                                <li><strong>Having:</strong><br>
+                                    <ul>
+                                        <li><strong>Definition:</strong> Applies a filter to groups created by the `GROUP BY` clause.</li><br>
+                                        <li><strong>Syntax:</strong> `HAVING condition`</li><br>
+                                        <li><strong>Example:</strong> `GROUP BY DepartmentID HAVING COUNT(EmployeeID) > 10` filters groups to only include departments with more than 10 employees.</li><br>
+                                    </ul><br>
+                                <li><strong>Aggregate Functions:</strong><br>
+                                    <ul>
+                                        <li><strong>Definition:</strong> Functions that compute a single value from a set of values.</li><br>
+                                        <li><strong>Examples:</strong> `SUM`, `COUNT`, `AVG`, `MIN`, `MAX`.</li><br>
+                                        <li><strong>Example:</strong> `SELECT DepartmentID, COUNT(EmployeeID) FROM Employees GROUP BY DepartmentID` returns the count of employees in each department.</li><br>
+                                    </ul><br>
+                                <li><strong>Order By:</strong><br>
+                                    <ul>
+                                        <li><strong>Definition:</strong> Sorts tuples based on specified attributes.</li><br>
+                                        <li><strong>Syntax:</strong> `ORDER BY column`</li><br>
+                                        <li><strong>Example:</strong> `ORDER BY Salary DESC` sorts rows by "Salary" in descending order.</li><br>
+                                    </ul><br>
+                                <li><strong>Rename:</strong><br>
+                                    <ul>
+                                        <li><strong>Definition:</strong> Changes the name of a relation or an attribute.</li><br>
+                                        <li><strong>Syntax:</strong> `ρ[new_relation_name](old_relation)`</li><br>
+                                        <li><strong>Example:</strong> `ρ[new_name](Employees)` renames the "Employees" relation to "new_name."</li><br>
+                                    </ul><br>
+                            </ul><br>
+                            <p><strong>Importance:</strong></p><br>
+                            <ul>
+                                <li>Powerful Queries: Extended relational algebra operations enable complex data manipulations and aggregations.</li><br>
+                                <li>Foundation for SQL: Many of these operations map directly to SQL clauses (e.g., `GROUP BY`, `HAVING`, `ORDER BY`).</li><br>
+                            </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Calculus:</h2><br>
+                        <h3>Tuple Relational Calculus:</h3><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Tuple relational calculus (TRC) is a non-procedural query language used to specify queries in a relational database. It focuses on the description of the data desired rather than the procedure for obtaining it.</li><br>
+                        </ul><br>
+                        <h3>Components:</h3><br>
+                        <ul>
+                            <li><strong>Variables:</strong> TRC uses variables (e.g., t) to represent tuples.</li><br>
+                            <li><strong>Predicates:</strong> Logical conditions that the tuples must satisfy (e.g., t.Name = "Alice").</li><br>
+                            <li><strong>Quantifiers:</strong> Existential (`∃`) and universal (`∀`) quantifiers to specify the scope of the variables.</li><br>
+                                <ul>
+                                    <li><strong>Existential Quantifier (`∃`):</strong> Specifies that there exists a tuple that satisfies the condition.</li><br>
+                                    <li><strong>Universal Quantifier (`∀`):</strong> Specifies that a condition must hold for all tuples.</li><br>
+                                </ul><br>
+                        </ul><br>
+                        <h3>Syntax:</h3><br>
+                        <p><strong>Basic Form:</strong> TRC queries follow the form `{t | condition}`.</p><br>
+                        <p><strong>Connectives:</strong> Logical connectives such as AND (`∧`), OR (`∨`), and NOT (`¬`) can be used to combine conditions.</p><br>
+                        <h3>Examples:</h3><br>
+                        <ul>
+                            <li>Retrieve all tuples: `{t | t ∈ Employees}`</li><br>
+                            <li>Retrieve tuples where salary is above a certain amount: `{t | t ∈ Employees ∧ t.Salary > 50000}`</li><br>
+                        </ul><br>
+                        <h3>Benefits:</h3><br>
+                        <ul>
+                            <li>Non-Procedural: TRC focuses on describing the desired data rather than the steps to retrieve it.</li><br>
+                            <li>Flexibility: Allows complex queries using logical conditions and quantifiers.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h3>Domain Relational Calculus:</h3><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Domain relational calculus (DRC) is a non-procedural query language used to specify queries in a relational database. It operates on domain variables, focusing on the description of the desired data rather than the procedure for obtaining it.</li><br>
+                        </ul><br>
+                        <h3>Components:</h3><br>
+                        <ul>
+                            <li><strong>Variables:</strong> DRC uses domain variables (e.g., x) to represent values from a domain (columns or attributes).</li><br>
+                            <li><strong>Predicates:</strong> Logical conditions that the variables must satisfy (e.g., x > 50000).</li><br>
+                            <li><strong>Quantifiers:</strong> Existential (`∃`) and universal (`∀`) quantifiers to specify the scope of the variables.</li><br>
+                                <ul>
+                                    <li><strong>Existential Quantifier (`∃`):</strong> Specifies that there exists a value that satisfies the condition.</li><br>
+                                    <li><strong>Universal Quantifier (`∀`):</strong> Specifies that a condition must hold for all values in a domain.</li><br>
+                                </ul><br>
+                        </ul><br>
+                        <h3>Syntax:</h3><br>
+                        <p><strong>Basic Form:</strong> DRC queries follow the form `{<variable> | condition}`.</p><br>
+                        <p><strong>Connectives:</strong> Logical connectives such as AND (`∧`), OR (`∨`), and NOT (`¬`) can be used to combine conditions.</p><br>
+                        <h3>Examples:</h3><br>
+                        <ul>
+                            <li>Retrieve all salaries: `{<x> | ∃e (e ∈ Employees) ∧ (e.Salary = x)}`</li><br>
+                            <li>Retrieve unique employee IDs: `{<x> | ∃e (e ∈ Employees) ∧ (e.EmployeeID = x)}`</li><br>
+                        </ul><br>
+                        <h3>Benefits:</h3><br>
+                        <ul>
+                            <li>Non-Procedural: DRC focuses on describing the desired data rather than the steps to retrieve it.</li><br>
+                            <li>Flexibility: Allows complex queries using logical conditions and quantifiers.</li><br>
+                        </ul><br>
+
+                        <h3>Extended Relational Algebra Operations:</h3><br>
+                        <p><strong>calculus vs algebra:</strong></p><br>
+                        <ul>
+                            <li><strong>Overview:</strong> Relational calculus and relational algebra are two formal query languages used in relational databases. They differ in their approach to querying data, but both aim to provide powerful and efficient data retrieval.</li><br>
+                        </ul><br>
+                        <h3>Relational Algebra:</h3><br>
+                        <ul>
+                            <li><strong>Procedural:</strong> Relational algebra is a procedural query language. It provides a set of operations for manipulating and retrieving data from relational databases.</li><br>
+                            <li><strong>Operations:</strong> Common operations include select (`σ`), project (`π`), join (`⨝`), and set operations (union, difference, etc.).</li><br>
+                            <li><strong>Execution Path:</strong> Relational algebra specifies the exact sequence of operations to perform a query, providing a clear execution path.</li><br>
+                            <li><strong>Query Composition:</strong> Allows complex queries to be composed using a combination of operations.</li><br>
+                        </ul><br>
+                        <h3>Relational Calculus:</h3><br>
+                        <ul>
+                            <li><strong>Non-Procedural:</strong> Relational calculus is a non-procedural query language. It focuses on the description of the data desired rather than the procedure for obtaining it.</li><br>
+                            <li><strong>Domain and Tuple Relational Calculus:</strong> Two forms of relational calculus:
+                                <ul>
+                                    <li><strong>Domain Relational Calculus (DRC):</strong> Queries are based on specifying conditions on domain variables (attributes).</li><br>
+                                    <li><strong>Tuple Relational Calculus (TRC):</strong> Queries are based on specifying conditions on tuples (rows).</li><br>
+                                </ul>
+                            </li><br>
+                            <li><strong>Declarative:</strong> Relational calculus specifies what data is needed rather than how to retrieve it, providing a more declarative approach.</li><br>
+                        </ul><br>
+                        <h3>Comparison:</h3><br>
+                        <ul>
+                            <li><strong>Ease of Use:</strong> Relational calculus is often considered easier to understand and use because it focuses on describing the desired data, similar to SQL.</li><br>
+                            <li><strong>Control:</strong> Relational algebra provides more control over the query execution path, which can be beneficial for optimization.</li><br>
+                            <li><strong>Complexity:</strong> Both languages can handle complex queries, but the procedural nature of relational algebra may offer more precision in specifying the query execution.</li><br>
+                        </ul><br>
+                        <h3>Relationship to SQL:</h3><br>
+                        <ul>
+                            <li><strong>Relational Algebra:</strong> Forms the theoretical foundation of SQL, particularly in its approach to set-based operations and joins.</li><br>
+                            <li><strong>Relational Calculus:</strong> Influences the declarative nature of SQL, where the focus is on specifying the desired data rather than how to retrieve it.</li><br>
+                        </ul><br>
+
+                        <h3>computational capabilities:</h3><br>
+                            <p><strong>Definition:</strong> Computational capabilities refer to the expressive power of a query language in terms of the complexity of queries it can express and the types of computations it can perform.</p><br>
+                            <h3>Relational Algebra and Calculus:</h3><br>
+                            <ul>
+                                <li><strong>Equivalence:</strong> Relational algebra and relational calculus have equivalent expressive power, meaning they can express the same queries and computations.</li><br>
+                                <li><strong>Query Expressiveness:</strong> Both languages can express a wide range of queries, including selection, projection, join, aggregation, and grouping.</li><br>
+                            </ul><br>
+                            <h3>Operations and Complexity:</h3><br>
+                            <ul>
+                                <li><strong>Basic Operations:</strong> Relational algebra provides a set of basic operations such as selection, projection, join, and set operations, which are foundational for querying data.</li><br>
+                                <li><strong>Advanced Operations:</strong> Both relational algebra and relational calculus support complex queries involving nested subqueries, aggregation, and recursive queries.</li><br>
+                                <li><strong>Optimization:</strong> Both languages benefit from optimization techniques to improve query performance, such as indexing, query rewriting, and caching.</li><br>
+                            </ul><br>
+                            <h3>Recursion:</h3><br>
+                            <ul>
+                                <li><strong>Recursive Queries:</strong> Some query languages, such as SQL, support recursive queries for hierarchical data retrieval (e.g., parent-child relationships).</li><br>
+                                <li><strong>Common Table Expressions (CTEs):</strong> In SQL, CTEs can be used for recursion, allowing for complex queries such as hierarchical data traversal.</li><br>
+                            </ul><br>
+                            <h3>Expressiveness in SQL:</h3><br>
+                            <ul>
+                                <li><strong>Declarative Nature:</strong> SQL, influenced by relational calculus, provides a high level of expressiveness for querying data in a declarative manner.</li><br>
+                                <li><strong>Set Operations:</strong> SQL supports set operations (union, intersection, difference) similar to those in relational algebra.</li><br>
+                            </ul><br>
+                            <h3>Comparisons with Other Languages:</h3><br>
+                            <ul>
+                                <li><strong>NoSQL:</strong> Non-relational databases use different query languages with varying computational capabilities, focusing on flexibility and scalability.</li><br>
+                                <li><strong>Graph Databases:</strong> Graph query languages focus on navigating and querying nodes and edges, offering different computational capabilities compared to relational databases.</li><br>
+                            </ul><br>
+                    </section>
+                    
                 </div>
 
                 <div id="unit3" class="formatted-text">
                     <!-- Unit 3 text -->
                     <h2>UNIT 3: Introduction to SQL</h2>
                     <br>
-                    <p>Maecenas nec sem justo. Phasellus magna. Fusce ac felis sit amet ligula pharetra condimentum. Sed fringilla mauris sit amet nibh. Phasellus dolor. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Vestibulum at velit eget mauris placerat eleifend.</p>
+                    <section>
+                        <h2>Overview of SQL:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> SQL (Structured Query Language) is a standardized language used to interact with relational databases. It includes commands for querying, updating, and managing data and database structures.</li><br>
+                        </ul><br>
+                        <h3>SQL Features:</h3><br>
+                        <ul>
+                            <li><strong>Declarative:</strong> SQL specifies what data should be retrieved or manipulated, not how to achieve the result.</li><br>
+                            <li><strong>Data Definition:</strong> SQL provides statements for creating, altering, and dropping tables and other database objects (DDL).</li><br>
+                            <li><strong>Data Manipulation:</strong> SQL includes statements for querying, inserting, updating, and deleting data (DML).</li><br>
+                            <li><strong>Data Control:</strong> SQL supports data access control and permission management (DCL).</li><br>
+                        </ul><br>
+                        <h3>Categories of SQL:</h3><br>
+                        <ul>
+                            <li><strong>Data Definition Language (DDL):</strong>
+                                <ul>
+                                    <li>Commands such as `CREATE`, `ALTER`, `DROP` for managing database schema and objects.</li><br>
+                                    <li>Example: `CREATE TABLE Employees (ID INT PRIMARY KEY, Name VARCHAR(50));`</li><br>
+                                </ul><br>
+                            <li><strong>Data Manipulation Language (DML):</strong>
+                                <ul>
+                                    <li>Commands such as `SELECT`, `INSERT`, `UPDATE`, `DELETE` for querying and manipulating data.</li><br>
+                                    <li>Example: `SELECT * FROM Employees WHERE ID = 1;`</li><br>
+                                </ul><br>
+                            <li><strong>Data Control Language (DCL):</strong>
+                                <ul>
+                                    <li>Commands such as `GRANT`, `REVOKE` for managing user access and permissions.</li><br>
+                                    <li>Example: `GRANT SELECT ON Employees TO user123;`</li><br>
+                                </ul><br>
+                        </ul><br>
+                        <h3>SQL Standards:</h3><br>
+                        <ul>
+                            <li><strong>ANSI SQL:</strong> The American National Standards Institute (ANSI) established SQL standards for consistency across implementations.</li><br>
+                            <li><strong>Variations:</strong> Different DBMSs may extend ANSI SQL with additional features and optimizations.</li><br>
+                        </ul><br>
+                        <h3>Data Types:</h3><br>
+                        <ul>
+                            <li><strong>Common Types:</strong> SQL supports various data types such as integers, strings (VARCHAR), dates, and binary data (BLOB).</li><br>
+                            <li><strong>User-Defined Types:</strong> Some databases allow creating custom data types for specialized use cases.</li><br>
+                        </ul><br>
+                        <h3>Applications:</h3><br>
+                        <ul>
+                            <li><strong>Querying Data:</strong> Retrieve specific data using `SELECT` queries.</li><br>
+                            <li><strong>Data Modification:</strong> Add (`INSERT`), update (`UPDATE`), and remove (`DELETE`) data.</li><br>
+                            <li><strong>Schema Management:</strong> Define and modify database structure (tables, indexes, views).</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>SQL Data Definition:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Definition Language (DDL):</strong> SQL provides a set of commands known as Data Definition Language for defining and modifying the database schema. This includes creating, altering, and dropping tables, indexes, views, and other database objects.</li><br>
+                        </ul><br>
+                        <h3>Common SQL DDL Commands:</h3><br>
+                        <ul>
+                            <li><strong>CREATE:</strong>
+                                <ul>
+                                    <li>Used to create new database objects such as tables, indexes, and views.</li><br>
+                                    <li>Examples:</li><br>
+                                        <ul>
+                                            <li>Create Table: `CREATE TABLE Employees (ID INT PRIMARY KEY, Name VARCHAR(50));`</li><br>
+                                            <li>Create Index: `CREATE INDEX idx_name ON Employees (Name);`</li><br>
+                                            <li>Create View: `CREATE VIEW HighSalaries AS SELECT * FROM Employees WHERE Salary > 100000;`</li><br>
+                                        </ul><br>
+                                </ul><br>
+                            <li><strong>ALTER:</strong>
+                                <ul>
+                                    <li>Used to modify existing database objects such as tables and views.</li><br>
+                                    <li>Examples:</li><br>
+                                        <ul>
+                                            <li>Add Column: `ALTER TABLE Employees ADD COLUMN DepartmentID INT;`</li><br>
+                                            <li>Modify Column: `ALTER TABLE Employees MODIFY Name VARCHAR(100);`</li><br>
+                                            <li>Drop Column: `ALTER TABLE Employees DROP COLUMN DepartmentID;`</li><br>
+                                        </ul><br>
+                                </ul><br>
+                            <li><strong>DROP:</strong>
+                                <ul>
+                                    <li>Used to remove existing database objects such as tables, views, and indexes.</li><br>
+                                    <li>Examples:</li><br>
+                                        <ul>
+                                            <li>Drop Table: `DROP TABLE Employees;`</li><br>
+                                            <li>Drop View: `DROP VIEW HighSalaries;`</li><br>
+                                            <li>Drop Index: `DROP INDEX idx_name ON Employees;`</li><br>
+                                        </ul><br>
+                                </ul><br>
+                            <li><strong>TRUNCATE:</strong>
+                                <ul>
+                                    <li>Removes all rows from a table without logging individual row deletions, providing a faster method of emptying a table.</li><br>
+                                    <li>Syntax: `TRUNCATE TABLE table_name;`</li><br>
+                                </ul><br>
+                            <li><strong>RENAME:</strong>
+                                <ul>
+                                    <li>Changes the name of a database object such as a table or column.</li><br>
+                                    <li>Examples:</li><br>
+                                        <ul>
+                                            <li>Rename Table: `ALTER TABLE Employees RENAME TO Staff;`</li><br>
+                                            <li>Rename Column: `ALTER TABLE Employees RENAME COLUMN Name TO FullName;`</li><br>
+                                        </ul><br>
+                                </ul><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Basic Structure of SQL Queries:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>SQL Query:</strong> A statement that retrieves data from a database. A basic SQL query consists of clauses such as `SELECT`, `FROM`, and `WHERE` that define the data to be retrieved and any conditions to be applied.</li><br>
+                        </ul><br>
+                        <h3>Structure of a Basic SQL Query:</h3><br>
+                        <ul>
+                            <li><strong>SELECT:</strong>
+                                <ul>
+                                    <li>Specifies the columns or expressions to be retrieved.</li><br>
+                                    <li>Example: `SELECT Name, Age`</li><br>
+                                </ul><br>
+                            <li><strong>FROM:</strong>
+                                <ul>
+                                    <li>Specifies the table(s) from which data is retrieved.</li><br>
+                                    <li>Example: `FROM Employees`</li><br>
+                                </ul><br>
+                            <li><strong>WHERE:</strong>
+                                <ul>
+                                    <li>Applies conditions to filter the rows being retrieved.</li><br>
+                                    <li>Example: `WHERE Age > 30`</li><br>
+                                </ul><br>
+                        </ul><br>
+                        <h4>Example of a Basic SQL Query:</h4><br>
+                        <p>`SELECT Name, Age FROM Employees WHERE Age > 30;`<br>This query retrieves the "Name" and "Age" columns from the "Employees" table for employees older than 30.</p><br>
+                        <h3>Additional Clauses:</h3><br>
+                        <ul>
+                            <li><strong>GROUP BY:</strong>
+                                <ul>
+                                    <li>Groups rows sharing a common attribute.</li><br>
+                                    <li>Example: `GROUP BY DepartmentID`</li><br>
+                                </ul><br>
+                            <li><strong>HAVING:</strong>
+                                <ul>
+                                    <li>Filters groups created by the `GROUP BY` clause based on a condition.</li><br>
+                                    <li>Example: `HAVING COUNT(EmployeeID) > 5`</li><br>
+                                </ul><br>
+                            <li><strong>ORDER BY:</strong>
+                                <ul>
+                                    <li>Specifies the order in which the rows should be returned.</li><br>
+                                    <li>Example: `ORDER BY Salary DESC`</li><br>
+                                </ul><br>
+                        </ul><br>
+                        <h4>Example of an Advanced SQL Query:</h4><br>
+                        <p>`SELECT DepartmentID, AVG(Salary) FROM Employees GROUP BY DepartmentID HAVING AVG(Salary) > 50000 ORDER BY DepartmentID;`<br>This query calculates the average salary for each department where the average salary is greater than 50,000, then orders the results by department ID.</p><br>
+                        <h3>Joins in SQL:</h3><br>
+                        <ul>
+                            <li><strong>Inner Join:</strong> Combines rows from multiple tables based on a matching condition.</li><br>
+                                <p>Example: `SELECT e.Name, d.Name FROM Employees e INNER JOIN Departments d ON e.DepartmentID = d.DepartmentID;`</p><br>
+                            <li><strong>Left Join:</strong> Returns all rows from the left table and matching rows from the right table.</li><br>
+                                <p>Example: `SELECT e.Name, d.Name FROM Employees e LEFT JOIN Departments d ON e.DepartmentID = d.DepartmentID;`</p><br>
+                            <li><strong>Right Join:</strong> Returns all rows from the right table and matching rows from the left table.</li><br>
+                                <p>Example: `SELECT e.Name, d.Name FROM Employees e RIGHT JOIN Departments d ON e.DepartmentID = d.DepartmentID;`</p><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Additional Basic Operators:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Operators:</strong> SQL provides a variety of operators to enhance query functionality and data manipulation.</li><br>
+                        </ul><br>
+                        <h3>Comparison Operators:</h3><br>
+                        <ul>
+                            <li><strong>Equality (`=`):</strong> Tests if values are equal.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE Age = 30;`</p><br>
+                            <li><strong>Not Equal (`<>` or `!=`):</strong> Tests if values are not equal.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE Age <> 30;`</p><br>
+                            <li><strong>Greater Than (`>`):</strong> Tests if one value is greater than another.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE Salary > 50000;`</p><br>
+                            <li><strong>Less Than (`<`):</strong> Tests if one value is less than another.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE Salary < 50000;`</p><br>
+                            <li><strong>Greater Than or Equal To (`>=`):</strong> Tests if one value is greater than or equal to another.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE Age >= 25;`</p><br>
+                            <li><strong>Less Than or Equal To (`<=`):</strong> Tests if one value is less than or equal to another.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE Age <= 25;`</p><br>
+                        </ul><br>
+                        <h3>Logical Operators:</h3><br>
+                        <ul>
+                            <li><strong>AND:</strong> Combines conditions; returns true only if both conditions are true.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE Age > 30 AND Salary > 40000;`</p><br>
+                            <li><strong>OR:</strong> Combines conditions; returns true if either condition is true.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE Age > 30 OR Salary > 40000;`</p><br>
+                            <li><strong>NOT:</strong> Inverts a condition; returns true if the condition is false.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE NOT Age = 30;`</p><br>
+                        </ul><br>
+                        <h3>Other Operators:</h3><br>
+                        <ul>
+                            <li><strong>LIKE:</strong> Used for pattern matching in strings.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE Name LIKE 'A%';`</p><br>
+                            <li><strong>IN:</strong> Checks if a value is within a list of values.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE DepartmentID IN (1, 2, 3);`</p><br>
+                            <li><strong>BETWEEN:</strong> Checks if a value is within a specified range.</li><br>
+                                <p>Example: `SELECT * FROM Employees WHERE Age BETWEEN 30 AND 40;`</p><br>
+                        </ul><br>
+                        <h3>Arithmetic Operators:</h3><br>
+                        <ul>
+                            <li><strong>Addition (`+`):</strong> Adds two numbers.</li><br>
+                                <p>Example: `SELECT Age + 5 AS AgeInFiveYears FROM Employees;`</p><br>
+                            <li><strong>Subtraction (`-`):</strong> Subtracts one number from another.</li><br>
+                                <p>Example: `SELECT Salary - 5000 AS NewSalary FROM Employees;`</p><br>
+                            <li><strong>Multiplication (`*`):</strong> Multiplies two numbers.</li><br>
+                                <p>Example: `SELECT Salary * 1.1 AS NewSalary FROM Employees;`</p><br>
+                            <li><strong>Division (`/`):</strong> Divides one number by another.</li><br>
+                                <p>Example: `SELECT Salary / 12 AS MonthlySalary FROM Employees;`</p><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Set Operations:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Set Operations:</strong> SQL includes set operations that allow combining results from multiple queries. These operations treat the results as sets, providing a way to merge, intersect, or exclude rows.</li><br>
+                        </ul><br>
+                        <h3>Common Set Operations:</h3><br>
+                        <ul>
+                            <li><strong>UNION:</strong>
+                                <ul>
+                                    <li>Combines the results of two queries and returns distinct rows from both queries.</li><br>
+                                    <li>Syntax: `query1 UNION query2`</li><br>
+                                    <li>Example: `SELECT Name FROM Employees UNION SELECT Name FROM Managers;`</li><br>
+                                </ul><br>
+                            <li><strong>UNION ALL:</strong>
+                                <ul>
+                                    <li>Similar to `UNION` but returns all rows from both queries, including duplicates.</li><br>
+                                    <li>Syntax: `query1 UNION ALL query2`</li><br>
+                                    <li>Example: `SELECT Name FROM Employees UNION ALL SELECT Name FROM Managers;`</li><br>
+                                </ul><br>
+                            <li><strong>INTERSECT:</strong>
+                                <ul>
+                                    <li>Returns rows that are common to both queries.</li><br>
+                                    <li>Syntax: `query1 INTERSECT query2`</li><br>
+                                    <li>Example: `SELECT Name FROM Employees INTERSECT SELECT Name FROM Managers;`</li><br>
+                                </ul><br>
+                            <li><strong>EXCEPT (or MINUS):</strong>
+                                <ul>
+                                    <li>Returns rows from the first query that are not present in the second query.</li><br>
+                                    <li>Syntax: `query1 EXCEPT query2` (or `query1 MINUS query2`)</li><br>
+                                    <li>Example: `SELECT Name FROM Employees EXCEPT SELECT Name FROM Managers;`</li><br>
+                                </ul><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Null Values:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Null Values:</strong> A null value represents the absence of a value or unknown information in a database. It is different from zero, an empty string, or any other default value.</li><br>
+                        </ul><br>
+                        <h3>Usage:</h3><br>
+                        <ul>
+                            <li><strong>Representation:</strong> Null is represented as the keyword `NULL` in SQL.</li><br>
+                            <li><strong>Handling Nulls:</strong> Special handling is required in SQL because nulls can lead to unexpected results if not properly considered.</li><br>
+                        </ul><br>
+                        <h3>Comparison and Operations with Nulls:</h3><br>
+                        <ul>
+                            <li><strong>Equality Comparisons:</strong>
+                                <ul>
+                                    <li>IS NULL: Checks if a value is null.</li><br>
+                                        <p>Example: `SELECT * FROM Employees WHERE ManagerID IS NULL;`</p><br>
+                                    <li>IS NOT NULL: Checks if a value is not null.</li><br>
+                                        <p>Example: `SELECT * FROM Employees WHERE ManagerID IS NOT NULL;`</p><br>
+                                    <li>Null values cannot be compared using the usual comparison operators (e.g., `=`, `<>`).</li><br>
+                                </ul><br>
+                            <li><strong>Conditional Logic:</strong>
+                                <ul>
+                                    <li>Functions like `COALESCE` and `NVL` (in some DBMSs) provide ways to handle null values.</li><br>
+                                        <p>COALESCE: Returns the first non-null value in a list.</p><br>
+                                        <p>NVL (Oracle-specific): Replaces null values with a specified value.</p><br>
+                                </ul><br>
+                            <li><strong>Aggregates:</strong>
+                                <ul>
+                                    <li>Most aggregate functions (e.g., `SUM`, `AVG`, `COUNT`) ignore null values.</li><br>
+                                    <li>COUNT(*): Counts all rows, including rows with null values.</li><br>
+                                </ul><br>
+                            <li><strong>Joining and Nulls:</strong>
+                                <ul>
+                                    <li>Null values in a foreign key can lead to rows not being joined in an inner join.</li><br>
+                                    <li>Outer joins can help include rows with nulls.</li><br>
+                                </ul><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Aggregate Functions:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Aggregate functions in SQL perform calculations on a set of values and return a single value as a result.</li><br>
+                        </ul><br>
+                        <h3>Common Aggregate Functions:</h3><br>
+                        <ul>
+                            <li><strong>COUNT:</strong>
+                                <ul>
+                                    <li>Counts the number of rows.</li><br>
+                                    <li>Syntax: `COUNT(expression)`</li><br>
+                                    <li>Example: `SELECT COUNT(*) FROM Employees;` returns the total number of rows in the "Employees" table.</li><br>
+                                </ul><br>
+                            <li><strong>SUM:</strong>
+                                <ul>
+                                    <li>Calculates the sum of a set of values.</li><br>
+                                    <li>Syntax: `SUM(expression)`</li><br>
+                                    <li>Example: `SELECT SUM(Salary) FROM Employees;` returns the total sum of salaries in the "Employees" table.</li><br>
+                                </ul><br>
+                            <li><strong>AVG:</strong>
+                                <ul>
+                                    <li>Calculates the average (mean) of a set of values.</li><br>
+                                    <li>Syntax: `AVG(expression)`</li><br>
+                                    <li>Example: `SELECT AVG(Salary) FROM Employees;` returns the average salary in the "Employees" table.</li><br>
+                                </ul><br>
+                            <li><strong>MAX:</strong>
+                                <ul>
+                                    <li>Returns the maximum value in a set.</li><br>
+                                    <li>Syntax: `MAX(expression)`</li><br>
+                                    <li>Example: `SELECT MAX(Salary) FROM Employees;` returns the highest salary in the "Employees" table.</li><br>
+                                </ul><br>
+                            <li><strong>MIN:</strong>
+                                <ul>
+                                    <li>Returns the minimum value in a set.</li><br>
+                                    <li>Syntax: `MIN(expression)`</li><br>
+                                    <li>Example: `SELECT MIN(Salary) FROM Employees;` returns the lowest salary in the "Employees" table.</li><br>
+                                </ul><br>
+                        </ul><br>
+                        <h3>Using Aggregate Functions with GROUP BY:</h3><br>
+                        <ul>
+                            <li><strong>Aggregate functions can be used with the `GROUP BY` clause to calculate values for each group.</strong></li><br>
+                                <p>Example: `SELECT DepartmentID, AVG(Salary) FROM Employees GROUP BY DepartmentID;`</p><br>
+                                    <ul>
+                                        <li>This query returns the average salary for each department.</li><br>
+                                    </ul><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>Nested Subqueries:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Nested subqueries, also known as sub-selects or inner queries, are queries within other queries. They allow for more complex data retrieval by enabling a main (outer) query to use the results of another (inner) query.</li><br>
+                        </ul><br>
+                        <h3>Types of Nested Subqueries:</h3><br>
+                        <ul>
+                            <li><strong>Scalar Subqueries:</strong>
+                                <ul>
+                                    <li>Return a single value.</li><br>
+                                    <li>Example: `SELECT Name FROM Employees WHERE Salary = (SELECT MAX(Salary) FROM Employees);`</li><br>
+                                </ul><br>
+                            <li><strong>Row Subqueries:</strong>
+                                <ul>
+                                    <li>Return a single row.</li><br>
+                                    <li>Example: `SELECT * FROM Employees WHERE (DepartmentID, JobTitle) = (SELECT DepartmentID, JobTitle FROM Managers WHERE ID = 1);`</li><br>
+                                </ul><br>
+                            <li><strong>Table Subqueries:</strong>
+                                <ul>
+                                    <li>Return a set of rows.</li><br>
+                                    <li>Example: `SELECT * FROM Employees WHERE DepartmentID IN (SELECT DepartmentID FROM Managers);`</li><br>
+                                </ul><br>
+                        </ul><br>
+                        <h3>Placement in Queries:</h3><br>
+                        <ul>
+                            <li><strong>WHERE Clause:</strong>
+                                <ul>
+                                    <li>Most common use for nested subqueries.</li><br>
+                                    <li>Example: `SELECT * FROM Employees WHERE Salary > (SELECT AVG(Salary) FROM Employees);`</li><br>
+                                </ul><br>
+                            <li><strong>FROM Clause:</strong>
+                                <ul>
+                                    <li>Subqueries can also be used in the `FROM` clause.</li><br>
+                                    <li>Example: `SELECT * FROM (SELECT * FROM Employees WHERE Age > 30) AS OlderEmployees;`</li><br>
+                                </ul><br>
+                            <li><strong>HAVING Clause:</strong>
+                                <ul>
+                                    <li>Subqueries can be used in the `HAVING` clause to filter groups.</li><br>
+                                    <li>Example: `SELECT DepartmentID, AVG(Salary) FROM Employees GROUP BY DepartmentID HAVING AVG(Salary) > (SELECT AVG(Salary) FROM Employees);`</li><br>
+                                </ul><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Modification of the Database Intermediate SQL:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Manipulation Language (DML):</strong> SQL provides commands to modify data in the database using Data Manipulation Language (DML). The primary commands are `INSERT`, `UPDATE`, and `DELETE`.</li><br>
+                        </ul><br>
+                        <h3>Data Modification Commands:</h3><br>
+                        <ul>
+                            <li><strong>INSERT:</strong>
+                                <ul>
+                                    <li>Adds new rows to a table.</li><br>
+                                    <li>Syntax: `INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);`</li><br>
+                                    <li>Example: `INSERT INTO Employees (Name, Age, DepartmentID) VALUES ('Alice', 30, 2);`</li><br>
+                                </ul><br>
+                            <li><strong>UPDATE:</strong>
+                                <ul>
+                                    <li>Modifies existing rows in a table.</li><br>
+                                    <li>Syntax: `UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;`</li><br>
+                                    <li>Example: `UPDATE Employees SET Salary = Salary * 1.1 WHERE DepartmentID = 1;`</li><br>
+                                </ul><br>
+                            <li><strong>DELETE:</strong>
+                                <ul>
+                                    <li>Removes rows from a table based on a condition.</li><br>
+                                    <li>Syntax: `DELETE FROM table_name WHERE condition;`</li><br>
+                                    <li>Example: `DELETE FROM Employees WHERE Age > 60;`</li><br>
+                                </ul><br>
+                        </ul><br>
+                        <h3>Join Expressions:</h3><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Join expressions combine rows from two or more tables based on a related column. They allow for querying data across multiple tables by establishing relationships between them.</li><br>
+                        </ul><br>
+                        <h3>Types of Joins:</h3><br>
+                        <ul>
+                            <li><strong>Inner Join:</strong>
+                                <ul>
+                                    <li>Returns rows that have matching values in both tables.</li><br>
+                                    <li>Syntax: `SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column;`</li><br>
+                                    <li>Example: `SELECT Employees.Name, Departments.DepartmentName FROM Employees INNER JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID;`</li><br>
+                                </ul><br>
+                            <li><strong>Left Join:</strong>
+                                <ul>
+                                    <li>Returns all rows from the left table and matching rows from the right table. Unmatched rows in the right table are filled with nulls.</li><br>
+                                    <li>Syntax: `SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column;`</li><br>
+                                    <li>Example: `SELECT Employees.Name, Departments.DepartmentName FROM Employees LEFT JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID;`</li><br>
+                                </ul><br>
+                            <li><strong>Right Join:</strong>
+                                <ul>
+                                    <li>Returns all rows from the right table and matching rows from the left table. Unmatched rows in the left table are filled with nulls.</li><br>
+                                    <li>Syntax: `SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;`</li><br>
+                                    <li>Example: `SELECT Employees.Name, Departments.DepartmentName FROM Employees RIGHT JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID;`</li><br>
+                                </ul><br>
+                            <li><strong>Full Outer Join:</strong>
+                                <ul>
+                                    <li>Returns all rows from both tables, with nulls where there is no match.</li><br>
+                                    <li>Syntax: `SELECT * FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column;`</li><br>
+                                    <li>Example: `SELECT Employees.Name, Departments.DepartmentName FROM Employees FULL OUTER JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID;`</li><br>
+                                </ul><br>
+                            <li><strong>Cross Join:</strong>
+                                <ul>
+                                    <li>Also known as Cartesian product, it returns all possible combinations of rows from both tables.</li><br>
+                                    <li>Syntax: `SELECT * FROM table1 CROSS JOIN table2;`</li><br>
+                                    <li>Example: `SELECT Employees.Name, Departments.DepartmentName FROM Employees CROSS JOIN Departments;`</li><br>
+                                </ul><br>
+                            <li><strong>Self Join:</strong>
+                                <ul>
+                                    <li>Joins a table to itself to compare rows within the same table.</li><br>
+                                    <li>Syntax: `SELECT a.column, b.column FROM table_name a JOIN table_name b ON a.column = b.column;`</li><br>
+                                    <li>Example: `SELECT e1.Name AS Employee1, e2.Name AS Employee2 FROM Employees e1 JOIN Employees e2 ON e1.ManagerID = e2.EmployeeID;`</li><br>
+                                </ul><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Views:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Views in SQL are virtual tables created from a query. They act as a saved query, representing a subset of data from one or more tables.</li><br>
+                        </ul><br>
+                        <h3>Creating Views:</h3><br>
+                        <ul>
+                            <li><strong>Syntax:</strong> `CREATE VIEW view_name AS SELECT column1, column2, ... FROM table_name WHERE condition;`</li><br>
+                            <li><strong>Example:</strong> `CREATE VIEW HighSalaryEmployees AS SELECT Name, Salary FROM Employees WHERE Salary > 50000;`</li><br>
+                        </ul><br>
+                        <h3>Using Views:</h3><br>
+                        <ul>
+                            <li><strong>Querying Views:</strong> Views can be queried like regular tables.</li><br>
+                            <li><strong>Example:</strong> `SELECT * FROM HighSalaryEmployees;`</li><br>
+                            <li><strong>Updating Views:</strong> Some views can be updated directly if they meet certain criteria.</li><br>
+                            <li><strong>Example:</strong> `UPDATE HighSalaryEmployees SET Salary = Salary + 5000 WHERE Name = 'Alice';`</li><br>
+                        </ul><br>
+                        <h3>Types of Views:</h3><br>
+                        <ul>
+                            <li><strong>Simple Views:</strong> Based on a single table and can be updated.</li><br>
+                            <li><strong>Complex Views:</strong> Based on multiple tables or complex queries and may not be directly updatable.</li><br>
+                            <li><strong>Materialized Views:</strong> Store the result set of the view and periodically refresh it for better performance.</li><br>
+                        </ul><br>
+                        <h3>Advantages of Views:</h3><br>
+                        <ul>
+                            <li><strong>Abstraction:</strong> Hide complexity from end-users by abstracting underlying tables.</li><br>
+                            <li><strong>Security:</strong> Restrict data access by exposing only necessary data.</li><br>
+                            <li><strong>Reusability:</strong> Use views as reusable components for complex queries.</li><br>
+                        </ul><br>
+                    </section>
+                    <section>
+                        <h2>Transactions:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Transactions in SQL refer to a sequence of database operations (such as queries and updates) that are executed as a single unit of work. A transaction ensures that all operations succeed or fail together.</li><br>
+                        </ul><br>
+                        <h3>Transaction Properties (ACID):</h3><br>
+                        <ul>
+                            <li><strong>Atomicity:</strong> All operations in a transaction are treated as a single unit.</li><br>
+                            <li><strong>Consistency:</strong> Transactions ensure the database remains in a consistent state.</li><br>
+                            <li><strong>Isolation:</strong> Transactions are isolated from one another.</li><br>
+                            <li><strong>Durability:</strong> Once a transaction is committed, its changes are permanent.</li><br>
+                        </ul><br>
+                        <h3>Transaction Commands:</h3><br>
+                        <ul>
+                            <li><strong>BEGIN TRANSACTION:</strong> Marks the beginning of a transaction.</li><br>
+                            <li><strong>COMMIT:</strong> Marks the successful completion of a transaction and makes changes permanent.</li><br>
+                            <li><strong>ROLLBACK:</strong> Reverts all changes made during a transaction and ends the transaction.</li><br>
+                            <li><strong>SAVEPOINT:</strong> Sets a savepoint within a transaction to allow partial rollbacks.</li><br>
+                            <li><strong>ROLLBACK TO SAVEPOINT:</strong> Rolls back to a specific savepoint within a transaction.</li><br>
+                        </ul><br>
+                        <h3>Concurrency Control:</h3><br>
+                        <ul>
+                            <li><strong>Locks:</strong> Used to manage concurrent access to data.</li><br>
+                            <li><strong>Isolation Levels:</strong> Define the degree of isolation between concurrent transactions.</li><br>
+                            <li><strong>Example:</strong> `SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;`</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Integrity Constraints:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Integrity constraints in SQL are rules that enforce data integrity and consistency in a database.</li><br>
+                        </ul><br>
+                        <h3>Types of Integrity Constraints:</h3><br>
+                        <ul>
+                            <li><strong>Primary Key:</strong> Ensures each row in a table has a unique identifier.</li><br>
+                            <li><strong>Foreign Key:</strong> Enforces referential integrity by ensuring that a column's values match values in another table's primary key.</li><br>
+                            <li><strong>Unique:</strong> Ensures that a column or a group of columns contains only unique values.</li><br>
+                            <li><strong>Not Null:</strong> Ensures that a column does not accept null values.</li><br>
+                            <li><strong>Check:</strong> Ensures that a column's values satisfy a specific condition.</li><br>
+                        </ul><br>
+                        <h3>Benefits:</h3><br>
+                        <ul>
+                            <li><strong>Data Integrity:</strong> Constraints help maintain data accuracy and consistency.</li><br>
+                            <li><strong>Prevent Invalid Data:</strong> Constraints prevent invalid data from being entered into the database.</li><br>
+                        </ul><br>
+                    </section>
+                    <section>
+                        <h2>SQL Data Types and Schema:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Types:</strong> SQL provides various data types to define the type of data a column can store.</li><br>
+                            <li><strong>SQL Schema:</strong> The schema is a logical grouping of database objects such as tables, views, indexes, and procedures.</li><br>
+                        </ul><br>
+                        <h3>Common SQL Data Types:</h3><br>
+                        <ul>
+                            <li><strong>Numeric Types:</strong> Integer, Decimal</li><br>
+                            <li><strong>String Types:</strong> Character, Variable Character, Text</li><br>
+                            <li><strong>Date and Time Types:</strong> Date, Time, Timestamp</li><br>
+                            <li><strong>Binary Types:</strong> Binary, Blob</li><br>
+                        </ul><br>
+                        <h3>SQL Schema:</h3><br>
+                        <ul>
+                            <li><strong>Creating Schema:</strong> Create a logical grouping of database objects.</li><br>
+                            <li><strong>Schema Qualifiers:</strong> Specify a schema for a database object.</li><br>
+                            <li><strong>Default Schema:</strong> Each user may have a default schema where objects are created by default.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Authorization:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Authorization in SQL refers to the process of granting and revoking permissions to access and manipulate data in a database.</li><br>
+                            <li><strong>Types of Permissions:</strong> Read, Write, Execute, Manage</li><br>
+                        </ul><br>
+                        <h3>SQL Authorization Commands:</h3><br>
+                        <ul>
+                            <li><strong>GRANT:</strong> Grants specified permissions to a user or role.</li><br>
+                            <li><strong>REVOKE:</strong> Revokes specified permissions from a user or role.</li><br>
+                            <li><strong>Roles:</strong> Roles can be used to group permissions for easier management.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Assessing SQL from Programming Language:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Database Connectivity:</strong> JDBC, ODBC, Embedded SQL</li><br>
+                            <li><strong>Query Execution:</strong> Query Preparation, Executing Queries, Fetching Data</li><br>
+                            <li><strong>Error Handling:</strong> Transaction Management, Exception Handling</li><br>
+                        </ul><br>
+                        <h3>JDBC (Java Database Connectivity):</h3><br>
+                        <p><strong>Definition:</strong> JDBC is a Java API that provides connectivity between a Java application and various databases.</p><br>
+                        <p><strong>Features:</strong></p><br>
+                        <ul>
+                            <li>Connection Management</li>
+                            <li>Query Execution</li>
+                            <li>Prepared Statements</li>
+                            <li>Transaction Management</li>
+                            <li>Data Handling</li>
+                        </ul><br>
+                        <h3>ODBC (Open Database Connectivity):</h3><br>
+                        <p><strong>Definition:</strong> ODBC is a standardized API that provides connectivity between an application and various databases.</p><br>
+                        <p><strong>Features:</strong></p><br>
+                        <ul>
+                            <li>Compatibility</li>
+                            <li>Connection Management</li>
+                            <li>Query Execution</li>
+                            <li>Transaction Management</li>
+                            <li>Data Handling</li>
+                        </ul><br>
+                        <h3>Embedded SQL:</h3><br>
+                        <p><strong>Definition:</strong> Embedded SQL refers to incorporating SQL statements directly into the source code of a programming language such as C, C++, or COBOL.</p><br>
+                        <p><strong>Features:</strong></p><br>
+                        <ul>
+                            <li>Code Integration</li>
+                            <li>Precompilation</li>
+                            <li>Syntax</li>
+                        </ul><br>
+
+                        <h3>Functions and Procedures:</h3><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Functions:</strong> Named blocks of code that perform specific tasks and return a value.</li><br>
+                            <li><strong>Procedures:</strong> Named blocks of code that perform specific tasks, may or may not return a value, and often include multiple SQL statements.</li><br>
+                            <li><strong>Advantages:</strong> Reusability, Performance, Security.</li><br>
+                        </ul><br>
+                        <h4>Functions:</h4><br>
+                        <p><strong>Creation:</strong></p><br>
+                        <ul>
+                            <li>Syntax: <code>CREATE FUNCTION function_name (parameter1 data_type, ...) RETURNS data_type AS BEGIN ... END;</code></li><br>
+                            <li>Usage: Can be called in <code>SELECT</code> statements, assignments, and other expressions.</li><br>
+                            <li>Considerations: Should perform a specific task and return a value; avoid side effects.</li><br>
+                        </ul><br>
+                        <h4>Procedures:</h4><br>
+                        <p><strong>Creation:</strong></p><br>
+                        <ul>
+                            <li>Syntax: <code>CREATE PROCEDURE procedure_name (parameter1 data_type, ...) AS BEGIN ... END;</code></li><br>
+                            <li>Usage: Can be called with the <code>CALL</code> statement.</li><br>
+                            <li>Considerations: Can include control-of-flow statements, accept input parameters, return output parameters, and use INOUT parameters; error handling can be implemented within procedures.</li><br>
+                        </ul><br>
+
+                        <h3>Triggers:</h3><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Before Triggers:</strong> Execute before a specified event occurs.</li><br>
+                            <li><strong>After Triggers:</strong> Execute after a specified event occurs.</li><br>
+                            <li><strong>Instead Of Triggers:</strong> Execute in place of the specified event.</li><br>
+                        </ul><br>
+                        <p><strong>Creating Triggers:</strong></p><br>
+                        <ul>
+                            <li>Syntax: <code>CREATE TRIGGER trigger_name trigger_time trigger_event ON table_name FOR EACH ROW BEGIN ... END;</code></li><br>
+                            <li>Operations: Include any valid SQL statements within the trigger; use <code>NEW</code> and <code>OLD</code> for row-level triggers.</li><br>
+                            <li>Error Handling: Implement error handling within triggers using constructs such as <code>EXCEPTION</code> blocks.</li><br>
+                        </ul><br>
+                        <p><strong>Use Cases:</strong></p><br>
+                        <ul>
+                            <li>Auditing: Automatically log changes to data for auditing purposes.</li><br>
+                            <li>Data Validation: Enforce business rules and data constraints beyond the standard integrity constraints.</li><br>
+                            <li>Cascading Actions: Perform additional data modifications in response to specific events.</li><br>
+                        </ul><br>
+                    </section>
+
                 </div>
 
                 <div id="unit4" class="formatted-text">
                     <!-- Unit 4 text -->
                     <h2>UNIT 4: Relational Database Design and File Organization, Indexing & Hashing</h2>
                     <br>
-                    <p>Aliquam id dolor. Phasellus nec sem in justo pellentesque facilisis. Curabitur at lacus ac velit ornare lobortis. Curabitur blandit mollis lacus. Praesent vestibulum dapibus nibh. Fusce commodo aliquam arcu. Aliquam erat volutpat. Aliquam vestibulum morbi blandit cursus risus at ultrices. Morbi scelerisque luctus velit. Etiam rhoncus.</p>
+                    <section>
+                        <h2>Normalization:</h2><br>
+                        <h3>Features of Good Relational Designs</h3><br>
+                        <p><strong>Key Features:</strong></p><br>
+                        <ul>
+                            <li><strong>Minimize Redundancy:</strong> Reduce duplicate data by organizing tables efficiently.</li><br>
+                            <li><strong>Maximize Data Integrity:</strong> Enforce integrity constraints such as primary keys, foreign keys, and unique constraints.</li><br>
+                            <li><strong>Efficient Query Performance:</strong> Design tables to minimize complex joins and nested queries.</li><br>
+                            <li><strong>Logical and Intuitive Schema:</strong> Structure tables and relationships in a way that mirrors real-world relationships.</li><br>
+                            <li><strong>Flexibility:</strong> Design tables and relationships to accommodate future changes and growth in data volume.</li><br>
+                            <li><strong>Avoiding Data Anomalies:</strong> Design to prevent update, insertion, and deletion anomalies.</li><br>
+                            <li><strong>Maintainability:</strong> Use consistent naming conventions and documentation for tables, columns, and relationships.</li><br>
+                            <li><strong>Data Security:</strong> Design for security, such as implementing role-based access control.</li><br>
+                        </ul><br>
+                        <p><strong>Design Strategies:</strong></p><br>
+                        <ul>
+                            <li><strong>Normalization:</strong> Follow normalization rules to structure tables effectively.</li><br>
+                            <li><strong>Denormalization:</strong> Consider selective denormalization for performance improvements.</li><br>
+                            <li><strong>Indexing:</strong> Use indexes on frequently queried columns to improve data retrieval speed.</li><br>
+                            <li><strong>Documentation:</strong> Maintain comprehensive documentation of schema design.</li><br>
+                        </ul><br>
+                    </section>
+                    <section>
+                        <h2>Functional Dependencies</h2><br>
+                        <p><strong>Understanding Functional Dependencies:</strong></p><br>
+                        <ul>
+                            <li><strong>Notation:</strong> Denoted as A -> B, indicating that A functionally determines B.</li><br>
+                        </ul><br>
+                        <p><strong>Types of Functional Dependencies:</strong></p><br>
+                        <ul>
+                            <li><strong>Trivial Dependency:</strong> A dependency where the right side is a subset of the left side.</li><br>
+                            <li><strong>Non-trivial Dependency:</strong> A dependency where the right side is not a subset of the left side.</li><br>
+                            <li><strong>Full Functional Dependency:</strong> Occurs when an attribute fully determines another attribute.</li><br>
+                            <li><strong>Partial Dependency:</strong> Occurs when an attribute partially determines another attribute.</li><br>
+                        </ul><br>
+                        <p><strong>Use in Normalization:</strong></p><br>
+                        <ul>
+                            <li><strong>Normalization:</strong> Functional dependencies are used to identify and eliminate redundancy in a database.</li><br>
+                            <li><strong>Identifying Keys:</strong> Functional dependencies help identify candidate keys and the primary key of a table.</li><br>
+                            <li><strong>Anomalies:</strong> Functional dependencies help identify and eliminate anomalies.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h3>Normal Forms</h3><br>
+                        <p><strong>First Normal Form (1NF):</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> A table is in 1NF if it meets certain criteria.</li><br>
+                            <li><strong>Example:</strong> In a table with a column for student courses, each course should be a separate row.</li><br>
+                        </ul><br>
+                        <p><strong>Second Normal Form (2NF):</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> A table is in 2NF if it meets certain criteria.</li><br>
+                            <li><strong>Example:</strong> Separating product information into its own table to avoid partial dependency.</li><br>
+                        </ul><br>
+                        <p><strong>Third Normal Form (3NF):</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> A table is in 3NF if it meets certain criteria.</li><br>
+                            <li><strong>Example:</strong> Separating department information into its own table to avoid transitive dependency.</li><br>
+                        </ul><br>
+                        <p><strong>Benefits of Normalization:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Integrity:</strong> Helps maintain data consistency and avoids redundancy.</li><br>
+                            <li><strong>Ease of Maintenance:</strong> Simplifies data updates and maintenance tasks.</li><br>
+                            <li><strong>Smaller Storage:</strong> Reduces data storage by avoiding duplicate data.</li><br>
+                        </ul><br>
+                    </section>
+                    <section>
+                        <h3>BCNF</h3><br>
+                        <p><strong>BCNF Criteria:</strong></p><br>
+                        <ul>
+                            <li><strong>3NF Compliance:</strong> A table must first meet the requirements of 3NF.</li><br>
+                            <li><strong>Superkey Dependency:</strong> For every non-trivial functional dependency, the determinant must be a superkey.</li><br>
+                        </ul><br>
+                        <p><strong>Example:</strong></p><br>
+                        <ul>
+                            <li><strong>Violation:</strong> If there is a functional dependency where non-superkeys determine non-key attributes.</li><br>
+                            <li><strong>Normalization:</strong> To normalize to BCNF, separate columns into different tables.</li><br>
+                        </ul><br>
+                        <p><strong>Benefits:</strong></p><br>
+                        <ul>
+                            <li><strong>Minimal Redundancy:</strong> BCNF eliminates more redundancy than 3NF.</li><br>
+                            <li><strong>Simpler Queries:</strong> Queries can be easier to construct and interpret.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h3>Functional Dependency Theory</h3><br>
+                        <p><strong>Functional Dependencies:</strong></p><br>
+                        <ul>
+                            <li><strong>Representation:</strong> Represented using the notation <code>A -&gt; B</code>, meaning "A functionally determines B."</li><br>
+                            <li><strong>Keys:</strong> Definitions of superkey, candidate key, and primary key.</li><br>
+                            <li><strong>Closure:</strong> Attribute Closure and example.</li><br>
+                        </ul><br>
+                        <p><strong>Armstrong's Axioms:</strong></p><br>
+                        <ul>
+                            <li><strong>Definitions:</strong> Reflexivity, Augmentation, Transitivity, Decomposition, Union, and Pseudo-Transitivity.</li><br>
+                        </ul><br>
+                        <p><strong>Applications:</strong></p><br>
+                        <ul>
+                            <li><strong>Normalization:</strong> Role in guiding normalization and achieving normal forms.</li><br>
+                            <li><strong>Dependency Closure:</strong> Identifying candidate keys and verifying functional dependencies.</li><br>
+                        </ul><br>
+                    </section>
+                    <section>
+                        <h3>Multivalued Dependencies</h3><br>
+                        <p><strong>Understanding Multivalued Dependencies:</strong></p><br>
+                        <ul>
+                            <li><strong>Notation:</strong> Represented using the notation <code>A -&gt;&gt; B</code>, meaning "A multivaluedly determines B."</li><br>
+                            <li><strong>Example:</strong> Illustration with a table of students, courses, and clubs.</li><br>
+                        </ul><br>
+                        <p><strong>Implications of Multivalued Dependencies:</strong></p><br>
+                        <ul>
+                            <li><strong>Normalization:</strong> Role in achieving the Fourth Normal Form (4NF).</li><br>
+                            <li><strong>Decomposition:</strong> Decomposition to eliminate MVDs.</li><br>
+                            <li><strong>Data Integrity:</strong> Ensuring data integrity and reducing redundancy.</li><br>
+                        </ul><br>
+                        <p><strong>Identifying Multivalued Dependencies:</strong></p><br>
+                        <ul>
+                            <li><strong>Testing:</strong> Analyze data and test for patterns of multivalued dependencies.</li><br>
+                            <li><strong>Visualize:</strong> Use dependency diagrams or other visual aids.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h3>Fourth Normal Form</h3><br>
+                        <p><strong>Criteria for Fourth Normal Form:</strong></p><br>
+                        <ul>
+                            <li><strong>BCNF Compliance:</strong> A table must first be in Boyce-Codd Normal Form (BCNF).</li><br>
+                            <li><strong>No Non-Trivial Multivalued Dependencies:</strong> A table is in 4NF if there are no non-trivial multivalued dependencies.</li><br>
+                        </ul><br>
+                        <p><strong>Example:</strong></p><br>
+                        <ul>
+                            <li><strong>Violation of 4NF:</strong> Illustration with a table of students, courses, and clubs.</li><br>
+                            <li><strong>Normalization to 4NF:</strong> Decomposing the table into separate tables for independent attributes.</li><br>
+                        </ul><br>
+                        <p><strong>Benefits:</strong></p><br>
+                        <ul>
+                            <li><strong>Data Integrity:</strong> Maintaining data consistency and integrity.</li><br>
+                            <li><strong>Reduced Redundancy:</strong> Minimizing redundancy and potential anomalies.</li><br>
+                        </ul><br>
+                    </section>
+                    <section>
+                        <h3>Database Design Process</h3><br>
+                        <p><strong>Stages of Database Design:</strong></p><br>
+                        <ol>
+                            <li><strong>Requirement Analysis:</strong> Gathering information about data requirements.</li><br>
+                            <li><strong>Conceptual Design:</strong> Creating a high-level view using data modeling techniques.</li><br>
+                            <li><strong>Logical Design:</strong> Translating the conceptual model into a logical model.</li><br>
+                            <li><strong>Physical Design:</strong> Determining storage and access strategies.</li><br>
+                        </ol><br>
+                        <p><strong>Best Practices:</strong></p><br>
+                        <ul>
+                            <li><strong>Normalization:</strong> Normalize the data model to at least Third Normal Form (3NF).</li><br>
+                            <li><strong>Denormalization:</strong> Consider denormalization for performance optimization.</li><br>
+                            <li><strong>Indexing:</strong> Use indexing to speed up data retrieval.</li><br>
+                            <li><strong>Documentation:</strong> Maintain detailed documentation of the data model.</li><br>
+                            <li><strong>Security:</strong> Consider security measures during the design process.</li><br>
+                        </ul><br>
+                        <p><strong>Challenges:</strong></p><br>
+                        <ul>
+                            <li><strong>Evolving Requirements:</strong> Handling changes in data requirements over time.</li><br>
+                            <li><strong>Performance Optimization:</strong> Balancing data integrity with query performance.</li><br>
+                            <li><strong>Integration:</strong> Integrating the database with other systems and applications.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>File Organization:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> File organization refers to how data is stored and managed on physical storage in a database.</li><br>
+                        </ul><br>
+                        <h3>Types of File Organization:</h3><br>
+                        <ul>
+                            <li><strong>Heap File Organization:</strong> Data is stored in no particular order.</li><br>
+                            <li><strong>Sequential File Organization:</strong> Data is stored sequentially, often sorted by a key attribute.</li><br>
+                            <li><strong>Indexed File Organization:</strong> Uses indexes to speed up data retrieval.</li><br>
+                            <li><strong>Clustered File Organization:</strong> Data is stored in clusters based on a key attribute.</li><br>
+                        </ul><br>
+                        <h3>File Organization Methods:</h3><br>
+                        <ul>
+                            <li><strong>Heap Files:</strong> Suitable for small tables or tables that require infrequent updates.</li><br>
+                            <li><strong>Sequential Files:</strong> Suitable for tables that benefit from data being stored in order.</li><br>
+                            <li><strong>Indexed Files:</strong> Utilize indexes to speed up data retrieval.</li><br>
+                            <li><strong>Clustered Files:</strong> Group related data based on key attributes, improving access times for related data.</li><br>
+                        </ul><br>
+                    </section>
+                    <section>
+                        <h2>Ordered Indices:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Ordered indices are data structures that maintain data in a sorted order based on one or more key attributes.</li><br>
+                        </ul><br>
+                        <h3>Types of Ordered Indices:</h3><br>
+                        <ul>
+                            <li><strong>Single-Level Index:</strong> Contains entries for each key value in the data, sorted in order.</li><br>
+                            <li><strong>Multi-Level Index:</strong> Hierarchical structure with multiple levels of indexing.</li><br>
+                            <li><strong>Composite Index:</strong> An index on multiple attributes; useful for queries that involve multiple columns.</li><br>
+                        </ul><br>
+                        <h3>Benefits of Ordered Indices:</h3><br>
+                        <ul>
+                            <li><strong>Efficient Search:</strong> Allows quick retrieval of data based on key attributes.</li><br>
+                            <li><strong>Data Ordering:</strong> Maintains data in a sorted order, facilitating ordered retrieval.</li><br>
+                            <li><strong>Improved Query Performance:</strong> Reduces the need for full table scans by pointing directly to data blocks.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>B+ Tree Index Files:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> A B+ tree is a type of balanced tree data structure used for indexing in databases.</li><br>
+                        </ul><br>
+                        <h3>B+ Tree Structure:</h3><br>
+                        <ul>
+                            <li><strong>Nodes:</strong> Consists of root, internal, and leaf nodes.</li><br>
+                            <li><strong>Properties:</strong> Balanced Tree, Sorted Keys, Fan-Out.</li><br>
+                        </ul><br>
+                        <h3>Operations:</h3><br>
+                        <ul>
+                            <li><strong>Search:</strong> Start at the root node and traverse the tree.</li><br>
+                            <li><strong>Insertion:</strong> Insertions may cause nodes to split.</li><br>
+                            <li><strong>Deletion:</strong> Deletions may cause nodes to merge or redistribute entries.</li><br>
+                            <li><strong>Range Queries:</strong> B+ trees efficiently support range queries.</li><br>
+                        </ul><br>
+                        <h3>Benefits of B+ Tree Indices:</h3><br>
+                        <ul>
+                            <li><strong>Fast Search and Retrieval:</strong> Balanced nature ensures efficient data retrieval.</li><br>
+                            <li><strong>Ordered Access:</strong> Leaf nodes maintain key-value pairs in sorted order.</li><br>
+                            <li><strong>Flexibility:</strong> Can accommodate dynamic data sets with insertions and deletions.</li><br>
+                        </ul><br>
+                    </section>
+                    <section>
+                        <h2>B Tree Index File:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> A B tree is a self-balancing tree data structure used for indexing in databases.</li><br>
+                        </ul><br>
+                        <h3>B Tree Structure:</h3><br>
+                        <ul>
+                            <li><strong>Nodes:</strong> Consists of root, internal, and leaf nodes.</li><br>
+                            <li><strong>Properties:</strong> Balanced Tree, Sorted Keys, Fan-Out.</li><br>
+                        </ul><br>
+                        <h3>Operations:</h3><br>
+                        <ul>
+                            <li><strong>Search:</strong> Start at the root node and traverse the tree.</li><br>
+                            <li><strong>Insertion:</strong> Insertions may cause nodes to split.</li><br>
+                            <li><strong>Deletion:</strong> Deletions may cause nodes to merge or redistribute entries.</li><br>
+                            <li><strong>Range Queries:</strong> Efficiently supports range queries.</li><br>
+                        </ul><br>
+                        <h3>Benefits of B Tree Indices:</h3><br>
+                        <ul>
+                            <li><strong>Fast Data Access:</strong> Offers efficient searching and retrieval.</li><br>
+                            <li><strong>Dynamic Data Support:</strong> Supports frequent insertions and deletions.</li><br>
+                            <li><strong>Sequential Access:</strong> Leaf nodes maintain data entries in order.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Static Hashing:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Static hashing uses a hash function to map keys to specific locations in a hash table.</li><br>
+                        </ul><br>
+                        <h3>Structure and Operations:</h3><br>
+                        <ul>
+                            <li><strong>Hash Table:</strong> Contains buckets or slots for storing data entries.</li><br>
+                            <li><strong>Hash Function:</strong> Maps a key to an index in the hash table.</li><br>
+                            <li><strong>Collision Handling:</strong> Methods include chaining and open addressing.</li><br>
+                            <li><strong>Insertion:</strong> Compute hash value, store data entry in corresponding bucket.</li><br>
+                            <li><strong>Search:</strong> Compute hash value, look up corresponding bucket for key.</li><br>
+                            <li><strong>Deletion:</strong> Compute hash value, remove data entry from corresponding bucket.</li><br>
+                        </ul><br>
+                        <h3>Benefits:</h3><br>
+                        <ul>
+                            <li><strong>Fast Data Access:</strong> Provides direct access to data based on the key.</li><br>
+                            <li><strong>Simple Implementation:</strong> Relatively straightforward to implement and understand.</li><br>
+                        </ul><br>
+                    </section>
+                    <section>
+                        <h2>Dynamic Hashing:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Dynamic hashing adjusts the size of the hash table based on the amount of data being stored.</li><br>
+                        </ul><br>
+                        <h3>Types of Dynamic Hashing:</h3><br>
+                        <ul>
+                            <li><strong>Extendible Hashing:</strong> Uses a directory that points to buckets.</li><br>
+                            <li><strong>Linear Hashing:</strong> Adjusts a single hash function over time.</li><br>
+                        </ul><br>
+                        <h3>Operations:</h3><br>
+                        <ul>
+                            <li><strong>Insertion:</strong> Compute hash value, insert data entry into corresponding bucket.</li><br>
+                            <li><strong>Search:</strong> Compute hash value, locate appropriate bucket, search for data entry.</li><br>
+                            <li><strong>Deletion:</strong> Compute hash value, locate bucket, remove data entry.</li><br>
+                        </ul><br>
+                        <h3>Benefits:</h3><br>
+                        <ul>
+                            <li><strong>Scalability:</strong> Dynamically adjusts to growing data sets.</li><br>
+                            <li><strong>Efficiency:</strong> Maintains efficient data retrieval as data grows.</li><br>
+                            <li><strong>Collision Handling:</strong> Minimizes collisions through bucket splitting and directory adjustments.</li><br>
+                        </ul><br>
+                    </section>
+                    
                 </div>
 
                 <div id="unit5" class="formatted-text">
                     <!-- Unit 5 text -->
-                    <h2>UNIT 5: Transaction Processing
-                    
-                    
-                    
-                    
-                    
-                    
-                    </h2>
+                    <h2>UNIT 5: Transaction Processing</h2>
                     <br>
-                    <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                    <section>
+                        <h2>Transaction Concept:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> A transaction in a database system is a sequence of operations performed as a single logical unit of work.</li><br>
+                        </ul><br>
+                        <h3>Characteristics of Transactions:</h3><br>
+                        <ul>
+                            <li><strong>Atomicity:</strong> Ensures that all operations within a transaction are completed successfully as a whole.</li><br>
+                            <li><strong>Consistency:</strong> Ensures that a transaction brings the database from one valid state to another.</li><br>
+                            <li><strong>Isolation:</strong> Ensures that concurrent transactions do not interfere with each other.</li><br>
+                            <li><strong>Durability:</strong> Guarantees that committed transactions persist even in the event of a system failure.</li><br>
+                        </ul><br>
+                        <h3>Transaction Lifecycle:</h3><br>
+                        <ul>
+                            <li><strong>Begin:</strong> Marks the start of a transaction.</li><br>
+                            <li><strong>Execute:</strong> Operations are performed within the transaction.</li><br>
+                            <li><strong>Commit:</strong> Marks the successful completion of a transaction, making changes permanent.</li><br>
+                            <li><strong>Rollback:</strong> Reverts all changes made during the transaction if an error occurs.</li><br>
+                        </ul><br>
+                        <h3>Types of Transactions:</h3><br>
+                        <ul>
+                            <li><strong>Read-Only Transactions:</strong> Transactions that only read data and do not modify it.</li><br>
+                            <li><strong>Read-Write Transactions:</strong> Transactions that modify data as well as read it.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>A simple Transaction Model:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> A simple transaction model outlines the basic operations and flow of a transaction in a database system.</li><br>
+                        </ul><br>
+                        <h3>Transaction Lifecycle:</h3><br>
+                        <ol>
+                            <li><strong>Start:</strong> A transaction begins with the initiation of a transaction block.</li><br>
+                            <li><strong>Execution:</strong> The transaction performs a series of operations, such as data retrieval, modification, or deletion.</li><br>
+                            <li><strong>Validation:</strong> Checks are performed to ensure that the operations satisfy database constraints and business rules.</li><br>
+                            <li><strong>Commit or Rollback:</strong> If all operations are successful, the transaction is committed, making all changes permanent. Otherwise, the transaction is rolled back, undoing all changes.</li><br>
+                        </ol><br>
+                        <h3>Operations within a Transaction:</h3><br>
+                        <ul>
+                            <li><strong>Data Manipulation:</strong> Includes operations such as INSERT, UPDATE, and DELETE.</li><br>
+                            <li><strong>Data Retrieval:</strong> Queries (SELECT) may be part of a transaction for decision-making.</li><br>
+                            <li><strong>Locking:</strong> Transactions may acquire locks on data to maintain isolation.</li><br>
+                            <li><strong>Error Handling:</strong> Proper error handling ensures that any issues encountered are appropriately managed.</li><br>
+                        </ul><br>
+                        <h3>Considerations:</h3><br>
+                        <ul>
+                            <li><strong>Atomicity:</strong> Ensures that all operations are completed successfully as a single unit or not at all.</li><br>
+                            <li><strong>Consistency:</strong> Transactions maintain the database in a consistent state.</li><br>
+                            <li><strong>Isolation:</strong> Transactions execute in isolation from each other, preventing data anomalies.</li><br>
+                            <li><strong>Durability:</strong> Once committed, changes are permanent, even in the event of a system failure.</li><br>
+                            <li><strong>Concurrency Control:</strong> Techniques manage concurrent transactions and maintain data integrity.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Transaction Atomicity and Durability:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Transaction Atomicity:</strong> Ensures that all operations within a transaction are completed successfully as a single unit of work.</li><br>
+                            <li><strong>Transaction Durability:</strong> Ensures that once a transaction is committed, its changes are permanent and survive system failures.</li><br>
+                        </ul><br>
+                        <h3>Transaction Atomicity:</h3><br>
+                        <ul>
+                            <li><strong>Atomicity:</strong> Ensures that all operations within a transaction are completed successfully as a single unit of work.</li><br>
+                            <li><strong>Key Features:</strong> All or Nothing, Rollback.</li><br>
+                            <li><strong>Implementation:</strong> Typically implemented using logs that record changes during a transaction.</li><br>
+                        </ul><br>
+                        <h3>Transaction Durability:</h3><br>
+                        <ul>
+                            <li><strong>Durability:</strong> Ensures that once a transaction is committed, its changes are permanent and survive system failures.</li><br>
+                            <li><strong>Key Features:</strong> Persistence, Recovery.</li><br>
+                            <li><strong>Implementation:</strong> Often achieved using write-ahead logging (WAL) and checkpoints.</li><br>
+                        </ul><br>
+                    </section>
+                    <section>
+                        <h2>Transaction Isolation:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Definition:</strong> Transaction isolation refers to the level of visibility a transaction has to the changes made by other concurrent transactions.</li><br>
+                        </ul><br>
+                        <h3>Isolation Levels:</h3><br>
+                        <ul>
+                            <li><strong>Read Uncommitted:</strong> Allows a transaction to see uncommitted changes made by other transactions.</li><br>
+                            <li><strong>Read Committed:</strong> A transaction can see only changes that have been committed.</li><br>
+                            <li><strong>Repeatable Read:</strong> Ensures that a transaction sees a consistent snapshot of the data it reads.</li><br>
+                            <li><strong>Serializable:</strong> Provides the highest level of isolation, ensuring transactions are executed as if they were serially ordered.</li><br>
+                        </ul><br>
+                        <h3>Use Cases:</h3><br>
+                        <ul>
+                            <li><strong>Selecting an Isolation Level:</strong> Choose an isolation level based on the application's specific requirements for data integrity and performance.</li><br>
+                            <li><strong>Locking Strategies:</strong> Different isolation levels use various locking strategies to achieve the desired level of isolation.</li><br>
+                        </ul><br>
+                        <h3>Trade-offs:</h3><br>
+                        <ul>
+                            <li><strong>Performance:</strong> Higher isolation levels (e.g., serializable) may negatively impact performance due to increased locking and blocking.</li><br>
+                            <li><strong>Data Integrity:</strong> Lower isolation levels (e.g., read uncommitted) may lead to data anomalies such as dirty reads, non-repeatable reads, and phantom reads.</li><br>
+                            <li><strong>Application Needs:</strong> Consider the specific needs of the application, including acceptable levels of data anomalies and performance requirements.</li><br>
+                        </ul><br>
+                    </section>
+                    
+                    <section>
+                        <h2>ACID Properties:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Atomicity:</strong> Ensures that all operations within a transaction are treated as a single unit of work.</li><br>
+                            <li><strong>Consistency:</strong> Guarantees that a transaction brings the database from one valid state to another valid state.</li><br>
+                            <li><strong>Isolation:</strong> Ensures that concurrent transactions do not interfere with each other.</li><br>
+                            <li><strong>Durability:</strong> Guarantees that once a transaction is committed, its changes are permanent and survive system failures.</li><br>
+                        </ul><br>
+                        <h3>Importance:</h3><br>
+                        <ul>
+                            <li><strong>Data Integrity:</strong> ACID properties help maintain data integrity and prevent data corruption.</li><br>
+                            <li><strong>Reliability:</strong> By providing reliable transaction handling, ACID properties ensure that the database remains usable and consistent even in the event of system failures.</li><br>
+                            <li><strong>User Trust:</strong> ACID properties increase user trust in the database system, knowing that their data is handled consistently and reliably.</li><br>
+                        </ul><br>
+                        <h3>Implementation:</h3><br>
+                        <ul>
+                            <li><strong>Transaction Management:</strong> Database systems typically include transaction management components to handle ACID properties.</li><br>
+                            <li><strong>Concurrency Control:</strong> Techniques such as locking protocols and isolation levels help manage concurrent transactions and maintain isolation.</li><br>
+                        </ul><br>
+                    </section>
+                    <section>
+                        <h2>Serializability:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Conflict Serializability:</strong> Ensures that the outcome of concurrent transactions is the same as if the transactions were executed serially.</li><br>
+                            <li><strong>View Serializability:</strong> A less strict form of serializability compared to conflict serializability.</li><br>
+                        </ul><br>
+                        <h3>Implementation:</h3><br>
+                        <ul>
+                            <li><strong>Concurrency Control Protocols:</strong> Protocols such as two-phase locking (2PL) and timestamp-based protocols help ensure serializability.</li><br>
+                            <li><strong>Transaction Scheduling:</strong> By controlling the order in which transactions are scheduled and executed, serializability can be maintained.</li><br>
+                            <li><strong>Conflict Graph:</strong> A representation of transactions and their conflicts, used to check if a schedule is serializable.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Concurrency Control Techniques:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Lock-Based Protocols:</strong> Manage concurrent access to data using locks.</li><br>
+                            <li><strong>Deadlock Handling:</strong> Prevent, detect, and resolve deadlocks in concurrent transactions.</li><br>
+                            <li><strong>Multiple Granularity:</strong> Allow locks to be acquired at different levels of data granularity.</li><br>
+                            <li><strong>Timestamp-Based Protocols:</strong> Assign unique timestamps to transactions to manage concurrency.</li><br>
+                            <li><strong>Optimistic Concurrency Control:</strong> Assume conflicts are rare and allow transactions to execute without locking.</li><br>
+                            <li><strong>Snapshot Isolation:</strong> Provide each transaction with a consistent snapshot of the database.</li><br>
+                        </ul><br>
+                        <h3>Lock-Based Protocols:</h3><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Shared Locks:</strong> Allow multiple transactions to read the same data concurrently.</li><br>
+                            <li><strong>Exclusive Locks:</strong> Allow only one transaction to modify data.</li><br>
+                        </ul><br>
+                        <p><strong>Lock Granularity:</strong></p><br>
+                        <ul>
+                            <li><strong>Fine-Grained Locks:</strong> Locks on smaller data units for higher concurrency.</li><br>
+                            <li><strong>Coarse-Grained Locks:</strong> Locks on larger data units for simplicity and reduced deadlock potential.</li><br>
+                        </ul><br>
+                        <p><strong>Locking Protocols:</strong></p><br>
+                        <ul>
+                            <li><strong>Two-Phase Locking (2PL):</strong> Consists of the growing phase and the shrinking phase.</li><br>
+                            <li><strong>Strict Two-Phase Locking:</strong> All locks are held until the transaction commits or rolls back.</li><br>
+                            <li><strong>Deadlock Detection and Resolution:</strong> Identify and resolve deadlocks in concurrent transactions.</li><br>
+                            <li><strong>Deadlock Prevention:</strong> Use transaction ordering to prevent deadlock cycles.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Deadlock Handling:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Deadlock Prevention:</strong> Prevent deadlocks by defining lock ordering and using lock timeouts.</li><br>
+                            <li><strong>Deadlock Detection:</strong> Identify deadlocks using wait-for graphs and detection algorithms.</li><br>
+                            <li><strong>Deadlock Resolution:</strong> Resolve deadlocks by selecting victims and rolling back transactions.</li><br>
+                        </ul><br>
+                        <p><strong>Strategies for Victim Selection:</strong></p><br>
+                        <ul>
+                            <li><strong>Priority-Based:</strong> Choose victims based on transaction priority.</li><br>
+                            <li><strong>Resource Usage:</strong> Choose transactions with the least resources or changes as victims.</li><br>
+                            <li><strong>Age-Based:</strong> Select younger transactions as victims to avoid penalizing long-running transactions.</li><br>
+                        </ul><br>
+                        <p><strong>Considerations:</strong></p><br>
+                        <ul>
+                            <li><strong>Impact on Transactions:</strong> Victim selection affects performance and user experience.</li><br>
+                            <li><strong>Performance:</strong> Deadlock handling introduces overhead, impacting performance.</li><br>
+                            <li><strong>Isolation Levels:</strong> Lower isolation levels may reduce deadlock risk but can introduce data anomalies.</li><br>
+                        </ul><br>
+                        <h3>Multiple Granularity:</h3><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Coarse-Grained Locks:</strong> Locks on larger data units for simplicity.</li><br>
+                            <li><strong>Fine-Grained Locks:</strong> Locks on smaller data units for higher concurrency.</li><br>
+                        </ul><br>
+                        <p><strong>Intention Locks:</strong></p><br>
+                        <ul>
+                            <li><strong>Used to indicate a transaction's intention to acquire finer-grained locks.</strong></li><br>
+                        </ul><br>
+                        <p><strong>Lock Compatibility:</strong></p><br>
+                        <ul>
+                            <li><strong>Defines which types of locks are compatible and can coexist on the same data.</strong></li><br>
+                        </ul><br>
+                        <p><strong>Benefits:</strong></p><br>
+                        <ul>
+                            <li><strong>Improved Concurrency:</strong> Allows multiple transactions to access different parts of the data simultaneously.</li><br>
+                            <li><strong>Flexibility:</strong> Transactions can acquire locks based on their specific needs.</li><br>
+                        </ul><br>
+                        <p><strong>Considerations:</strong></p><br>
+                        <ul>
+                            <li><strong>Complexity:</strong> Implementing and managing multiple granularity locks can add complexity.</li><br>
+                            <li><strong>Deadlocks:</strong> Fine-grained locking can increase the risk of deadlocks.</li><br>
+                            <li><strong>Performance:</strong> Proper use of multiple granularity locks can improve performance.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Timestamp-Based Protocols:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Timestamp Assignment:</strong> Transactions and data items are assigned timestamps to determine their order.</li><br>
+                            <li><strong>Protocol Rules:</strong> Read and write rules govern access to data items based on timestamps.</li><br>
+                            <li><strong>Handling Aborted Transactions:</strong> Aborted transactions are restarted with new timestamps.</li><br>
+                        </ul><br>
+                        <p><strong>Benefits:</strong></p><br>
+                        <ul>
+                            <li><strong>Serializability:</strong> Maintains serializability by ordering transactions based on timestamps.</li><br>
+                            <li><strong>Deadlock Avoidance:</strong> Avoids deadlocks since transactions are not blocked waiting for locks.</li><br>
+                        </ul><br>
+                    </section>
+
+                    <section>
+                        <h2>Recovery System:</h2><br>
+                        <p><strong>Key Concepts:</strong></p><br>
+                        <ul>
+                            <li><strong>Write-Ahead Logging (WAL):</strong> A recovery method that logs changes to data before they are written to the database.</li><br>
+                            <li><strong>Checkpoints:</strong> Points in time when the database records its current state on disk.</li><br>
+                            <li><strong>Steal and Force Policies:</strong> Steal policy allows a transaction to release its lock on data before committing, while force policy ensures that changes made by a transaction are immediately written to disk when the transaction commits.</li><br>
+                            <li><strong>Shadow Paging:</strong> A recovery technique that maintains a copy (shadow) of each page before it is modified.</li><br>
+                            <li><strong>ARIES:</strong> Algorithm for Recovery and Isolation Exploiting Semantics.</li><br>
+                        </ul><br>
+                        <h3>Recovery Process:</h3><br>
+                        <ul>
+                            <li><strong>Analysis Phase:</strong> Scans the log to identify the last checkpoint and build a list of transactions that were active at the time of the crash.</li><br>
+                            <li><strong>Redo Phase:</strong> Reapplies changes from the log to the database to restore the state up to the point of failure.</li><br>
+                            <li><strong>Undo Phase:</strong> Reverts uncommitted transactions' changes from the log to roll back the database to a consistent state.</li><br>
+                        </ul><br>
+                        <h3>Considerations:</h3><br>
+                        <ul>
+                            <li><strong>Performance Overhead:</strong> Logging and checkpointing can introduce overhead, affecting database performance.</li><br>
+                            <li><strong>Recovery Time:</strong> Properly managing checkpoints and logs can help minimize recovery time after a failure.</li><br>
+                            <li><strong>Data Consistency:</strong> Ensure that the recovery system maintains data consistency and integrity across the database.</li><br>
+                            <li><strong>Testing and Monitoring:</strong> Test the recovery system regularly to ensure it works as expected and monitor logs for performance and health.</li><br>
+                        </ul><br>
+                    </section>
+                    
                 </div>
 
             </div>

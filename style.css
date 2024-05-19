@@ -413,7 +413,8 @@ hr {
     flex-direction: column;
     min-height: 322px;
     padding: 20px;
-
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .vid-title-wrapper{
